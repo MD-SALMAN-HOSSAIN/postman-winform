@@ -1,7 +1,7 @@
 ﻿
 namespace Postman.App.Dashboard.Homepage.Order
 {
-    partial class Form1
+    partial class Order
     {
         /// <summary>
         /// Required designer variable.

@@ -85,11 +85,11 @@
     <Compile Include="App\Dashboard\Homepage\Settings\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Dashboard\Homepage\Order\Form1.cs">
+    <Compile Include="App\Dashboard\Homepage\Order\Order.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="App\Dashboard\Homepage\Order\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="App\Dashboard\Homepage\Order\Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Dashboard\Homepage\Withdrow\Withdrow.cs">
       <SubType>Form</SubType>
@@ -123,8 +123,8 @@
     <EmbeddedResource Include="App\Dashboard\Homepage\Settings\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Dashboard\Homepage\Order\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="App\Dashboard\Homepage\Order\Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Dashboard\Homepage\Withdrow\Withdrow.resx">
       <DependentUpon>Withdrow.cs</DependentUpon>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Postman.App.Dashboard.Homepage.Order
 {
-    public partial class Form1 : Form
+    public partial class Order : Form
     {
-        public Form1()
+        public Order()
         {
             InitializeComponent();
         }
