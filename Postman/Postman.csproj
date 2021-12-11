@@ -90,6 +90,9 @@
     <EmbeddedResource Include="App\Authentication\Reset\Reset.resx">
       <DependentUpon>Reset.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Dashboard\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +127,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\c8ed4fc3eb4a75a85a0df5e466c78bfc-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pdarcel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

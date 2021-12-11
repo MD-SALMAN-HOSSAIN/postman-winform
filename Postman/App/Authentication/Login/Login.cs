@@ -21,5 +21,10 @@ namespace Postman.App.Authentication.Login
         {
             
         }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
