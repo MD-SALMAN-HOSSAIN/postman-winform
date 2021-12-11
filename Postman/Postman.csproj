@@ -73,17 +73,23 @@
     <Compile Include="App\Dashboard\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Dashboard\Homepage\Deposit\Deposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Dashboard\Homepage\Deposit\Deposit.Designer.cs">
+      <DependentUpon>Deposit.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\Dashboard\Homepage\Homepage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="App\Dashboard\Homepage\Homepage.Designer.cs">
       <DependentUpon>Homepage.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Dashboard\Homepage\Settings\Form1.cs">
+    <Compile Include="App\Dashboard\Homepage\Settings\Settings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="App\Dashboard\Homepage\Settings\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="App\Dashboard\Homepage\Settings\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Dashboard\Homepage\Withdrow\Withdrow.cs">
       <SubType>Form</SubType>
@@ -111,11 +117,14 @@
     <EmbeddedResource Include="App\Dashboard\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Dashboard\Homepage\Deposit\Deposit.resx">
+      <DependentUpon>Deposit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Dashboard\Homepage\Homepage.resx">
       <DependentUpon>Homepage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Dashboard\Homepage\Settings\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="App\Dashboard\Homepage\Settings\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Dashboard\Homepage\Withdrow\Withdrow.resx">
       <DependentUpon>Withdrow.cs</DependentUpon>

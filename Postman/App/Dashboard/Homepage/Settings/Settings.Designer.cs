@@ -1,7 +1,7 @@
 ﻿
 namespace Postman.App.Dashboard.Homepage.Settings
 {
-    partial class Form1
+    partial class Settings
     {
         /// <summary>
         /// Required designer variable.

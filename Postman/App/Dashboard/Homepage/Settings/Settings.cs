@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Postman.App.Dashboard.Homepage.Withdrow
+namespace Postman.App.Dashboard.Homepage.Settings
 {
-    public partial class Withdrow : Form
+    public partial class Settings : Form
     {
-        public Withdrow()
+        public Settings()
         {
             InitializeComponent();
-        }
-
-        private void Withdrow_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Postman.App.Dashboard.Homepage.Settings
+namespace Postman.App.Dashboard.Homepage.Deposit
 {
-    public partial class Form1 : Form
+    public partial class Deposit : Form
     {
-        public Form1()
+        public Deposit()
         {
             InitializeComponent();
         }

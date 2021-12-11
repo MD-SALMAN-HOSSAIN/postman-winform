@@ -45,8 +45,6 @@ namespace Postman.App.Dashboard.Homepage.Withdrow
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
@@ -54,6 +52,8 @@ namespace Postman.App.Dashboard.Homepage.Withdrow
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -234,44 +234,6 @@ namespace Postman.App.Dashboard.Homepage.Withdrow
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
             // 
-            // guna2Button11
-            // 
-            this.guna2Button11.CheckedState.Parent = this.guna2Button11;
-            this.guna2Button11.CustomImages.Parent = this.guna2Button11;
-            this.guna2Button11.FillColor = System.Drawing.Color.White;
-            this.guna2Button11.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button11.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button11.HoverState.Parent = this.guna2Button11;
-            this.guna2Button11.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button11.Image")));
-            this.guna2Button11.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button11.ImageSize = new System.Drawing.Size(45, 45);
-            this.guna2Button11.Location = new System.Drawing.Point(683, 61);
-            this.guna2Button11.Name = "guna2Button11";
-            this.guna2Button11.ShadowDecoration.Parent = this.guna2Button11;
-            this.guna2Button11.Size = new System.Drawing.Size(104, 35);
-            this.guna2Button11.TabIndex = 20;
-            this.guna2Button11.Text = "DBBL";
-            this.guna2Button11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // guna2Button10
-            // 
-            this.guna2Button10.CheckedState.Parent = this.guna2Button10;
-            this.guna2Button10.CustomImages.Parent = this.guna2Button10;
-            this.guna2Button10.FillColor = System.Drawing.Color.White;
-            this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button10.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button10.HoverState.Parent = this.guna2Button10;
-            this.guna2Button10.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button10.Image")));
-            this.guna2Button10.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button10.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button10.Location = new System.Drawing.Point(561, 61);
-            this.guna2Button10.Name = "guna2Button10";
-            this.guna2Button10.ShadowDecoration.Parent = this.guna2Button10;
-            this.guna2Button10.Size = new System.Drawing.Size(116, 35);
-            this.guna2Button10.TabIndex = 21;
-            this.guna2Button10.Text = "City  bank";
-            this.guna2Button10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // guna2Button9
             // 
             this.guna2Button9.AutoRoundedCorners = true;
@@ -393,6 +355,44 @@ namespace Postman.App.Dashboard.Homepage.Withdrow
             this.guna2TextBox1.Size = new System.Drawing.Size(254, 28);
             this.guna2TextBox1.TabIndex = 14;
             // 
+            // guna2Button11
+            // 
+            this.guna2Button11.CheckedState.Parent = this.guna2Button11;
+            this.guna2Button11.CustomImages.Parent = this.guna2Button11;
+            this.guna2Button11.FillColor = System.Drawing.Color.White;
+            this.guna2Button11.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button11.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button11.HoverState.Parent = this.guna2Button11;
+            this.guna2Button11.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button11.Image")));
+            this.guna2Button11.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button11.ImageSize = new System.Drawing.Size(45, 45);
+            this.guna2Button11.Location = new System.Drawing.Point(683, 61);
+            this.guna2Button11.Name = "guna2Button11";
+            this.guna2Button11.ShadowDecoration.Parent = this.guna2Button11;
+            this.guna2Button11.Size = new System.Drawing.Size(104, 35);
+            this.guna2Button11.TabIndex = 20;
+            this.guna2Button11.Text = "DBBL";
+            this.guna2Button11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // guna2Button10
+            // 
+            this.guna2Button10.CheckedState.Parent = this.guna2Button10;
+            this.guna2Button10.CustomImages.Parent = this.guna2Button10;
+            this.guna2Button10.FillColor = System.Drawing.Color.White;
+            this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button10.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button10.HoverState.Parent = this.guna2Button10;
+            this.guna2Button10.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button10.Image")));
+            this.guna2Button10.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button10.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2Button10.Location = new System.Drawing.Point(561, 61);
+            this.guna2Button10.Name = "guna2Button10";
+            this.guna2Button10.ShadowDecoration.Parent = this.guna2Button10;
+            this.guna2Button10.Size = new System.Drawing.Size(116, 35);
+            this.guna2Button10.TabIndex = 21;
+            this.guna2Button10.Text = "City  bank";
+            this.guna2Button10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // Withdrow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -414,6 +414,7 @@ namespace Postman.App.Dashboard.Homepage.Withdrow
             this.Controls.Add(this.guna2TextBox1);
             this.Name = "Withdrow";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Withdrow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
