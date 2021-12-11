@@ -74,6 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -96,6 +97,9 @@
     <Folder Include="App\Delivery\NewFolder1\" />
     <Folder Include="DataAccess\" />
     <Folder Include="Repository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c8ed4fc3eb4a75a85a0df5e466c78bfc-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
