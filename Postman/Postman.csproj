@@ -55,6 +55,12 @@
     <Compile Include="App\Authentication\Login\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Authentication\Register\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Authentication\Register\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\Authentication\Reset\Reset.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="App\Authentication\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Authentication\Register\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Authentication\Reset\Reset.resx">
       <DependentUpon>Reset.cs</DependentUpon>
@@ -99,7 +108,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\Authentication\Register\" />
     <Folder Include="App\Consignments\All\" />
     <Folder Include="App\Dashboard\" />
     <Folder Include="App\Delivery\NewFolder1\" />
