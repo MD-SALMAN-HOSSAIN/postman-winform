@@ -16,5 +16,10 @@ namespace Postman.App.Authentication.Register
         {
             InitializeComponent();
         }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

@@ -230,6 +230,7 @@ namespace Postman.App.Authentication.Register
             this.guna2Button5.TabIndex = 17;
             this.guna2Button5.Text = "Sign up";
             this.guna2Button5.UseTransparentBackground = true;
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // guna2TextBox1
             // 
@@ -434,7 +435,7 @@ namespace Postman.App.Authentication.Register
             this.guna2PictureBox2.TabIndex = 35;
             this.guna2PictureBox2.TabStop = false;
             // 
-            // Form1
+            // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -448,7 +449,7 @@ namespace Postman.App.Authentication.Register
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.guna2PictureBox2);
-            this.Name = "Form1";
+            this.Name = "Register";
             this.Text = "Form1";
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
