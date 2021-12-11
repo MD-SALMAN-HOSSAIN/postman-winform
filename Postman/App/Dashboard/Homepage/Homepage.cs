@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Postman.App.Dashboard.Homepage
 {
-    public partial class Form1 : Form
+    public partial class Homepage : Form
     {
-        public Form1()
+        public Homepage()
         {
             InitializeComponent();
         }

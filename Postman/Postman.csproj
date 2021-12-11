@@ -73,10 +73,16 @@
     <Compile Include="App\Dashboard\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Dashboard\Homepage\Form1.cs">
+    <Compile Include="App\Dashboard\Homepage\Homepage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="App\Dashboard\Homepage\Form1.Designer.cs">
+    <Compile Include="App\Dashboard\Homepage\Homepage.Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Dashboard\Homepage\Settings\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Dashboard\Homepage\Settings\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Dashboard\Homepage\Order\Form1.cs">
@@ -111,7 +117,10 @@
     <EmbeddedResource Include="App\Dashboard\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Dashboard\Homepage\Form1.resx">
+    <EmbeddedResource Include="App\Dashboard\Homepage\Homepage.resx">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Dashboard\Homepage\Settings\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Dashboard\Homepage\Order\Form1.resx">
