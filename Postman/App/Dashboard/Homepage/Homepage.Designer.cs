@@ -1,7 +1,7 @@
 ﻿
 namespace Postman.App.Dashboard.Homepage
 {
-    partial class Form1
+    partial class Homepage
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Postman.App.Dashboard.Homepage
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage));
             this.label5 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2CircleProgressBar1 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
