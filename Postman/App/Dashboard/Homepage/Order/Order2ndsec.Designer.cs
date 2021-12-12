@@ -67,6 +67,7 @@ namespace Postman.App.Dashboard.Homepage.Order
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel1.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2ShadowPanel2.SuspendLayout();
@@ -74,6 +75,7 @@ namespace Postman.App.Dashboard.Homepage.Order
             this.guna2ShadowPanel4.SuspendLayout();
             this.guna2ShadowPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -110,6 +112,7 @@ namespace Postman.App.Dashboard.Homepage.Order
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.guna2CirclePictureBox2);
             this.guna2ShadowPanel1.Controls.Add(this.label4);
             this.guna2ShadowPanel1.Controls.Add(this.label3);
             this.guna2ShadowPanel1.Controls.Add(this.label2);
@@ -134,7 +137,7 @@ namespace Postman.App.Dashboard.Homepage.Order
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 57);
+            this.label3.Location = new System.Drawing.Point(91, 62);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 18);
             this.label3.TabIndex = 6;
@@ -144,7 +147,7 @@ namespace Postman.App.Dashboard.Homepage.Order
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(20, 24);
+            this.label2.Location = new System.Drawing.Point(90, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(172, 20);
             this.label2.TabIndex = 5;
@@ -502,6 +505,18 @@ namespace Postman.App.Dashboard.Homepage.Order
             this.textBox4.Size = new System.Drawing.Size(166, 22);
             this.textBox4.TabIndex = 20;
             // 
+            // guna2CirclePictureBox2
+            // 
+            this.guna2CirclePictureBox2.Image = global::Postman.Properties.Resources.bc;
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(15, 25);
+            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
+            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox2.ShadowDecoration.Parent = this.guna2CirclePictureBox2;
+            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(58, 55);
+            this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox2.TabIndex = 14;
+            this.guna2CirclePictureBox2.TabStop = false;
+            // 
             // Order2ndsec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -529,6 +544,7 @@ namespace Postman.App.Dashboard.Homepage.Order
             this.guna2ShadowPanel5.ResumeLayout(false);
             this.guna2ShadowPanel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -573,5 +589,6 @@ namespace Postman.App.Dashboard.Homepage.Order
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
     }
 }
