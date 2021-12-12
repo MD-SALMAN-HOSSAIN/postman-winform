@@ -105,6 +105,12 @@
     <Compile Include="App\Dashboard\Homepage\Homepage.Designer.cs">
       <DependentUpon>Homepage.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Dashboard\Homepage\Order\Order2ndsec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Dashboard\Homepage\Order\Order2ndsec.Designer.cs">
+      <DependentUpon>Order2ndsec.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\Dashboard\Homepage\Settings\Settings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     <EmbeddedResource Include="App\Dashboard\Homepage\Homepage.resx">
       <DependentUpon>Homepage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Dashboard\Homepage\Order\Order2ndsec.resx">
+      <DependentUpon>Order2ndsec.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Dashboard\Homepage\Settings\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,6 +206,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Pdarcel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deposit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\widraw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dsadxzc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seetting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bc.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
