@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace Postman.App.Dashboard
 {
-    public partial class Dashboard : Form
+    public partial class MerchentDashboard : Form
     {
-        public Dashboard()
+        public MerchentDashboard()
         {
             InitializeComponent();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

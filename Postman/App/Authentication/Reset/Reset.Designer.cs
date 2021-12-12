@@ -51,7 +51,7 @@ namespace Postman.App.Authentication.Reset
             // 
             this.guna2Panel1.AutoRoundedCorners = true;
             this.guna2Panel1.BackColor = System.Drawing.Color.White;
-            this.guna2Panel1.BorderRadius = 232;
+            this.guna2Panel1.BorderRadius = 174;
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel3);
             this.guna2Panel1.Controls.Add(this.guna2TextBox2);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
@@ -59,19 +59,21 @@ namespace Postman.App.Authentication.Reset
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel4);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel5);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel1.Location = new System.Drawing.Point(688, 88);
+            this.guna2Panel1.Location = new System.Drawing.Point(516, 72);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(466, 589);
+            this.guna2Panel1.Size = new System.Drawing.Size(350, 478);
             this.guna2Panel1.TabIndex = 23;
             // 
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(31, 320);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(23, 260);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(50, 30);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(41, 23);
             this.guna2HtmlLabel3.TabIndex = 11;
             this.guna2HtmlLabel3.Text = "Email";
             // 
@@ -93,8 +95,8 @@ namespace Postman.App.Authentication.Reset
             this.guna2TextBox2.ForeColor = System.Drawing.Color.White;
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(31, 358);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2TextBox2.Location = new System.Drawing.Point(23, 291);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
@@ -102,7 +104,7 @@ namespace Postman.App.Authentication.Reset
             this.guna2TextBox2.SelectionStart = 5;
             this.guna2TextBox2.ShadowDecoration.Color = System.Drawing.Color.Maroon;
             this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(324, 44);
+            this.guna2TextBox2.Size = new System.Drawing.Size(243, 36);
             this.guna2TextBox2.TabIndex = 12;
             // 
             // guna2HtmlLabel1
@@ -110,9 +112,10 @@ namespace Postman.App.Authentication.Reset
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(31, 39);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(23, 32);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(271, 39);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(220, 32);
             this.guna2HtmlLabel1.TabIndex = 15;
             this.guna2HtmlLabel1.Text = "Reset Your Password";
             // 
@@ -125,10 +128,11 @@ namespace Postman.App.Authentication.Reset
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(122, 423);
+            this.guna2Button1.Location = new System.Drawing.Point(92, 344);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button1.Size = new System.Drawing.Size(135, 37);
             this.guna2Button1.TabIndex = 16;
             this.guna2Button1.Text = "Reset";
             // 
@@ -137,9 +141,10 @@ namespace Postman.App.Authentication.Reset
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(31, 115);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(23, 93);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(427, 25);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(340, 21);
             this.guna2HtmlLabel4.TabIndex = 14;
             this.guna2HtmlLabel4.Text = "Please fill in the email fields below.we\'ll send you a link .";
             // 
@@ -148,9 +153,10 @@ namespace Postman.App.Authentication.Reset
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(31, 146);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(23, 119);
+            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(176, 25);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(144, 21);
             this.guna2HtmlLabel5.TabIndex = 13;
             this.guna2HtmlLabel5.Text = "to reset your password";
             // 
@@ -159,10 +165,11 @@ namespace Postman.App.Authentication.Reset
             this.guna2PictureBox1.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 88);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 72);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(737, 589);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(553, 478);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 22;
             this.guna2PictureBox1.TabStop = false;
@@ -171,11 +178,12 @@ namespace Postman.App.Authentication.Reset
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = global::Postman.Properties.Resources.c8ed4fc3eb4a75a85a0df5e466c78bfc_removebg_preview;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(9, 10);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(78, 58);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(58, 47);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 24;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -184,9 +192,10 @@ namespace Postman.App.Authentication.Reset
             // 
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(96, 27);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(72, 22);
+            this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(77, 25);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(64, 21);
             this.guna2HtmlLabel7.TabIndex = 25;
             this.guna2HtmlLabel7.Text = "Postman";
             // 
@@ -195,23 +204,25 @@ namespace Postman.App.Authentication.Reset
             this.guna2PictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(1154, 88);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(866, 72);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 26;
             this.guna2PictureBox2.TabStop = false;
             // 
             // Reset
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1154, 677);
+            this.ClientSize = new System.Drawing.Size(866, 550);
             this.Controls.Add(this.guna2HtmlLabel7);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2PictureBox2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Reset";
             this.Text = "Form1";
             this.guna2Panel1.ResumeLayout(false);
