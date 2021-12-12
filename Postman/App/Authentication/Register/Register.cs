@@ -21,5 +21,15 @@ namespace Postman.App.Authentication.Register
         {
            
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2RadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

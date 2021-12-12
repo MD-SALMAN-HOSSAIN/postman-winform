@@ -26,5 +26,15 @@ namespace Postman.App.Authentication.Login
         {
 
         }
+
+        private void guna2HtmlLabel9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
