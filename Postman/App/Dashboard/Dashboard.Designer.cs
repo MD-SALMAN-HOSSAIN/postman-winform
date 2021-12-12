@@ -1068,9 +1068,9 @@ namespace Postman.App.Dashboard
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(17, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(370, 28);
+            this.label2.Size = new System.Drawing.Size(393, 28);
             this.label2.TabIndex = 2;
-            this.label2.Text = "We take, We pack, We Delivery";
+            this.label2.Text = "We take, We pack, We delivered ";
             // 
             // label1
             // 
