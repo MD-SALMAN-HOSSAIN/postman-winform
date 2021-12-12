@@ -55,12 +55,6 @@ namespace Postman.App.Dashboard.Homepage
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
-            this.Fromproduct_Load = new Guna.UI2.WinForms.Guna2Button();
             this.panellogo = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -73,6 +67,12 @@ namespace Postman.App.Dashboard.Homepage
             this.btnClose = new System.Windows.Forms.Button();
             this.btnCloseChildFrom = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
+            this.Fromproduct_Load = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CircleProgressBar1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -372,114 +372,6 @@ namespace Postman.App.Dashboard.Homepage
             this.guna2Button3.Text = "User";
             this.guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Red;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button1.FillColor = System.Drawing.Color.Empty;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2Button1.Location = new System.Drawing.Point(0, 380);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(200, 60);
-            this.guna2Button1.TabIndex = 13;
-            this.guna2Button1.Text = "Settings";
-            // 
-            // guna2Button10
-            // 
-            this.guna2Button10.CheckedState.Parent = this.guna2Button10;
-            this.guna2Button10.CustomImages.Parent = this.guna2Button10;
-            this.guna2Button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button10.FillColor = System.Drawing.Color.Empty;
-            this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button10.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button10.HoverState.Parent = this.guna2Button10;
-            this.guna2Button10.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button10.ImageSize = new System.Drawing.Size(23, 23);
-            this.guna2Button10.Location = new System.Drawing.Point(0, 320);
-            this.guna2Button10.Name = "guna2Button10";
-            this.guna2Button10.ShadowDecoration.Parent = this.guna2Button10;
-            this.guna2Button10.Size = new System.Drawing.Size(200, 60);
-            this.guna2Button10.TabIndex = 12;
-            this.guna2Button10.Text = "Customer";
-            // 
-            // guna2Button9
-            // 
-            this.guna2Button9.CheckedState.Parent = this.guna2Button9;
-            this.guna2Button9.CustomImages.Parent = this.guna2Button9;
-            this.guna2Button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button9.FillColor = System.Drawing.Color.Empty;
-            this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button9.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button9.HoverState.Parent = this.guna2Button9;
-            this.guna2Button9.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button9.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button9.Location = new System.Drawing.Point(0, 260);
-            this.guna2Button9.Name = "guna2Button9";
-            this.guna2Button9.ShadowDecoration.Parent = this.guna2Button9;
-            this.guna2Button9.Size = new System.Drawing.Size(200, 60);
-            this.guna2Button9.TabIndex = 11;
-            this.guna2Button9.Text = "Widraw";
-            // 
-            // guna2Button8
-            // 
-            this.guna2Button8.CheckedState.Parent = this.guna2Button8;
-            this.guna2Button8.CustomImages.Parent = this.guna2Button8;
-            this.guna2Button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button8.FillColor = System.Drawing.Color.Empty;
-            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button8.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button8.HoverState.Parent = this.guna2Button8;
-            this.guna2Button8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button8.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2Button8.Location = new System.Drawing.Point(0, 200);
-            this.guna2Button8.Name = "guna2Button8";
-            this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
-            this.guna2Button8.Size = new System.Drawing.Size(200, 60);
-            this.guna2Button8.TabIndex = 10;
-            this.guna2Button8.Text = "Order";
-            // 
-            // guna2Button7
-            // 
-            this.guna2Button7.CheckedState.Parent = this.guna2Button7;
-            this.guna2Button7.CustomImages.Parent = this.guna2Button7;
-            this.guna2Button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button7.FillColor = System.Drawing.Color.Empty;
-            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button7.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button7.HoverState.Parent = this.guna2Button7;
-            this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button7.ImageSize = new System.Drawing.Size(23, 23);
-            this.guna2Button7.Location = new System.Drawing.Point(0, 140);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
-            this.guna2Button7.Size = new System.Drawing.Size(200, 60);
-            this.guna2Button7.TabIndex = 9;
-            this.guna2Button7.Text = "Deposite";
-            // 
-            // Fromproduct_Load
-            // 
-            this.Fromproduct_Load.CheckedState.Parent = this.Fromproduct_Load;
-            this.Fromproduct_Load.CustomImages.Parent = this.Fromproduct_Load;
-            this.Fromproduct_Load.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Fromproduct_Load.FillColor = System.Drawing.Color.Empty;
-            this.Fromproduct_Load.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Fromproduct_Load.ForeColor = System.Drawing.Color.Black;
-            this.Fromproduct_Load.HoverState.Parent = this.Fromproduct_Load;
-            this.Fromproduct_Load.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Fromproduct_Load.Location = new System.Drawing.Point(0, 80);
-            this.Fromproduct_Load.Name = "Fromproduct_Load";
-            this.Fromproduct_Load.ShadowDecoration.Parent = this.Fromproduct_Load;
-            this.Fromproduct_Load.Size = new System.Drawing.Size(200, 60);
-            this.Fromproduct_Load.TabIndex = 8;
-            this.Fromproduct_Load.Text = "Dashboard";
-            // 
             // panellogo
             // 
             this.panellogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -508,7 +400,7 @@ namespace Postman.App.Dashboard.Homepage
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(394, 19);
+            this.label1.Location = new System.Drawing.Point(391, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(193, 33);
             this.label1.TabIndex = 0;
@@ -516,7 +408,7 @@ namespace Postman.App.Dashboard.Homepage
             // 
             // paneltitlebar
             // 
-            this.paneltitlebar.BackColor = System.Drawing.Color.Silver;
+            this.paneltitlebar.BackColor = System.Drawing.Color.White;
             this.paneltitlebar.Controls.Add(this.label13);
             this.paneltitlebar.Controls.Add(this.guna2Button6);
             this.paneltitlebar.Controls.Add(this.btnMinimize);
@@ -525,9 +417,9 @@ namespace Postman.App.Dashboard.Homepage
             this.paneltitlebar.Controls.Add(this.btnClose);
             this.paneltitlebar.Controls.Add(this.btnCloseChildFrom);
             this.paneltitlebar.Controls.Add(this.label1);
-            this.paneltitlebar.Location = new System.Drawing.Point(200, 0);
+            this.paneltitlebar.Location = new System.Drawing.Point(206, 0);
             this.paneltitlebar.Name = "paneltitlebar";
-            this.paneltitlebar.Size = new System.Drawing.Size(1002, 80);
+            this.paneltitlebar.Size = new System.Drawing.Size(996, 80);
             this.paneltitlebar.TabIndex = 11;
             // 
             // label13
@@ -561,7 +453,7 @@ namespace Postman.App.Dashboard.Homepage
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimize.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnMinimize.Location = new System.Drawing.Point(872, 4);
+            this.btnMinimize.Location = new System.Drawing.Point(866, 4);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(39, 40);
             this.btnMinimize.TabIndex = 4;
@@ -585,7 +477,7 @@ namespace Postman.App.Dashboard.Homepage
             this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximize.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMaximize.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnMaximize.Location = new System.Drawing.Point(917, 4);
+            this.btnMaximize.Location = new System.Drawing.Point(911, 4);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(39, 40);
             this.btnMaximize.TabIndex = 4;
@@ -599,7 +491,7 @@ namespace Postman.App.Dashboard.Homepage
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnClose.Location = new System.Drawing.Point(960, 4);
+            this.btnClose.Location = new System.Drawing.Point(954, 4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(39, 40);
             this.btnClose.TabIndex = 3;
@@ -643,7 +535,122 @@ namespace Postman.App.Dashboard.Homepage
             this.guna2Button5.Text = "LOGOUT";
             this.guna2Button5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // Form1
+            // guna2Button1
+            // 
+            this.guna2Button1.BackColor = System.Drawing.Color.Red;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button1.FillColor = System.Drawing.Color.Empty;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = global::Postman.Properties.Resources.seetting;
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2Button1.Location = new System.Drawing.Point(0, 380);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(200, 60);
+            this.guna2Button1.TabIndex = 13;
+            this.guna2Button1.Text = "Settings";
+            // 
+            // guna2Button10
+            // 
+            this.guna2Button10.CheckedState.Parent = this.guna2Button10;
+            this.guna2Button10.CustomImages.Parent = this.guna2Button10;
+            this.guna2Button10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button10.FillColor = System.Drawing.Color.Empty;
+            this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button10.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button10.HoverState.Parent = this.guna2Button10;
+            this.guna2Button10.Image = global::Postman.Properties.Resources.dsadxzc;
+            this.guna2Button10.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button10.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2Button10.Location = new System.Drawing.Point(0, 320);
+            this.guna2Button10.Name = "guna2Button10";
+            this.guna2Button10.ShadowDecoration.Parent = this.guna2Button10;
+            this.guna2Button10.Size = new System.Drawing.Size(200, 60);
+            this.guna2Button10.TabIndex = 12;
+            this.guna2Button10.Text = "Customer";
+            // 
+            // guna2Button9
+            // 
+            this.guna2Button9.CheckedState.Parent = this.guna2Button9;
+            this.guna2Button9.CustomImages.Parent = this.guna2Button9;
+            this.guna2Button9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button9.FillColor = System.Drawing.Color.Empty;
+            this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button9.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button9.HoverState.Parent = this.guna2Button9;
+            this.guna2Button9.Image = global::Postman.Properties.Resources.widraw;
+            this.guna2Button9.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button9.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2Button9.Location = new System.Drawing.Point(0, 260);
+            this.guna2Button9.Name = "guna2Button9";
+            this.guna2Button9.ShadowDecoration.Parent = this.guna2Button9;
+            this.guna2Button9.Size = new System.Drawing.Size(200, 60);
+            this.guna2Button9.TabIndex = 11;
+            this.guna2Button9.Text = "Widraw";
+            // 
+            // guna2Button8
+            // 
+            this.guna2Button8.CheckedState.Parent = this.guna2Button8;
+            this.guna2Button8.CustomImages.Parent = this.guna2Button8;
+            this.guna2Button8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button8.FillColor = System.Drawing.Color.Empty;
+            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button8.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button8.HoverState.Parent = this.guna2Button8;
+            this.guna2Button8.Image = global::Postman.Properties.Resources.package;
+            this.guna2Button8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button8.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2Button8.Location = new System.Drawing.Point(0, 200);
+            this.guna2Button8.Name = "guna2Button8";
+            this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
+            this.guna2Button8.Size = new System.Drawing.Size(200, 60);
+            this.guna2Button8.TabIndex = 10;
+            this.guna2Button8.Text = "Order";
+            // 
+            // guna2Button7
+            // 
+            this.guna2Button7.CheckedState.Parent = this.guna2Button7;
+            this.guna2Button7.CustomImages.Parent = this.guna2Button7;
+            this.guna2Button7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button7.FillColor = System.Drawing.Color.Empty;
+            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button7.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button7.HoverState.Parent = this.guna2Button7;
+            this.guna2Button7.Image = global::Postman.Properties.Resources.Deposit;
+            this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button7.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2Button7.Location = new System.Drawing.Point(0, 140);
+            this.guna2Button7.Name = "guna2Button7";
+            this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
+            this.guna2Button7.Size = new System.Drawing.Size(200, 60);
+            this.guna2Button7.TabIndex = 9;
+            this.guna2Button7.Text = "Deposite";
+            // 
+            // Fromproduct_Load
+            // 
+            this.Fromproduct_Load.CheckedState.Parent = this.Fromproduct_Load;
+            this.Fromproduct_Load.CustomImages.Parent = this.Fromproduct_Load;
+            this.Fromproduct_Load.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Fromproduct_Load.FillColor = System.Drawing.Color.Empty;
+            this.Fromproduct_Load.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fromproduct_Load.ForeColor = System.Drawing.Color.Black;
+            this.Fromproduct_Load.HoverState.Parent = this.Fromproduct_Load;
+            this.Fromproduct_Load.Image = global::Postman.Properties.Resources.Dashboard;
+            this.Fromproduct_Load.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Fromproduct_Load.ImageSize = new System.Drawing.Size(25, 25);
+            this.Fromproduct_Load.Location = new System.Drawing.Point(0, 80);
+            this.Fromproduct_Load.Name = "Fromproduct_Load";
+            this.Fromproduct_Load.ShadowDecoration.Parent = this.Fromproduct_Load;
+            this.Fromproduct_Load.Size = new System.Drawing.Size(200, 60);
+            this.Fromproduct_Load.TabIndex = 8;
+            this.Fromproduct_Load.Text = "Dashboard";
+            // 
+            // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -651,7 +658,7 @@ namespace Postman.App.Dashboard.Homepage
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.paneltitlebar);
-            this.Name = "Form1";
+            this.Name = "Homepage";
             this.Text = "Form1";
             this.guna2CircleProgressBar1.ResumeLayout(false);
             this.guna2CircleProgressBar1.PerformLayout();

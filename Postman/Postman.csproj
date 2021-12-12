@@ -176,5 +176,23 @@
   <ItemGroup>
     <None Include="Resources\Pdarcel.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deposit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\widraw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dsadxzc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seetting.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

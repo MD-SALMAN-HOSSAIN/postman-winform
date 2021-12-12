@@ -358,6 +358,7 @@ namespace Postman.App.Dashboard
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = global::Postman.Properties.Resources.seetting;
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.ImageSize = new System.Drawing.Size(25, 25);
             this.guna2Button1.Location = new System.Drawing.Point(0, 380);
@@ -376,6 +377,7 @@ namespace Postman.App.Dashboard
             this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button10.ForeColor = System.Drawing.Color.Black;
             this.guna2Button10.HoverState.Parent = this.guna2Button10;
+            this.guna2Button10.Image = global::Postman.Properties.Resources.dsadxzc;
             this.guna2Button10.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button10.ImageSize = new System.Drawing.Size(23, 23);
             this.guna2Button10.Location = new System.Drawing.Point(0, 320);
@@ -394,6 +396,7 @@ namespace Postman.App.Dashboard
             this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button9.ForeColor = System.Drawing.Color.Black;
             this.guna2Button9.HoverState.Parent = this.guna2Button9;
+            this.guna2Button9.Image = global::Postman.Properties.Resources.widraw;
             this.guna2Button9.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button9.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2Button9.Location = new System.Drawing.Point(0, 260);
@@ -412,6 +415,7 @@ namespace Postman.App.Dashboard
             this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button8.ForeColor = System.Drawing.Color.Black;
             this.guna2Button8.HoverState.Parent = this.guna2Button8;
+            this.guna2Button8.Image = global::Postman.Properties.Resources.package;
             this.guna2Button8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button8.ImageSize = new System.Drawing.Size(25, 25);
             this.guna2Button8.Location = new System.Drawing.Point(0, 200);
@@ -430,8 +434,9 @@ namespace Postman.App.Dashboard
             this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button7.ForeColor = System.Drawing.Color.Black;
             this.guna2Button7.HoverState.Parent = this.guna2Button7;
+            this.guna2Button7.Image = global::Postman.Properties.Resources.Deposit;
             this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button7.ImageSize = new System.Drawing.Size(23, 23);
+            this.guna2Button7.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2Button7.Location = new System.Drawing.Point(0, 140);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
@@ -448,7 +453,9 @@ namespace Postman.App.Dashboard
             this.Fromproduct_Load.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Fromproduct_Load.ForeColor = System.Drawing.Color.Black;
             this.Fromproduct_Load.HoverState.Parent = this.Fromproduct_Load;
+            this.Fromproduct_Load.Image = global::Postman.Properties.Resources.Dashboard;
             this.Fromproduct_Load.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Fromproduct_Load.ImageSize = new System.Drawing.Size(25, 25);
             this.Fromproduct_Load.Location = new System.Drawing.Point(0, 80);
             this.Fromproduct_Load.Name = "Fromproduct_Load";
             this.Fromproduct_Load.ShadowDecoration.Parent = this.Fromproduct_Load;
@@ -538,7 +545,7 @@ namespace Postman.App.Dashboard
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.White;
             this.guna2GradientPanel1.BorderRadius = 20;
             this.guna2GradientPanel1.Controls.Add(this.label3);
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(206, 98);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(216, 98);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
             this.guna2GradientPanel1.Size = new System.Drawing.Size(564, 266);
