@@ -100,7 +100,7 @@ namespace Postman.App.Admin
             // guna2Button8
             // 
             this.guna2Button8.AutoRoundedCorners = true;
-            this.guna2Button8.BackColor = System.Drawing.Color.RoyalBlue;
+            this.guna2Button8.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button8.BorderRadius = 13;
             this.guna2Button8.CheckedState.Parent = this.guna2Button8;
             this.guna2Button8.CustomImages.Parent = this.guna2Button8;
@@ -151,13 +151,13 @@ namespace Postman.App.Admin
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(14, 128);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(10, 106);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(775, 349);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(781, 374);
             this.guna2DataGridView1.TabIndex = 37;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -185,7 +185,7 @@ namespace Postman.App.Admin
             // guna2Button5
             // 
             this.guna2Button5.AutoRoundedCorners = true;
-            this.guna2Button5.BackColor = System.Drawing.Color.RoyalBlue;
+            this.guna2Button5.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button5.BorderRadius = 13;
             this.guna2Button5.CheckedState.Parent = this.guna2Button5;
             this.guna2Button5.CustomImages.Parent = this.guna2Button5;
@@ -203,7 +203,7 @@ namespace Postman.App.Admin
             // guna2Button6
             // 
             this.guna2Button6.AutoRoundedCorners = true;
-            this.guna2Button6.BackColor = System.Drawing.Color.RoyalBlue;
+            this.guna2Button6.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button6.BorderRadius = 13;
             this.guna2Button6.CheckedState.Parent = this.guna2Button6;
             this.guna2Button6.CustomImages.Parent = this.guna2Button6;
@@ -221,7 +221,7 @@ namespace Postman.App.Admin
             // guna2Button7
             // 
             this.guna2Button7.AutoRoundedCorners = true;
-            this.guna2Button7.BackColor = System.Drawing.Color.RoyalBlue;
+            this.guna2Button7.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button7.BorderRadius = 13;
             this.guna2Button7.CheckedState.Parent = this.guna2Button7;
             this.guna2Button7.CustomImages.Parent = this.guna2Button7;
@@ -404,6 +404,7 @@ namespace Postman.App.Admin
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2DataGridView1);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(14, 12);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
@@ -427,7 +428,6 @@ namespace Postman.App.Admin
             this.Controls.Add(this.guna2Button7);
             this.Controls.Add(this.guna2Button6);
             this.Controls.Add(this.guna2Button5);
-            this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.guna2Button8);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Name = "WithdrawTableForm";

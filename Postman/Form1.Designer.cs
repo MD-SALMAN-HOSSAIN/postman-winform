@@ -34,26 +34,29 @@ namespace Postman
             // 
             // guna2GradientButton1
             // 
+            this.guna2GradientButton1.AutoRoundedCorners = true;
+            this.guna2GradientButton1.BorderRadius = 26;
             this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(354, 378);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(472, 465);
+            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(180, 45);
+            this.guna2GradientButton1.Size = new System.Drawing.Size(240, 55);
             this.guna2GradientButton1.TabIndex = 0;
             this.guna2GradientButton1.Text = "Login";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 547);
+            this.ClientSize = new System.Drawing.Size(1203, 673);
             this.Controls.Add(this.guna2GradientButton1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Postman | Home";
             this.Load += new System.EventHandler(this.Form1_Load);

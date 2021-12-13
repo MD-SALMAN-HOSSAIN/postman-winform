@@ -88,6 +88,8 @@ namespace Postman.App.Rider
             // 
             // guna2ShadowPanel1
             // 
+            this.guna2ShadowPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.guna2TextBox2);
             this.guna2ShadowPanel1.Controls.Add(this.guna2TextBox1);
@@ -439,6 +441,8 @@ namespace Postman.App.Rider
             // 
             // guna2ShadowPanel2
             // 
+            this.guna2ShadowPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel2.Controls.Add(this.guna2Button4);
             this.guna2ShadowPanel2.Controls.Add(this.guna2Button3);
@@ -449,11 +453,14 @@ namespace Postman.App.Rider
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
             this.guna2ShadowPanel2.Radius = 5;
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel2.Size = new System.Drawing.Size(557, 69);
+            this.guna2ShadowPanel2.Size = new System.Drawing.Size(829, 69);
             this.guna2ShadowPanel2.TabIndex = 10;
             // 
             // guna2ShadowPanel3
             // 
+            this.guna2ShadowPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ShadowPanel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel3.Controls.Add(this.guna2Button6);
             this.guna2ShadowPanel3.Controls.Add(this.guna2Button5);
@@ -476,7 +483,7 @@ namespace Postman.App.Rider
             this.guna2ShadowPanel3.Name = "guna2ShadowPanel3";
             this.guna2ShadowPanel3.Radius = 10;
             this.guna2ShadowPanel3.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel3.Size = new System.Drawing.Size(557, 390);
+            this.guna2ShadowPanel3.Size = new System.Drawing.Size(838, 538);
             this.guna2ShadowPanel3.TabIndex = 11;
             // 
             // guna2CirclePictureBox1

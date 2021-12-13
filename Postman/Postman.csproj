@@ -256,6 +256,9 @@
     <EmbeddedResource Include="App\Admin\AdminSettings.resx">
       <DependentUpon>AdminSettings.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\ConsignmentTableForm.resx">
+      <DependentUpon>ConsignmentTableForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\WithdrawTableForm.resx">
       <DependentUpon>WithdrawTableForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -300,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Rider\RiderSettings.resx">
       <DependentUpon>RiderSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Rider\TripsTableForm.resx">
+      <DependentUpon>TripsTableForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Rider\WithdrawTableForm.resx">
       <DependentUpon>WithdrawTableForm.cs</DependentUpon>

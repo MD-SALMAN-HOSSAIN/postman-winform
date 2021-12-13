@@ -52,9 +52,9 @@ namespace Postman.App.Rider
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -218,7 +218,7 @@ namespace Postman.App.Rider
             // guna2Button7
             // 
             this.guna2Button7.AutoRoundedCorners = true;
-            this.guna2Button7.BackColor = System.Drawing.Color.RoyalBlue;
+            this.guna2Button7.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button7.BorderRadius = 13;
             this.guna2Button7.CheckedState.Parent = this.guna2Button7;
             this.guna2Button7.CustomImages.Parent = this.guna2Button7;
@@ -236,7 +236,7 @@ namespace Postman.App.Rider
             // guna2Button6
             // 
             this.guna2Button6.AutoRoundedCorners = true;
-            this.guna2Button6.BackColor = System.Drawing.Color.RoyalBlue;
+            this.guna2Button6.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button6.BorderRadius = 13;
             this.guna2Button6.CheckedState.Parent = this.guna2Button6;
             this.guna2Button6.CustomImages.Parent = this.guna2Button6;
@@ -254,7 +254,7 @@ namespace Postman.App.Rider
             // guna2Button5
             // 
             this.guna2Button5.AutoRoundedCorners = true;
-            this.guna2Button5.BackColor = System.Drawing.Color.RoyalBlue;
+            this.guna2Button5.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button5.BorderRadius = 13;
             this.guna2Button5.CheckedState.Parent = this.guna2Button5;
             this.guna2Button5.CustomImages.Parent = this.guna2Button5;
@@ -345,7 +345,7 @@ namespace Postman.App.Rider
             // guna2Button8
             // 
             this.guna2Button8.AutoRoundedCorners = true;
-            this.guna2Button8.BackColor = System.Drawing.Color.RoyalBlue;
+            this.guna2Button8.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button8.BorderRadius = 13;
             this.guna2Button8.CheckedState.Parent = this.guna2Button8;
             this.guna2Button8.CustomImages.Parent = this.guna2Button8;
@@ -359,6 +359,16 @@ namespace Postman.App.Rider
             this.guna2Button8.Size = new System.Drawing.Size(79, 29);
             this.guna2Button8.TabIndex = 41;
             this.guna2Button8.Text = "First";
+            // 
+            // guna2ShadowPanel1
+            // 
+            this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(4, 3);
+            this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
+            this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(859, 589);
+            this.guna2ShadowPanel1.TabIndex = 42;
             // 
             // guna2Button10
             // 
@@ -397,16 +407,6 @@ namespace Postman.App.Rider
             this.guna2Button11.TabIndex = 34;
             this.guna2Button11.Text = "DBBL";
             this.guna2Button11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // guna2ShadowPanel1
-            // 
-            this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(12, 6);
-            this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
-            this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(805, 580);
-            this.guna2ShadowPanel1.TabIndex = 42;
             // 
             // WithdrawTableForm
             // 

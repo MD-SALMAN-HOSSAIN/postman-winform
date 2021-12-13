@@ -57,15 +57,15 @@ namespace Postman.App.Authentication.Register
                     {
                         Console.WriteLine("Error: " + err.Message);
                     }
-                    if ( == true)
-                    {
-                        MessageBox.Show("Login Successful", "success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else it
-                    {
-                        MessageBox.Show("Login Field", "Field", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    .Close();
+                    //if ( == true)
+                    //{
+                      //  MessageBox.Show("Login Successful", "success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   // }
+                   // else it
+                    //{
+                    //    MessageBox.Show("Login Field", "Field", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                   // }
+                    //.Close();
                 }
                 else
                 {
