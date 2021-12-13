@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Guna.UI2.WinForms;
 using Postman.Repository;
 using Postman.Models;
+using Postman.App.Authentication.Login;
 namespace Postman.App.Authentication.Register
 {
     public partial class Register : Form
@@ -24,9 +25,12 @@ namespace Postman.App.Authentication.Register
         {
 
         }
-
         private void signupButton_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Login.Login login = new Login.Login ();
+            login.Show();
+
             if (CheckNull(fullnameText) && CheckNull(passwordText) && CheckNull(phoneText) && CheckNull(emailText) && CheckNull(confirmPasswordText))
             {
 
@@ -57,7 +61,7 @@ namespace Postman.App.Authentication.Register
                     {
                         MessageBox.Show("Login Successful", "success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-                    else
+                    else it
                     {
                         MessageBox.Show("Login Field", "Field", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
@@ -68,7 +72,9 @@ namespace Postman.App.Authentication.Register
                     MessageBox.Show("Fill the Field", " Faild", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+
         }
+
 
 
         private bool CheckNull(Guna2TextBox box)
@@ -106,5 +112,45 @@ namespace Postman.App.Authentication.Register
                 errorProvider2.Clear();
             }
         }
+
+        private void passwordText_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(passwordText.Text))
+            {
+                passwordText.Focus();
+                errorProvider3.SetError(this.passwordText, "Fill The Field");
+            }
+            else
+            {
+                errorProvider3.Clear();
+            }
+        }
+
+        private void confirmPasswordText_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(confirmPasswordText.Text))
+            {
+                confirmPasswordText.Focus();
+                errorProvider4.SetError(this.confirmPasswordText, "Fill The Field");
+            }
+            else
+            {
+                errorProvider4.Clear();
+            }
+        }
+
+        private void phoneText_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(phoneText.Text))
+            {
+                phoneText.Focus();
+                errorProvider5.SetError(this.confirmPasswordText, "Fill The Field");
+            }
+            else
+            {
+                errorProvider5.Clear();
+            }
+        }
+        
     }
 }
