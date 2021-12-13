@@ -148,9 +148,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Customer.Model.cs" />
     <Compile Include="Models\User.Model.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Customer.Repository.cs" />
     <Compile Include="Repository\User.Repository.cs" />
     <EmbeddedResource Include="App\Admindashboard\Admindashboard.resx">
       <DependentUpon>Admindashboard.cs</DependentUpon>
