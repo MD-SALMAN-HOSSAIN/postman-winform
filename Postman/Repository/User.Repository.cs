@@ -24,7 +24,8 @@ namespace Postman.Repository
 
         public bool RegisterUser (User user)
         {
-            var query = ConnectionDB.ExecuteQuery("INSERT INTO users VALUES (@email, @password,@phone,@r");
+            var query = ConnectionDB.ExecuteQuery("INSERT INTO users VALUES (@name, @email,@password,@userRole, @phone);", new { user.name, user.email, user.password, user.userRole, user.phone });
+            if (query > 0) return true;
             return false;
         }
     }
