@@ -49,5 +49,31 @@ namespace Postman.App.Authentication.Login
             Register.Register register = new Register.Register();
             register.Show();
         }
+
+        private void emailTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(emailTextBox.Text))
+            {
+                emailTextBox.Focus();
+                errorProvider1.SetError(this.emailTextBox, "Fill The Field");
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+        }
+
+        private void passwordTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(passwordTextBox.Text))
+            {
+                passwordTextBox.Focus();
+                errorProvider2.SetError(this.passwordTextBox, "Fill The Field");
+            }
+            else
+            {
+                errorProvider2.Clear();
+            }
+        }
     }
 }
