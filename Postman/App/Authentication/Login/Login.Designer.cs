@@ -209,6 +209,7 @@ namespace Postman.App.Authentication.Login
             this.guna2Button5.TabIndex = 18;
             this.guna2Button5.Text = "Sign up";
             this.guna2Button5.UseTransparentBackground = true;
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // guna2HtmlLabel10
             // 
