@@ -48,7 +48,7 @@ namespace Postman.App.Authentication.Register
                     try
                     {
                         Console.WriteLine("Creating data");
-                        userRepo.RegisterUser(user);
+                            userRepo.RegisterUser(user);
                     } catch(Exception err)
                     {
                         Console.WriteLine("Error: " + err.Message);
