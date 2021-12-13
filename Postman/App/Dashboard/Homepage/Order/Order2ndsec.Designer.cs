@@ -119,6 +119,7 @@ namespace Postman.App.Dashboard.Homepage.Order
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(10, 50);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
+            this.guna2ShadowPanel1.Radius = 10;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(539, 100);
             this.guna2ShadowPanel1.TabIndex = 6;
@@ -178,6 +179,7 @@ namespace Postman.App.Dashboard.Homepage.Order
             this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel2.Location = new System.Drawing.Point(10, 175);
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
+            this.guna2ShadowPanel2.Radius = 10;
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel2.Size = new System.Drawing.Size(539, 478);
             this.guna2ShadowPanel2.TabIndex = 7;
@@ -287,6 +289,7 @@ namespace Postman.App.Dashboard.Homepage.Order
             this.guna2ShadowPanel3.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel3.Location = new System.Drawing.Point(568, 50);
             this.guna2ShadowPanel3.Name = "guna2ShadowPanel3";
+            this.guna2ShadowPanel3.Radius = 10;
             this.guna2ShadowPanel3.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel3.Size = new System.Drawing.Size(396, 216);
             this.guna2ShadowPanel3.TabIndex = 8;
@@ -393,6 +396,7 @@ namespace Postman.App.Dashboard.Homepage.Order
             this.guna2ShadowPanel4.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel4.Location = new System.Drawing.Point(568, 283);
             this.guna2ShadowPanel4.Name = "guna2ShadowPanel4";
+            this.guna2ShadowPanel4.Radius = 10;
             this.guna2ShadowPanel4.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel4.Size = new System.Drawing.Size(396, 228);
             this.guna2ShadowPanel4.TabIndex = 9;
@@ -483,6 +487,7 @@ namespace Postman.App.Dashboard.Homepage.Order
             this.guna2ShadowPanel5.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel5.Location = new System.Drawing.Point(568, 529);
             this.guna2ShadowPanel5.Name = "guna2ShadowPanel5";
+            this.guna2ShadowPanel5.Radius = 10;
             this.guna2ShadowPanel5.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel5.Size = new System.Drawing.Size(396, 124);
             this.guna2ShadowPanel5.TabIndex = 10;

@@ -232,6 +232,7 @@ namespace Postman.App.Authentication.Register
             this.phoneText.ShadowDecoration.Parent = this.phoneText;
             this.phoneText.Size = new System.Drawing.Size(324, 36);
             this.phoneText.TabIndex = 4;
+            this.phoneText.TextChanged += new System.EventHandler(this.phoneText_TextChanged);
             // 
             // guna2HtmlLabel19
             // 
@@ -395,6 +396,7 @@ namespace Postman.App.Authentication.Register
             this.passwordText.ShadowDecoration.Parent = this.passwordText;
             this.passwordText.Size = new System.Drawing.Size(324, 36);
             this.passwordText.TabIndex = 2;
+            this.passwordText.TextChanged += new System.EventHandler(this.passwordText_TextChanged);
             // 
             // fullnameText
             // 
@@ -454,6 +456,7 @@ namespace Postman.App.Authentication.Register
             this.confirmPasswordText.ShadowDecoration.Parent = this.confirmPasswordText;
             this.confirmPasswordText.Size = new System.Drawing.Size(324, 36);
             this.confirmPasswordText.TabIndex = 3;
+            this.confirmPasswordText.TextChanged += new System.EventHandler(this.confirmPasswordText_TextChanged);
             // 
             // emailText
             // 
