@@ -292,6 +292,9 @@
     <EmbeddedResource Include="App\Merchent\MerchentDashboard.resx">
       <DependentUpon>MerchentDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Merchent\MerchentSettings.resx">
+      <DependentUpon>MerchentSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Merchent\WithdrawSettingsForm.resx">
       <DependentUpon>WithdrawSettingsForm.cs</DependentUpon>
     </EmbeddedResource>
