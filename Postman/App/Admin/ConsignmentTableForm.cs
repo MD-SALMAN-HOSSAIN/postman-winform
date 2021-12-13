@@ -16,5 +16,20 @@ namespace Postman.App.Admin
         {
             InitializeComponent();
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ConsignmentTableForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -63,7 +63,7 @@ namespace Postman.App.Admin
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridView1.ColumnHeadersHeight = 52;
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
@@ -102,7 +102,7 @@ namespace Postman.App.Admin
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 52;
             this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -186,6 +186,7 @@ namespace Postman.App.Admin
             this.guna2Button2.Size = new System.Drawing.Size(137, 48);
             this.guna2Button2.TabIndex = 2;
             this.guna2Button2.Text = "Update ";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button3
             // 
@@ -202,6 +203,7 @@ namespace Postman.App.Admin
             this.guna2Button3.Size = new System.Drawing.Size(154, 48);
             this.guna2Button3.TabIndex = 3;
             this.guna2Button3.Text = "Delete";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // ConsignmentTableForm
             // 
@@ -214,6 +216,7 @@ namespace Postman.App.Admin
             this.Controls.Add(this.guna2DataGridView1);
             this.Name = "ConsignmentTableForm";
             this.Text = "ConsignmentTableForm";
+            this.Load += new System.EventHandler(this.ConsignmentTableForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
 
