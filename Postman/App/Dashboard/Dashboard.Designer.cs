@@ -275,7 +275,7 @@ namespace Postman.App.Dashboard
             this.guna2ShadowPanel2.Location = new System.Drawing.Point(6, 10);
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel2.Size = new System.Drawing.Size(1016, 90);
+            this.guna2ShadowPanel2.Size = new System.Drawing.Size(1026, 90);
             this.guna2ShadowPanel2.TabIndex = 46;
             // 
             // label8
@@ -298,7 +298,7 @@ namespace Postman.App.Dashboard
             this.guna2ShadowPanel8.Name = "guna2ShadowPanel8";
             this.guna2ShadowPanel8.Radius = 10;
             this.guna2ShadowPanel8.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel8.Size = new System.Drawing.Size(410, 114);
+            this.guna2ShadowPanel8.Size = new System.Drawing.Size(420, 114);
             this.guna2ShadowPanel8.TabIndex = 41;
             // 
             // label11
