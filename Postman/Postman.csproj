@@ -259,6 +259,18 @@
     <EmbeddedResource Include="App\Admin\ConsignmentTableForm.resx">
       <DependentUpon>ConsignmentTableForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\MerchentTableForm.resx">
+      <DependentUpon>MerchentTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\ParcelTableFomr.resx">
+      <DependentUpon>ParcelTableFomr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\RiderTableForm.resx">
+      <DependentUpon>RiderTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\UserTableForm.resx">
+      <DependentUpon>UserTableForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\WithdrawTableForm.resx">
       <DependentUpon>WithdrawTableForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -292,11 +304,20 @@
     <EmbeddedResource Include="App\Dashboard\Homepage\Withdrow\Withdrow.resx">
       <DependentUpon>Withdrow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Merchent\ConsignmentTableFomr.resx">
+      <DependentUpon>ConsignmentTableFomr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Merchent\CustomerTableForm.resx">
+      <DependentUpon>CustomerTableForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Merchent\MerchentDashboard.resx">
       <DependentUpon>MerchentDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Merchent\MerchentSettings.resx">
       <DependentUpon>MerchentSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Merchent\ParcelTableForm.resx">
+      <DependentUpon>ParcelTableForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Merchent\WithdrawSettingsForm.resx">
       <DependentUpon>WithdrawSettingsForm.cs</DependentUpon>
