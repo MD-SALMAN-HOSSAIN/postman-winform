@@ -57,6 +57,7 @@ namespace Postman.App.Dashboard.Homepage
             this.label8 = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -76,7 +77,6 @@ namespace Postman.App.Dashboard.Homepage
             this.btnMaximize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnCloseChildFrom = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
@@ -459,6 +459,29 @@ namespace Postman.App.Dashboard.Homepage
             this.panel1.Size = new System.Drawing.Size(200, 673);
             this.panel1.TabIndex = 10;
             // 
+            // guna2Button5
+            // 
+            this.guna2Button5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
+            this.guna2Button5.BorderRadius = 24;
+            this.guna2Button5.BorderThickness = 1;
+            this.guna2Button5.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.guna2Button5.CheckedState.FillColor = System.Drawing.Color.White;
+            this.guna2Button5.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.CheckedState.Image")));
+            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
+            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
+            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button5.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.HoverState.Parent = this.guna2Button5;
+            this.guna2Button5.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.Image")));
+            this.guna2Button5.Location = new System.Drawing.Point(12, 608);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
+            this.guna2Button5.Size = new System.Drawing.Size(53, 53);
+            this.guna2Button5.TabIndex = 19;
+            this.guna2Button5.UseTransparentBackground = true;
+            // 
             // guna2Button4
             // 
             this.guna2Button4.BorderRadius = 10;
@@ -508,6 +531,7 @@ namespace Postman.App.Dashboard.Homepage
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = global::Postman.Properties.Resources.seetting;
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.ImageSize = new System.Drawing.Size(25, 25);
             this.guna2Button1.Location = new System.Drawing.Point(0, 380);
@@ -527,6 +551,7 @@ namespace Postman.App.Dashboard.Homepage
             this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button10.ForeColor = System.Drawing.Color.Black;
             this.guna2Button10.HoverState.Parent = this.guna2Button10;
+            this.guna2Button10.Image = global::Postman.Properties.Resources.dsadxzc;
             this.guna2Button10.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button10.ImageSize = new System.Drawing.Size(23, 23);
             this.guna2Button10.Location = new System.Drawing.Point(0, 320);
@@ -546,6 +571,7 @@ namespace Postman.App.Dashboard.Homepage
             this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button9.ForeColor = System.Drawing.Color.Black;
             this.guna2Button9.HoverState.Parent = this.guna2Button9;
+            this.guna2Button9.Image = global::Postman.Properties.Resources.widraw;
             this.guna2Button9.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button9.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2Button9.Location = new System.Drawing.Point(0, 260);
@@ -565,6 +591,7 @@ namespace Postman.App.Dashboard.Homepage
             this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button8.ForeColor = System.Drawing.Color.Black;
             this.guna2Button8.HoverState.Parent = this.guna2Button8;
+            this.guna2Button8.Image = global::Postman.Properties.Resources.package;
             this.guna2Button8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button8.ImageSize = new System.Drawing.Size(25, 25);
             this.guna2Button8.Location = new System.Drawing.Point(0, 200);
@@ -584,8 +611,9 @@ namespace Postman.App.Dashboard.Homepage
             this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button7.ForeColor = System.Drawing.Color.Black;
             this.guna2Button7.HoverState.Parent = this.guna2Button7;
+            this.guna2Button7.Image = global::Postman.Properties.Resources.Deposit;
             this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button7.ImageSize = new System.Drawing.Size(23, 23);
+            this.guna2Button7.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2Button7.Location = new System.Drawing.Point(0, 140);
             this.guna2Button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button7.Name = "guna2Button7";
@@ -603,6 +631,7 @@ namespace Postman.App.Dashboard.Homepage
             this.Fromproduct_Load.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Fromproduct_Load.ForeColor = System.Drawing.Color.Black;
             this.Fromproduct_Load.HoverState.Parent = this.Fromproduct_Load;
+            this.Fromproduct_Load.Image = global::Postman.Properties.Resources.Dashboard;
             this.Fromproduct_Load.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Fromproduct_Load.Location = new System.Drawing.Point(0, 80);
             this.Fromproduct_Load.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -760,29 +789,6 @@ namespace Postman.App.Dashboard.Homepage
             this.btnCloseChildFrom.ShadowDecoration.Parent = this.btnCloseChildFrom;
             this.btnCloseChildFrom.Size = new System.Drawing.Size(35, 80);
             this.btnCloseChildFrom.TabIndex = 1;
-            // 
-            // guna2Button5
-            // 
-            this.guna2Button5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
-            this.guna2Button5.BorderRadius = 24;
-            this.guna2Button5.BorderThickness = 1;
-            this.guna2Button5.CheckedState.BorderColor = System.Drawing.Color.White;
-            this.guna2Button5.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button5.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.CheckedState.Image")));
-            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
-            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.Image")));
-            this.guna2Button5.Location = new System.Drawing.Point(12, 608);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(53, 53);
-            this.guna2Button5.TabIndex = 19;
-            this.guna2Button5.UseTransparentBackground = true;
             // 
             // Homepage
             // 

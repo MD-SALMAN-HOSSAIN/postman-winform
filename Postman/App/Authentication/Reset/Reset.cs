@@ -21,5 +21,18 @@ namespace Postman.App.Authentication.Reset
         {
 
         }
+
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(guna2TextBox2.Text))
+            {
+                guna2TextBox2.Focus();
+                errorProvider1.SetError(this.guna2TextBox2, "Fill The Field");
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+        }
     }
 }
