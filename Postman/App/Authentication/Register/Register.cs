@@ -53,6 +53,19 @@ namespace Postman.App.Authentication.Register
                     {
                         Console.WriteLine("Error: " + err.Message);
                     }
+                    if ( == true)
+                    {
+                        MessageBox.Show("Login Successful", "success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Login Field", "Field", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    .Close();
+                }
+                else
+                {
+                    MessageBox.Show("Fill the Field", " Faild", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -66,6 +79,32 @@ namespace Postman.App.Authentication.Register
         private void guna2PictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void fullnameText_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(fullnameText.Text))
+            {
+                fullnameText.Focus();
+                errorProvider1.SetError(this.fullnameText, "Fill The Field");
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+        }
+
+        private void emailText_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(emailText.Text))
+            {
+                emailText.Focus();
+                errorProvider2.SetError(this.emailText, "Fill The Field");
+            }
+            else
+            {
+                errorProvider2.Clear();
+            }
         }
     }
 }
