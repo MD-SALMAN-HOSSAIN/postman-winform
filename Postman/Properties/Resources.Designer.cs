@@ -73,6 +73,16 @@ namespace Postman.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bo {
+            get {
+                object obj = ResourceManager.GetObject("bo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap c8ed4fc3eb4a75a85a0df5e466c78bfc_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("c8ed4fc3eb4a75a85a0df5e466c78bfc-removebg-preview", resourceCulture);
@@ -136,6 +146,16 @@ namespace Postman.Properties {
         internal static System.Drawing.Bitmap seetting {
             get {
                 object obj = ResourceManager.GetObject("seetting", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Untitleddsaddasd_1 {
+            get {
+                object obj = ResourceManager.GetObject("Untitleddsaddasd-1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
