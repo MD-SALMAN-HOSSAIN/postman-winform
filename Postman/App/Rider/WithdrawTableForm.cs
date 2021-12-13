@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Postman.App.Admindashboard
+namespace Postman.App.Rider
 {
-    public partial class Admindashboard : Form
+    public partial class WithdrawTableForm : Form
     {
-        public Admindashboard()
+        public WithdrawTableForm()
         {
             InitializeComponent();
         }
