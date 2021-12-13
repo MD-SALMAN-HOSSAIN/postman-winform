@@ -109,6 +109,7 @@ namespace Postman.App.Riderdashboard
             this.label2.Size = new System.Drawing.Size(119, 21);
             this.label2.TabIndex = 5;
             this.label2.Text = "Welcome to";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // guna2ShadowPanel2
             // 
