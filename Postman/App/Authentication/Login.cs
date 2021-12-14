@@ -75,5 +75,10 @@ namespace Postman.App.Authentication.Login
                 errorProvider2.Clear();
             }
         }
+
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -14,9 +14,13 @@ namespace Postman.Repository
         public bool VerifyUser (string email, string password)
         {
             var result = ConnectionDB.SelectQuery<User>("SELECT * FROM users WHERE email=@email and password=@password;", new { email, password });
-
             if(result.Count ==1) return true;
             return false;
+        }
+
+        public User GetUserInfo(string email, string password)
+        {
+            return ConnectionDB.SelectQuery<User>("SELECT * FROM users WHERE email=@email and password=@password;", new { email, password }).SingleOrDefault();
         }
 
         public string RegisterUser (User user)
