@@ -93,9 +93,39 @@ namespace Postman.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Consignments {
+            get {
+                object obj = ResourceManager.GetObject("Consignments", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Consignments1 {
+            get {
+                object obj = ResourceManager.GetObject("Consignments1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Dashboard {
             get {
                 object obj = ResourceManager.GetObject("Dashboard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dashboard11 {
+            get {
+                object obj = ResourceManager.GetObject("Dashboard11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,29 +153,19 @@ namespace Postman.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap information_button {
-            get {
-                object obj = ResourceManager.GetObject("information-button", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap information_button1 {
-            get {
-                object obj = ResourceManager.GetObject("information-button1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap package {
             get {
                 object obj = ResourceManager.GetObject("package", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Parcels {
+            get {
+                object obj = ResourceManager.GetObject("Parcels", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,49 +203,9 @@ namespace Postman.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap undraw_add_information_j2wg {
+        internal static System.Drawing.Bitmap Settings {
             get {
-                object obj = ResourceManager.GetObject("undraw_add_information_j2wg", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap undraw_deliveries_131a {
-            get {
-                object obj = ResourceManager.GetObject("undraw_deliveries_131a", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap undraw_deliveries_131a1 {
-            get {
-                object obj = ResourceManager.GetObject("undraw_deliveries_131a1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap undraw_Delivery_address_re_cjca {
-            get {
-                object obj = ResourceManager.GetObject("undraw_Delivery_address_re_cjca", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap undraw_Message_sent_re_q2kl {
-            get {
-                object obj = ResourceManager.GetObject("undraw_Message_sent_re_q2kl", resourceCulture);
+                object obj = ResourceManager.GetObject("Settings", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +223,59 @@ namespace Postman.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap User {
+            get {
+                object obj = ResourceManager.GetObject("User", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap widraw {
             get {
                 object obj = ResourceManager.GetObject("widraw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Withdraw {
+            get {
+                object obj = ResourceManager.GetObject("Withdraw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Withdraw1 {
+            get {
+                object obj = ResourceManager.GetObject("Withdraw1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Withdraw11 {
+            get {
+                object obj = ResourceManager.GetObject("Withdraw11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Withdraw12 {
+            get {
+                object obj = ResourceManager.GetObject("Withdraw12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

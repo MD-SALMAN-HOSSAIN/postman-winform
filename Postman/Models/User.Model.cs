@@ -6,13 +6,20 @@ using System.Threading.Tasks;
 
 namespace Postman.Models
 {
+    public enum UserRole
+    {
+        ADMIN,
+        RIDER,
+        MARCHENT,
+        BANNED
+    }
     public class User
     {
         public string name { get; set; }
 
         public string password {get; set;}
 
-        public string userRole {get; set;}
+        public UserRole userRole {get; set;}
 
         public string email {get; set;}
 

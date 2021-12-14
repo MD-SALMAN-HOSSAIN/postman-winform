@@ -11,6 +11,7 @@ using Guna.UI2.WinForms;
 using Postman.Repository;
 using Postman.Models;
 using Postman.App.Authentication.Login;
+using BCrypt.Net;
 namespace Postman.App.Authentication.Register
 {
     public partial class Register : Form
@@ -38,16 +39,16 @@ namespace Postman.App.Authentication.Register
                 {
                     return;
                 }
-                Console.WriteLine("Hello world", riderRadio.Checked , marchentRadio.Checked);
+                string password = BCrypt.Net.BCrypt.HashPassword(passwordText.Text);
                 if (riderRadio.Checked || marchentRadio.Checked)
                 {
                     User user = new User()
                     {
                         email = emailText.Text,
-                        password = passwordText.Text,
+                        password = password,
                         phone = phoneText.Text,
                         name = fullnameText.Text,
-                        userRole = riderRadio.Checked ? "rider" : marchentRadio.Checked ? "marchent" : ""
+                        userRole = riderRadio.Checked ? Models.UserRole.RIDER : marchentRadio.Checked ? Models.UserRole.MARCHENT : UserRole.BANNED
                     };
                     try
                     {

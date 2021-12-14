@@ -504,22 +504,34 @@
     <None Include="Resources\bo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\undraw_deliveries_131a1.png" />
+    <None Include="Resources\Dashboard11.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\undraw_Delivery_address_re_cjca.png" />
+    <None Include="Resources\Settings.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\undraw_Message_sent_re_q2kl.png" />
+    <None Include="Resources\Withdraw.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\undraw_add_information_j2wg.png" />
+    <None Include="Resources\Withdraw1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\information-button.png" />
+    <None Include="Resources\Withdraw11.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\information-button1.png" />
+    <None Include="Resources\Consignments.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Consignments1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Parcels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Withdraw12.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
