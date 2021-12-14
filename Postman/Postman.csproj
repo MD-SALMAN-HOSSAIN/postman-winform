@@ -69,17 +69,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App\Admin\AdminDashboard.cs">
+    <Compile Include="App\Admin\AdminDashboardProt.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="App\Admin\AdminDashboard.Designer.cs">
-      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    <Compile Include="App\Admin\AdminDashboardProt.Designer.cs">
+      <DependentUpon>AdminDashboardProt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Admin\AdminPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Admin\AdminPrincipal.Designer.cs">
+      <DependentUpon>AdminPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Admin\AdminSettings.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="App\Admin\AdminSettings.Designer.cs">
       <DependentUpon>AdminSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Admin\ConsignmentTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Admin\ConsignmentTable.Designer.cs">
+      <DependentUpon>ConsignmentTable.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Admin\ConsignmentTableForm.cs">
       <SubType>Form</SubType>
@@ -105,11 +117,23 @@
     <Compile Include="App\Admin\RiderTableForm.Designer.cs">
       <DependentUpon>RiderTableForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Admin\UserTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Admin\UserTable.Designer.cs">
+      <DependentUpon>UserTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\Admin\UserTableForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="App\Admin\UserTableForm.Designer.cs">
       <DependentUpon>UserTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Admin\WithdrawTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Admin\WithdrawTable.Designer.cs">
+      <DependentUpon>WithdrawTable.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Admin\WithdrawTableForm.cs">
       <SubType>Form</SubType>
@@ -189,6 +213,18 @@
     <Compile Include="App\Merchent\CustomerTableForm.Designer.cs">
       <DependentUpon>CustomerTableForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Merchent\MarchentDashboardProt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Merchent\MarchentDashboardProt.Designer.cs">
+      <DependentUpon>MarchentDashboardProt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Merchent\MarchentPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Merchent\MarchentPrincipal.Designer.cs">
+      <DependentUpon>MarchentPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\Merchent\MerchentDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +236,12 @@
     </Compile>
     <Compile Include="App\Merchent\MerchentSettings.Designer.cs">
       <DependentUpon>MerchentSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Merchent\ParcelTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Merchent\ParcelTable.Designer.cs">
+      <DependentUpon>ParcelTable.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Merchent\ParcelTableForm.cs">
       <SubType>Form</SubType>
@@ -213,11 +255,35 @@
     <Compile Include="App\Merchent\WithdrawSettingsForm.Designer.cs">
       <DependentUpon>WithdrawSettingsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Merchent\WithdrawTableMr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Merchent\WithdrawTableMr.Designer.cs">
+      <DependentUpon>WithdrawTableMr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Rider\Consignments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Rider\Consignments.Designer.cs">
+      <DependentUpon>Consignments.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\Rider\RiderDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="App\Rider\RiderDashboard.Designer.cs">
       <DependentUpon>RiderDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Rider\RiderDashboardProt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Rider\RiderDashboardProt.Designer.cs">
+      <DependentUpon>RiderDashboardProt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Rider\RiderPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Rider\RiderPrincipal.Designer.cs">
+      <DependentUpon>RiderPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Rider\RiderSettings.cs">
       <SubType>Form</SubType>
@@ -257,11 +323,17 @@
     <Compile Include="Repository\Parcel.Repostiry.cs" />
     <Compile Include="Repository\User.Repository.cs" />
     <Compile Include="Repository\Withdraw.Repository.cs" />
-    <EmbeddedResource Include="App\Admin\AdminDashboard.resx">
-      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="App\Admin\AdminDashboardProt.resx">
+      <DependentUpon>AdminDashboardProt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\AdminPrincipal.resx">
+      <DependentUpon>AdminPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\AdminSettings.resx">
       <DependentUpon>AdminSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\ConsignmentTable.resx">
+      <DependentUpon>ConsignmentTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\ConsignmentTableForm.resx">
       <DependentUpon>ConsignmentTableForm.cs</DependentUpon>
@@ -275,8 +347,14 @@
     <EmbeddedResource Include="App\Admin\RiderTableForm.resx">
       <DependentUpon>RiderTableForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\UserTable.resx">
+      <DependentUpon>UserTable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\UserTableForm.resx">
       <DependentUpon>UserTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Admin\WithdrawTable.resx">
+      <DependentUpon>WithdrawTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\WithdrawTableForm.resx">
       <DependentUpon>WithdrawTableForm.cs</DependentUpon>
@@ -317,11 +395,20 @@
     <EmbeddedResource Include="App\Merchent\CustomerTableForm.resx">
       <DependentUpon>CustomerTableForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Merchent\MarchentDashboardProt.resx">
+      <DependentUpon>MarchentDashboardProt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Merchent\MarchentPrincipal.resx">
+      <DependentUpon>MarchentPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Merchent\MerchentDashboard.resx">
       <DependentUpon>MerchentDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Merchent\MerchentSettings.resx">
       <DependentUpon>MerchentSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Merchent\ParcelTable.resx">
+      <DependentUpon>ParcelTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Merchent\ParcelTableForm.resx">
       <DependentUpon>ParcelTableForm.cs</DependentUpon>
@@ -329,8 +416,20 @@
     <EmbeddedResource Include="App\Merchent\WithdrawSettingsForm.resx">
       <DependentUpon>WithdrawSettingsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Merchent\WithdrawTableMr.resx">
+      <DependentUpon>WithdrawTableMr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Rider\Consignments.resx">
+      <DependentUpon>Consignments.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Rider\RiderDashboard.resx">
       <DependentUpon>RiderDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Rider\RiderDashboardProt.resx">
+      <DependentUpon>RiderDashboardProt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Rider\RiderPrincipal.resx">
+      <DependentUpon>RiderPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Rider\RiderSettings.resx">
       <DependentUpon>RiderSettings.cs</DependentUpon>

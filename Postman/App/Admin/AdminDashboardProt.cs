@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Postman.App.Admin
 {
-    public partial class AdminDashboard : Form
+    public partial class AdminDashboardProt : Form
     {
-        public AdminDashboard()
+        public AdminDashboardProt()
         {
             InitializeComponent();
         }
 
-        private void label13_Click(object sender, EventArgs e)
+        private void guna2HtmlLabel9_Click(object sender, EventArgs e)
         {
 
         }

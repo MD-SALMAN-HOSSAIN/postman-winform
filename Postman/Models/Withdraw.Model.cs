@@ -11,6 +11,7 @@ namespace Postman.Models
     {
         PENDING,
         CONFIRM,
+        SUCCESS,
         PROCCESSED,
         REJECTED
     }

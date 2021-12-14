@@ -23,6 +23,11 @@ namespace Postman.Repository
             return ConnectionDB.SelectQuery<User>("SELECT * FROM users WHERE email=@email and password=@password;", new { email, password }).SingleOrDefault();
         }
 
+        public List<User> GetAll()
+        {
+            return ConnectionDB.SelectQuery<User>("SELECT * FROM users;").ToList();
+        }
+
         public string RegisterUser (User user)
         {
             var result = ConnectionDB.SelectQuery<User>("SELECT * FROM users WHERE email=@email;", new { user.email });

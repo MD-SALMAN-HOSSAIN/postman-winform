@@ -8,8 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Postman.Repository;
-using Postman.App.Dashboard;
-
+using Postman.App.Admin;
+using Postman.App.Merchent;
+using Postman.App.Rider;
 
 namespace Postman.App.Authentication.Login
 {
@@ -30,9 +31,31 @@ namespace Postman.App.Authentication.Login
             {
                 if (userRepo.VerifyUser(emailTextBox.Text, passwordTextBox.Text))
                 {
-                    this.Hide();
-                    MerchentDashboard merchent = new MerchentDashboard();
-                    merchent.Show();
+                    var user = userRepo.GetUserInfo(emailTextBox.Text, passwordTextBox.Text);
+                    Console.WriteLine(user.userRole);
+                    if(user.userRole == "marchent")
+                    {
+                        this.Hide();
+                        MerchentDashboard merchent = new MerchentDashboard();
+                        merchent.Show();
+                    }
+                    else if(user.userRole == "admin")
+                    {
+                        this.Hide();
+                        AdminPrincipal admin = new AdminPrincipal();
+                        admin.Show();
+                    }
+                    else if(user.userRole == "rider")
+                    {
+                        this.Hide();
+                        RiderDashboard rider = new RiderDashboard();
+                        rider.Show();
+                    }
+                   
+                }
+                else
+                {
+                    MessageBox.Show("Check your email and password", "Login failed!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
            
