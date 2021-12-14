@@ -56,6 +56,7 @@ namespace Postman.App.Rider
             this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            this.guna2ShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Button9
@@ -68,7 +69,7 @@ namespace Postman.App.Rider
             this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button9.ForeColor = System.Drawing.Color.Black;
             this.guna2Button9.HoverState.Parent = this.guna2Button9;
-            this.guna2Button9.Location = new System.Drawing.Point(446, 61);
+            this.guna2Button9.Location = new System.Drawing.Point(508, 58);
             this.guna2Button9.Name = "guna2Button9";
             this.guna2Button9.ShadowDecoration.Parent = this.guna2Button9;
             this.guna2Button9.Size = new System.Drawing.Size(109, 35);
@@ -168,7 +169,7 @@ namespace Postman.App.Rider
             this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(531, 14);
+            this.guna2TextBox1.Location = new System.Drawing.Point(594, 11);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
@@ -311,7 +312,7 @@ namespace Postman.App.Rider
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(775, 402);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(841, 429);
             this.guna2DataGridView1.TabIndex = 37;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -363,6 +364,10 @@ namespace Postman.App.Rider
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.guna2Button9);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2Button10);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2Button11);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2TextBox1);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(4, 3);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
@@ -381,7 +386,7 @@ namespace Postman.App.Rider
             this.guna2Button10.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button10.Image")));
             this.guna2Button10.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button10.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button10.Location = new System.Drawing.Point(561, 61);
+            this.guna2Button10.Location = new System.Drawing.Point(623, 58);
             this.guna2Button10.Name = "guna2Button10";
             this.guna2Button10.ShadowDecoration.Parent = this.guna2Button10;
             this.guna2Button10.Size = new System.Drawing.Size(116, 35);
@@ -400,7 +405,7 @@ namespace Postman.App.Rider
             this.guna2Button11.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button11.Image")));
             this.guna2Button11.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button11.ImageSize = new System.Drawing.Size(45, 45);
-            this.guna2Button11.Location = new System.Drawing.Point(683, 61);
+            this.guna2Button11.Location = new System.Drawing.Point(745, 58);
             this.guna2Button11.Name = "guna2Button11";
             this.guna2Button11.ShadowDecoration.Parent = this.guna2Button11;
             this.guna2Button11.Size = new System.Drawing.Size(104, 35);
@@ -413,15 +418,11 @@ namespace Postman.App.Rider
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(865, 598);
-            this.Controls.Add(this.guna2Button10);
-            this.Controls.Add(this.guna2Button9);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2Button4);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.guna2Button11);
             this.Controls.Add(this.guna2Button7);
             this.Controls.Add(this.guna2Button6);
             this.Controls.Add(this.guna2Button5);
@@ -431,6 +432,7 @@ namespace Postman.App.Rider
             this.Name = "WithdrawTableForm";
             this.Text = "WithdrawTableForm";
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            this.guna2ShadowPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
