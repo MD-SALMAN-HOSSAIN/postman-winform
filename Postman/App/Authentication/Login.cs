@@ -11,7 +11,7 @@ using Postman.Repository;
 using Postman.App.Admin;
 using Postman.App.Merchent;
 using Postman.App.Rider;
-
+using BCrypt.Net;
 namespace Postman.App.Authentication.Login
 {
     public partial class Login : Form
@@ -29,26 +29,28 @@ namespace Postman.App.Authentication.Login
            
             if(emailTextBox != null && passwordTextBox != null)
             {
-                if (userRepo.VerifyUser(emailTextBox.Text, passwordTextBox.Text))
+                var user = userRepo.GetUserInfo(emailTextBox.Text);
+                bool verify = BCrypt.Net.BCrypt.Verify(passwordTextBox.Text, user.password);
+                if (verify)
                 {
-                    var user = userRepo.GetUserInfo(emailTextBox.Text, passwordTextBox.Text);
+                  
                     Console.WriteLine(user.userRole);
-                    if(user.userRole == "marchent")
+                    if(user.userRole == Models.UserRole.MARCHENT)
                     {
                         this.Hide();
-                        MerchentDashboard merchent = new MerchentDashboard();
+                        MarchentPrincipal merchent = new MarchentPrincipal();
                         merchent.Show();
                     }
-                    else if(user.userRole == "admin")
+                    else if(user.userRole == Models.UserRole.ADMIN)
                     {
                         this.Hide();
                         AdminPrincipal admin = new AdminPrincipal();
                         admin.Show();
                     }
-                    else if(user.userRole == "rider")
+                    else if(user.userRole == Models.UserRole.RIDER)
                     {
                         this.Hide();
-                        RiderDashboard rider = new RiderDashboard();
+                        RiderPrincipal rider = new RiderPrincipal(user);
                         rider.Show();
                     }
                    

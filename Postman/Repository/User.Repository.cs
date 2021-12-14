@@ -18,9 +18,9 @@ namespace Postman.Repository
             return false;
         }
 
-        public User GetUserInfo(string email, string password)
+        public User GetUserInfo(string email)
         {
-            return ConnectionDB.SelectQuery<User>("SELECT * FROM users WHERE email=@email and password=@password;", new { email, password }).SingleOrDefault();
+            return ConnectionDB.SelectQuery<User>("SELECT * FROM users WHERE email=@email ;", new { email }).SingleOrDefault();
         }
 
         public List<User> GetAll()

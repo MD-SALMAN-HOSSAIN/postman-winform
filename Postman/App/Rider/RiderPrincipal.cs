@@ -7,15 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Postman.Models;
 namespace Postman.App.Rider
 {
     public partial class RiderPrincipal : Form
     {
+        User user { get; set; }
         public RiderPrincipal()
         {
             InitializeComponent();
+        }
+        public RiderPrincipal(User user)
+        {
+            InitializeComponent();
+            this.user = user;
             container(new RiderDashboardProt());
+            riderEmail.Text = this.user.email;
+            riderName.Text = this.user.name;
         }
 
         private void dashboardNavButton_Click(object sender, EventArgs e)
