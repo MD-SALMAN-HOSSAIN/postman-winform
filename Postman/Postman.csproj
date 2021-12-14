@@ -253,9 +253,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\Customer.Repository.cs" />
-    <Compile Include="Repository\Parcel.Repository.cs" />
     <Compile Include="Repository\Parcel.Repostiry.cs" />
     <Compile Include="Repository\User.Repository.cs" />
+    <Compile Include="Repository\Withdraw.Repository.cs" />
     <EmbeddedResource Include="App\Admin\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
