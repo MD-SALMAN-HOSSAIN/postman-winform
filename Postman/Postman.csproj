@@ -503,5 +503,23 @@
   <ItemGroup>
     <None Include="Resources\bo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_deliveries_131a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_Delivery_address_re_cjca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_Message_sent_re_q2kl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_add_information_j2wg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information-button1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
