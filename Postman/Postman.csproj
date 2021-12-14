@@ -533,5 +533,17 @@
   <ItemGroup>
     <None Include="Resources\Withdraw12.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information-button2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_add_information_j2wg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_Safe_re_kiil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_Order_delivered_re_v4ab.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
