@@ -19,5 +19,8 @@ namespace Postman.Models
         
         public string city { get; set; }
 
+
+        public User owner { get; set; }
+
     }
 }

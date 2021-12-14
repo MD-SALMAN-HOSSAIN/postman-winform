@@ -244,11 +244,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Account.Model.cs" />
+    <Compile Include="Models\Config.Model.cs" />
     <Compile Include="Models\Customer.Model.cs" />
+    <Compile Include="Models\Parcel.Model.cs" />
     <Compile Include="Models\User.Model.cs" />
+    <Compile Include="Models\Withdraw.Model.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\Customer.Repository.cs" />
+    <Compile Include="Repository\Parcel.Repository.cs" />
     <Compile Include="Repository\User.Repository.cs" />
     <EmbeddedResource Include="App\Admin\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>

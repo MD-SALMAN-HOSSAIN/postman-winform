@@ -9,6 +9,8 @@ namespace Postman.Repository
 {
     public class CustomerRepostiroy
     {
+
+        // CREATE 
         public bool CreateCustomer (Customer customer)
         {
             var query = ConnectionDB.ExecuteQuery("INSERT INTO customer VALUES (@name, @phone, @address, @area, @city);", new { customer.name, customer.phone, customer.address, customer.area, customer.city});
@@ -18,16 +20,39 @@ namespace Postman.Repository
             return false;
         }
 
-
+        // GET ALL
         public List<Customer> getAllCustomer ()
         {
             return ConnectionDB.SelectQuery<Customer>("SELECT * FROM customer;").ToList<Customer>();
         }
 
+
+        // GET ONE
         public Customer getOneCustomer(int id)
         {
             return ConnectionDB.SelectQuery<Customer>("SELECT * FROM customer WHERE id=@id", new { id }).FirstOrDefault<Customer>();
         }
 
+
+        // UPDATE ONE
+        public int? UpdateOneCustomer(int id, Customer customer)
+        {
+            return ConnectionDB.ExecuteQuery(@"UPDATE customer 
+	                                                SET name=@name,
+		                                                phone=@phone,
+		                                                address= @address,
+		                                                area=@area,
+		                                                city=@city
+	                                                WHERE id=@id;
+                                                    ", new { id, customer.name, customer.phone, customer.address, customer.area, customer.city });
+      
+        }
+
+        // DELETE ONE
+
+        public int? DeleteCustomer(int id)
+        {
+            return ConnectionDB.ExecuteQuery(@"DELETE FROM users WHERE id= @id;", new { id });
+        }
     }
 }
