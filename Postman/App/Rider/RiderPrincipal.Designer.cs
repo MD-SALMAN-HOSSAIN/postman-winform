@@ -125,6 +125,7 @@ namespace Postman.App.Rider
             this.guna2Button6.Size = new System.Drawing.Size(39, 40);
             this.guna2Button6.TabIndex = 20;
             this.guna2Button6.UseTransparentBackground = true;
+            this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
             // guna2DragControl2
             // 
@@ -271,12 +272,13 @@ namespace Postman.App.Rider
             this.guna2Button5.Image = global::Postman.Properties.Resources.MicrosoftTeams_image__7_2;
             this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button5.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button5.Location = new System.Drawing.Point(0, 638);
+            this.guna2Button5.Location = new System.Drawing.Point(0, 617);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(230, 43);
+            this.guna2Button5.Size = new System.Drawing.Size(230, 64);
             this.guna2Button5.TabIndex = 8;
             this.guna2Button5.Text = "Info";
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // guna2Button4
             // 
