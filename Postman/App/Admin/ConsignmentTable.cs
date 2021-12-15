@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Postman.Repository;
+using Postman.Models;
 namespace Postman.App.Admin
 {
     public partial class ConsignmentTable : Form
@@ -17,6 +18,12 @@ namespace Postman.App.Admin
         {
             InitializeComponent();
             loadGridView();
+        }
+
+        public ConsignmentTable(List<Parcel> parcelList)
+        {
+            InitializeComponent();
+            loadGridView(parcelList);
         }
 
         private void userTableData_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -29,6 +36,19 @@ namespace Postman.App.Admin
             try
             {
                 this.consignmentTableData.DataSource = parcelRepo.getAll();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Something went wrong in the database" + error, "Error!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        void loadGridView(List<Parcel> parcelList)
+        {
+            try
+            {
+                this.consignmentTableData.DataSource =parcelList;
             }
             catch (Exception error)
             {

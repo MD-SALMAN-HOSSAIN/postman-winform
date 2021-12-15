@@ -309,6 +309,12 @@
     <Compile Include="App\Rider\WithdrawTableForm.Designer.cs">
       <DependentUpon>WithdrawTableForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\UniformUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\UniformUpdate.Designer.cs">
+      <DependentUpon>UniformUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataAccess\ConnectionDB.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -446,6 +452,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Rider\WithdrawTableForm.resx">
       <DependentUpon>WithdrawTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\UniformUpdate.resx">
+      <DependentUpon>UniformUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
