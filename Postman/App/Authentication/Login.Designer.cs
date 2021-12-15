@@ -83,7 +83,7 @@ namespace Postman.App.Authentication.Login
             this.guna2ShadowPanel1.TabIndex = 34;
             this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
             // 
-            // guna2ControlBox3
+            // guna2ControlBox1
             // 
          
             // 
