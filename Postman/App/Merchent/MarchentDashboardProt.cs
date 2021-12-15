@@ -17,6 +17,9 @@ namespace Postman.App.Merchent
             InitializeComponent();
         }
 
-       
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

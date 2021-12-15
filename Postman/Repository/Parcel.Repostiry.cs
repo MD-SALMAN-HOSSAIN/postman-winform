@@ -27,6 +27,18 @@ namespace Postman.Repository
             return ConnectionDB.SelectQuery<Parcel>("SELECT * FROM parcel WHERE userId=@id", new { id }).ToList();
         }
 
+
+        public int? AssignParcelToRider(int id, int riderId)
+        {
+            return ConnectionDB.ExecuteQuery("UPDATE parcel SET riderId=@riderId WHERE id=@id", new {riderId, id });
+        }
+
+
+        public List<Parcel> getRiderConsignments(int riderId)
+        {
+            return ConnectionDB.SelectQuery<Parcel>("SELECT * FROM parcel WHERE riderId=@riderId", new { riderId }).ToList();
+        }
+
         public List<Parcel> getAll()
         {
             return ConnectionDB.SelectQuery<Parcel>("SELECT * FROM parcel;").ToList();

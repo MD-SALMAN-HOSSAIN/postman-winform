@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Postman.Models;
 namespace Postman.App.Rider
 {
     public partial class RiderDashboardProt : Form
@@ -15,6 +15,17 @@ namespace Postman.App.Rider
         public RiderDashboardProt()
         {
             InitializeComponent();
+        }
+
+        public RiderDashboardProt(User user )
+        {
+            
+            if(user != null)
+            {
+                
+            }
+            InitializeComponent();
+
         }
     }
 }

@@ -35,7 +35,7 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.parcelToday = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -43,7 +43,7 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel21 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel20 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.UserName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -67,9 +67,9 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel25.ForeColor = System.Drawing.Color.White;
             this.guna2HtmlLabel25.Location = new System.Drawing.Point(307, 290);
             this.guna2HtmlLabel25.Name = "guna2HtmlLabel25";
-            this.guna2HtmlLabel25.Size = new System.Drawing.Size(70, 32);
+            this.guna2HtmlLabel25.Size = new System.Drawing.Size(48, 32);
             this.guna2HtmlLabel25.TabIndex = 7;
-            this.guna2HtmlLabel25.Text = "TK. 200";
+            this.guna2HtmlLabel25.Text = "TK. 0";
             // 
             // guna2HtmlLabel22
             // 
@@ -78,9 +78,9 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel22.ForeColor = System.Drawing.Color.White;
             this.guna2HtmlLabel22.Location = new System.Drawing.Point(307, 235);
             this.guna2HtmlLabel22.Name = "guna2HtmlLabel22";
-            this.guna2HtmlLabel22.Size = new System.Drawing.Size(70, 32);
+            this.guna2HtmlLabel22.Size = new System.Drawing.Size(48, 32);
             this.guna2HtmlLabel22.TabIndex = 5;
-            this.guna2HtmlLabel22.Text = "TK. 200";
+            this.guna2HtmlLabel22.Text = "TK. 0";
             // 
             // guna2HtmlLabel23
             // 
@@ -102,7 +102,7 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel19.Name = "guna2HtmlLabel19";
             this.guna2HtmlLabel19.Size = new System.Drawing.Size(109, 130);
             this.guna2HtmlLabel19.TabIndex = 22;
-            this.guna2HtmlLabel19.Text = "20";
+            this.guna2HtmlLabel19.Text = "00";
             // 
             // guna2HtmlLabel18
             // 
@@ -113,7 +113,7 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel18.Name = "guna2HtmlLabel18";
             this.guna2HtmlLabel18.Size = new System.Drawing.Size(109, 130);
             this.guna2HtmlLabel18.TabIndex = 21;
-            this.guna2HtmlLabel18.Text = "20";
+            this.guna2HtmlLabel18.Text = "00";
             // 
             // guna2HtmlLabel17
             // 
@@ -124,18 +124,18 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel17.Name = "guna2HtmlLabel17";
             this.guna2HtmlLabel17.Size = new System.Drawing.Size(109, 130);
             this.guna2HtmlLabel17.TabIndex = 20;
-            this.guna2HtmlLabel17.Text = "20";
+            this.guna2HtmlLabel17.Text = "00";
             // 
-            // guna2HtmlLabel16
+            // parcelToday
             // 
-            this.guna2HtmlLabel16.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel16.Font = new System.Drawing.Font("Segoe UI Semibold", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabel16.Location = new System.Drawing.Point(55, 460);
-            this.guna2HtmlLabel16.Name = "guna2HtmlLabel16";
-            this.guna2HtmlLabel16.Size = new System.Drawing.Size(109, 130);
-            this.guna2HtmlLabel16.TabIndex = 19;
-            this.guna2HtmlLabel16.Text = "20";
+            this.parcelToday.BackColor = System.Drawing.Color.Transparent;
+            this.parcelToday.Font = new System.Drawing.Font("Segoe UI Semibold", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.parcelToday.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.parcelToday.Location = new System.Drawing.Point(55, 460);
+            this.parcelToday.Name = "parcelToday";
+            this.parcelToday.Size = new System.Drawing.Size(109, 130);
+            this.parcelToday.TabIndex = 19;
+            this.parcelToday.Text = "00";
             // 
             // guna2HtmlLabel15
             // 
@@ -143,9 +143,9 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel15.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel15.Location = new System.Drawing.Point(504, 563);
             this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
-            this.guna2HtmlLabel15.Size = new System.Drawing.Size(240, 27);
+            this.guna2HtmlLabel15.Size = new System.Drawing.Size(282, 27);
             this.guna2HtmlLabel15.TabIndex = 18;
-            this.guna2HtmlLabel15.Text = "TOTAL USERS THIS MONTH";
+            this.guna2HtmlLabel15.Text = "TOTAL DELIVERED THIS MONTH";
             // 
             // guna2HtmlLabel14
             // 
@@ -195,9 +195,9 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel21.ForeColor = System.Drawing.Color.White;
             this.guna2HtmlLabel21.Location = new System.Drawing.Point(307, 175);
             this.guna2HtmlLabel21.Name = "guna2HtmlLabel21";
-            this.guna2HtmlLabel21.Size = new System.Drawing.Size(70, 32);
+            this.guna2HtmlLabel21.Size = new System.Drawing.Size(48, 32);
             this.guna2HtmlLabel21.TabIndex = 3;
-            this.guna2HtmlLabel21.Text = "TK. 200";
+            this.guna2HtmlLabel21.Text = "TK. 0";
             // 
             // guna2HtmlLabel20
             // 
@@ -210,16 +210,16 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel20.TabIndex = 2;
             this.guna2HtmlLabel20.Text = "YOUR BALANCE";
             // 
-            // guna2HtmlLabel11
+            // UserName
             // 
-            this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel11.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel11.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(93, 60);
-            this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            this.guna2HtmlLabel11.Size = new System.Drawing.Size(167, 32);
-            this.guna2HtmlLabel11.TabIndex = 1;
-            this.guna2HtmlLabel11.Text = "HASAN AHAMED";
+            this.UserName.BackColor = System.Drawing.Color.Transparent;
+            this.UserName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserName.ForeColor = System.Drawing.Color.White;
+            this.UserName.Location = new System.Drawing.Point(93, 60);
+            this.UserName.Name = "UserName";
+            this.UserName.Size = new System.Drawing.Size(167, 32);
+            this.UserName.TabIndex = 1;
+            this.UserName.Text = "HASAN AHAMED";
             // 
             // guna2Panel2
             // 
@@ -230,7 +230,7 @@ namespace Postman.App.Rider
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel23);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel21);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel20);
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel11);
+            this.guna2Panel2.Controls.Add(this.UserName);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel10);
             this.guna2Panel2.Location = new System.Drawing.Point(13, 27);
             this.guna2Panel2.Name = "guna2Panel2";
@@ -256,9 +256,9 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.guna2HtmlLabel9.Location = new System.Drawing.Point(83, 290);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(80, 19);
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(132, 19);
             this.guna2HtmlLabel9.TabIndex = 8;
-            this.guna2HtmlLabel9.Text = "01623785124";
+            this.guna2HtmlLabel9.Text = "Please update phone ";
             // 
             // guna2HtmlLabel8
             // 
@@ -267,9 +267,9 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.guna2HtmlLabel8.Location = new System.Drawing.Point(83, 248);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(193, 19);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(142, 19);
             this.guna2HtmlLabel8.TabIndex = 7;
-            this.guna2HtmlLabel8.Text = "76,1-P/L, Biber Bagicha, Dhaka";
+            this.guna2HtmlLabel8.Text = "Please update Address";
             // 
             // guna2HtmlLabel7
             // 
@@ -312,7 +312,7 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(39, 47);
             this.guna2HtmlLabel4.TabIndex = 3;
-            this.guna2HtmlLabel4.Text = "20";
+            this.guna2HtmlLabel4.Text = "00";
             // 
             // guna2HtmlLabel3
             // 
@@ -323,7 +323,7 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(39, 47);
             this.guna2HtmlLabel3.TabIndex = 2;
-            this.guna2HtmlLabel3.Text = "20";
+            this.guna2HtmlLabel3.Text = "00";
             // 
             // guna2HtmlLabel2
             // 
@@ -331,9 +331,9 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(231, 22);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(103, 19);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(125, 19);
             this.guna2HtmlLabel2.TabIndex = 1;
-            this.guna2HtmlLabel2.Text = "TOTAL PARCELS";
+            this.guna2HtmlLabel2.Text = "PENDING DELIVERY";
             // 
             // guna2HtmlLabel1
             // 
@@ -341,9 +341,9 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(27, 22);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(87, 19);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(109, 19);
             this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "TOTAL USERS";
+            this.guna2HtmlLabel1.Text = "TOTAL DELIVERY";
             // 
             // guna2Panel1
             // 
@@ -371,7 +371,7 @@ namespace Postman.App.Rider
             this.Controls.Add(this.guna2HtmlLabel19);
             this.Controls.Add(this.guna2HtmlLabel18);
             this.Controls.Add(this.guna2HtmlLabel17);
-            this.Controls.Add(this.guna2HtmlLabel16);
+            this.Controls.Add(this.parcelToday);
             this.Controls.Add(this.guna2HtmlLabel15);
             this.Controls.Add(this.guna2HtmlLabel14);
             this.Controls.Add(this.guna2HtmlLabel13);
@@ -398,7 +398,7 @@ namespace Postman.App.Rider
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel19;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel18;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel16;
+        private Guna.UI2.WinForms.Guna2HtmlLabel parcelToday;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel15;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
@@ -406,7 +406,7 @@ namespace Postman.App.Rider
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel24;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel21;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel20;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
+        private Guna.UI2.WinForms.Guna2HtmlLabel UserName;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
