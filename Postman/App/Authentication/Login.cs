@@ -108,12 +108,17 @@ namespace Postman.App.Authentication.Login
 
         private void guna2ToggleSwitch2_CheckedChanged(object sender, EventArgs e)
         {
-            if(guna2ToggleSwitch2.Checked)
+            bool status = guna2ToggleSwitch2.Checked;
+            switch (status)
             {
-                passwordTextBox.UseSystemPasswordChar = false;
-            }
-            else passwordTextBox.UseSystemPasswordChar = true;
+                case true:
+                    passwordTextBox.UseSystemPasswordChar = false;
+                    break;
+                default:
+                    passwordTextBox.UseSystemPasswordChar = true;
+                    break;
 
+            }
         }
     }
 }
