@@ -372,7 +372,7 @@ namespace Postman.App.Authentication.Login
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(915, 841);
+            this.guna2Panel1.Size = new System.Drawing.Size(752, 841);
             this.guna2Panel1.TabIndex = 35;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
