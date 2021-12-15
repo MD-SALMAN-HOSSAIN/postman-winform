@@ -408,6 +408,9 @@
     <EmbeddedResource Include="App\Dashboard\Homepage\Withdrow\Withdrow.resx">
       <DependentUpon>Withdrow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Merchent\AddParcel.resx">
+      <DependentUpon>AddParcel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Merchent\ConsignmentTableFomr.resx">
       <DependentUpon>ConsignmentTableFomr.cs</DependentUpon>
     </EmbeddedResource>

@@ -46,7 +46,7 @@ namespace Postman.App.Merchent
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            container(new ParcelTable());
+            container(new ParcelTable(user));
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
