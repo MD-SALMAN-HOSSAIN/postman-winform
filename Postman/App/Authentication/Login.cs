@@ -120,5 +120,12 @@ namespace Postman.App.Authentication.Login
 
             }
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Register.Register register = new Register.Register();
+            register.Show();
+        }
     }
 }
