@@ -222,11 +222,13 @@ namespace Postman.App.Admin
             this.guna2Button5.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
             this.guna2Button5.Image = global::Postman.Properties.Resources.MicrosoftTeams_image__7_;
-            this.guna2Button5.Location = new System.Drawing.Point(0, 794);
+            this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button5.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2Button5.Location = new System.Drawing.Point(0, 792);
             this.guna2Button5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(304, 44);
+            this.guna2Button5.Size = new System.Drawing.Size(304, 46);
             this.guna2Button5.TabIndex = 8;
             this.guna2Button5.Text = "Info";
             // 
