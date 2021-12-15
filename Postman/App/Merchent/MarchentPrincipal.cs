@@ -7,14 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Postman.Models;
 namespace Postman.App.Merchent
 {
     public partial class MarchentPrincipal : Form
     {
+        User user { get; set; }
         public MarchentPrincipal()
         {
             InitializeComponent();
+            container(new MarchentDashboardProt());
+        }
+
+        public MarchentPrincipal(User user)
+        {
+            InitializeComponent();
+            this.user = user;
             container(new MarchentDashboardProt());
         }
 
@@ -44,6 +52,12 @@ namespace Postman.App.Merchent
         private void guna2Button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            if(user != null) container(new UniformUpdate(user));
+            else container(new UniformUpdate(user));
         }
     }
 }

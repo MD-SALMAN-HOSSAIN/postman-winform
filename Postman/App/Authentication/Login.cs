@@ -30,35 +30,49 @@ namespace Postman.App.Authentication.Login
             if(emailTextBox != null && passwordTextBox != null)
             {
                 var user = userRepo.GetUserInfo(emailTextBox.Text);
-                bool verify = BCrypt.Net.BCrypt.Verify(passwordTextBox.Text, user.password);
-                if (verify)
+                if(user == null)
                 {
-                  
-                    Console.WriteLine(user.userRole);
-                    if(user.userRole == Models.UserRole.MARCHENT)
-                    {
-                        this.Hide();
-                        MarchentPrincipal merchent = new MarchentPrincipal();
-                        merchent.Show();
-                    }
-                    else if(user.userRole == Models.UserRole.ADMIN)
-                    {
-                        this.Hide();
-                        AdminPrincipal admin = new AdminPrincipal();
-                        admin.Show();
-                    }
-                    else if(user.userRole == Models.UserRole.RIDER)
-                    {
-                        this.Hide();
-                        RiderPrincipal rider = new RiderPrincipal(user);
-                        rider.Show();
-                    }
-                   
+                    MessageBox.Show("Please check your email or password!", "Login failed!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
-                else
+                try
                 {
-                    MessageBox.Show("Check your email and password", "Login failed!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    bool verify = BCrypt.Net.BCrypt.Verify(passwordTextBox.Text, user.password);
+                    if (verify)
+                    {
+
+                        Console.WriteLine(user.userRole);
+                        if (user.userRole == Models.UserRole.MARCHENT)
+                        {
+                            this.Hide();
+                            MarchentPrincipal merchent = new MarchentPrincipal();
+                            merchent.Show();
+                        }
+                        else if (user.userRole == Models.UserRole.ADMIN)
+                        {
+                            this.Hide();
+                            AdminPrincipal admin = new AdminPrincipal(user);
+                            admin.Show();
+                        }
+                        else if (user.userRole == Models.UserRole.RIDER)
+                        {
+                            this.Hide();
+                            RiderPrincipal rider = new RiderPrincipal(user);
+                            rider.Show();
+                        }
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Check your email and password", "Login failed!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                } catch(Exception err)
+                {
+                    MessageBox.Show("Something went wrong, Please try again", "Login failed!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+
+
+               
             }
            
         }
