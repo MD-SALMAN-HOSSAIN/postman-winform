@@ -27,6 +27,11 @@ namespace Postman
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+         
+        }
+
+        private void guna2GradientButton1_Click_1(object sender, EventArgs e)
+        {
             this.Hide();
             Login login = new Login();
             login.Show();

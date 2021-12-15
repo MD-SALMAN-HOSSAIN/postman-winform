@@ -229,6 +229,7 @@ namespace Postman.App.Authentication.Login
             this.passwordTextBox.Size = new System.Drawing.Size(324, 36);
             this.passwordTextBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.passwordTextBox.TabIndex = 16;
+            this.passwordTextBox.UseSystemPasswordChar = true;
             this.passwordTextBox.TextChanged += new System.EventHandler(this.passwordTextBox_TextChanged);
             // 
             // emailTextBox
@@ -295,6 +296,15 @@ namespace Postman.App.Authentication.Login
             this.guna2ToggleSwitch2.UncheckedState.InnerBorderColor = System.Drawing.Color.Red;
             this.guna2ToggleSwitch2.UncheckedState.InnerColor = System.Drawing.Color.DimGray;
             this.guna2ToggleSwitch2.UncheckedState.Parent = this.guna2ToggleSwitch2;
+            this.guna2ToggleSwitch2.CheckedChanged += new System.EventHandler(this.guna2ToggleSwitch2_CheckedChanged);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
             // 
             // errorProvider1
             // 
@@ -307,7 +317,7 @@ namespace Postman.App.Authentication.Login
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.Image = global::Postman.Properties.Resources.Postman_Logo1;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
