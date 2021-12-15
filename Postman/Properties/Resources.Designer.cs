@@ -63,6 +63,56 @@ namespace Postman.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1 {
+            get {
+                object obj = ResourceManager.GetObject("1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _124100673_2696397823932282_3541106210550695838_n {
+            get {
+                object obj = ResourceManager.GetObject("124100673_2696397823932282_3541106210550695838_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _124100673_2696397823932282_3541106210550695838_n1 {
+            get {
+                object obj = ResourceManager.GetObject("124100673_2696397823932282_3541106210550695838_n1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1632147870719 {
+            get {
+                object obj = ResourceManager.GetObject("1632147870719", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap asaSAssa {
+            get {
+                object obj = ResourceManager.GetObject("asaSAssa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bc {
             get {
                 object obj = ResourceManager.GetObject("bc", resourceCulture);
@@ -146,6 +196,16 @@ namespace Postman.Properties {
         internal static System.Drawing.Bitmap dsadxzc {
             get {
                 object obj = ResourceManager.GetObject("dsadxzc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_0057fd {
+            get {
+                object obj = ResourceManager.GetObject("IMG_0057fd", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

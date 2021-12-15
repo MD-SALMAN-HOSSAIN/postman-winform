@@ -316,6 +316,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Account.Model.cs" />
     <Compile Include="Models\Config.Model.cs" />
     <Compile Include="Models\Customer.Model.cs" />
@@ -449,6 +455,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -608,6 +617,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Postman Logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\124100673_2696397823932282_3541106210550695838_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\124100673_2696397823932282_3541106210550695838_n1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asaSAssa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_0057fd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1632147870719.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
