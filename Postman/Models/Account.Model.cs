@@ -10,7 +10,7 @@ namespace Postman.Models
    
     public class Account
     {
-
+        public int id { get; }
         public double balance { get; set; }
 
         public double deposit { get; set;  }

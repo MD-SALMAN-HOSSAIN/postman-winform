@@ -7,15 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Postman.Models;
 namespace Postman.App.Admin
 {
     public partial class AdminPrincipal : Form
     {
+        User user { get; set; }
         public AdminPrincipal()
         {
             InitializeComponent();
             container(new AdminDashboardProt());
+        }
+
+        public AdminPrincipal(User user)
+        {
+            InitializeComponent();
+            container(new AdminDashboardProt());
+            this.user = user;
         }
 
         private void AdminDashboardProto_Load(object sender, EventArgs e)

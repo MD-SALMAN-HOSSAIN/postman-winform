@@ -17,6 +17,7 @@ namespace Postman.Models
     }
     public class Withdraw
     {
+        public int id { get; }
         public string accountNumber { get; set; }
 
         public string bankName { get; set; }

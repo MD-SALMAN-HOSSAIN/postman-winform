@@ -23,6 +23,7 @@ namespace Postman.Models
     }
     public class Parcel
     {
+        public int id { get; }
         public string invoiceNo { get; set; }
 
         public DeliveryMethod paymetMethod { get; set; }

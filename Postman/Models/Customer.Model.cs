@@ -8,6 +8,7 @@ namespace Postman.Models
 {
     public class Customer
     {
+        public int id { get; }
         public string name { get; set; }
 
         public string phone { get; set; }
