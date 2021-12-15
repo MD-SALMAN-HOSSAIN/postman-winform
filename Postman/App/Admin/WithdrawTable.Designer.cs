@@ -132,9 +132,9 @@ namespace Postman.App.Admin
             this.NumberOfUser.ForeColor = System.Drawing.Color.Blue;
             this.NumberOfUser.Location = new System.Drawing.Point(46, 12);
             this.NumberOfUser.Name = "NumberOfUser";
-            this.NumberOfUser.Size = new System.Drawing.Size(35, 39);
+            this.NumberOfUser.Size = new System.Drawing.Size(19, 39);
             this.NumberOfUser.TabIndex = 0;
-            this.NumberOfUser.Text = "70";
+            this.NumberOfUser.Text = "0";
             // 
             // guna2Panel2
             // 
