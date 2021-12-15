@@ -142,7 +142,7 @@ namespace Postman.App.Admin
             this.totalParcel.Name = "totalParcel";
             this.totalParcel.Size = new System.Drawing.Size(39, 47);
             this.totalParcel.TabIndex = 3;
-            this.totalParcel.Text = "20";
+            this.totalParcel.Text = "00";
             // 
             // totalUserCount
             // 
@@ -153,7 +153,8 @@ namespace Postman.App.Admin
             this.totalUserCount.Name = "totalUserCount";
             this.totalUserCount.Size = new System.Drawing.Size(39, 47);
             this.totalUserCount.TabIndex = 2;
-            this.totalUserCount.Text = "20";
+            this.totalUserCount.Text = "00";
+            this.totalUserCount.Click += new System.EventHandler(this.totalUserCount_Click);
             // 
             // guna2HtmlLabel2
             // 
@@ -329,18 +330,18 @@ namespace Postman.App.Admin
             this.todayParcel.Name = "todayParcel";
             this.todayParcel.Size = new System.Drawing.Size(109, 130);
             this.todayParcel.TabIndex = 9;
-            this.todayParcel.Text = "20";
+            this.todayParcel.Text = "00";
             // 
             // deliveryTodayLabel
             // 
             this.deliveryTodayLabel.BackColor = System.Drawing.Color.Transparent;
             this.deliveryTodayLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deliveryTodayLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.deliveryTodayLabel.Location = new System.Drawing.Point(267, 445);
+            this.deliveryTodayLabel.Location = new System.Drawing.Point(269, 445);
             this.deliveryTodayLabel.Name = "deliveryTodayLabel";
             this.deliveryTodayLabel.Size = new System.Drawing.Size(109, 130);
             this.deliveryTodayLabel.TabIndex = 10;
-            this.deliveryTodayLabel.Text = "20";
+            this.deliveryTodayLabel.Text = "00";
             // 
             // parcelThisMonth
             // 
@@ -351,7 +352,7 @@ namespace Postman.App.Admin
             this.parcelThisMonth.Name = "parcelThisMonth";
             this.parcelThisMonth.Size = new System.Drawing.Size(109, 130);
             this.parcelThisMonth.TabIndex = 11;
-            this.parcelThisMonth.Text = "20";
+            this.parcelThisMonth.Text = "00";
             // 
             // userThisMonth
             // 
@@ -362,7 +363,7 @@ namespace Postman.App.Admin
             this.userThisMonth.Name = "userThisMonth";
             this.userThisMonth.Size = new System.Drawing.Size(109, 130);
             this.userThisMonth.TabIndex = 12;
-            this.userThisMonth.Text = "20";
+            this.userThisMonth.Text = "00";
             // 
             // AdminDashboardProt
             // 
