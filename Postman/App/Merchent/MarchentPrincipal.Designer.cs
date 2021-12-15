@@ -135,6 +135,7 @@ namespace Postman.App.Merchent
             this.guna2Button6.Size = new System.Drawing.Size(38, 40);
             this.guna2Button6.TabIndex = 20;
             this.guna2Button6.UseTransparentBackground = true;
+            this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
             // guna2DragControl2
             // 
@@ -278,6 +279,7 @@ namespace Postman.App.Merchent
             this.guna2Button5.Size = new System.Drawing.Size(228, 42);
             this.guna2Button5.TabIndex = 8;
             this.guna2Button5.Text = "Info";
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // guna2Button4
             // 

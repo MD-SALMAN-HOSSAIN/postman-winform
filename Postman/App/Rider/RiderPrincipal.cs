@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Postman.Models;
+using Postman.App.Authentication.Login;
 namespace Postman.App.Rider
 {
     public partial class RiderPrincipal : Form
@@ -54,6 +55,19 @@ namespace Postman.App.Rider
         {
             if(user != null) container(new UniformUpdate(user));
             else container(new Consignments());
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            Info info = new Info();
+                info.Show();
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
         }
     }
 }
