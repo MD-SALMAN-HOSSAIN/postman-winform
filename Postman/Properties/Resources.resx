@@ -124,6 +124,9 @@
   <data name="Withdraw11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Withdraw11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="asaSAssa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\asaSAssa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -132,9 +135,6 @@
   </data>
   <data name="Dashboard11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dashboard11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MicrosoftTeams-image1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MicrosoftTeams-image1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MicrosoftTeams-image (6)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image (6)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,14 +148,20 @@
   <data name="information-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\information-button2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Postman Logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Postman Logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seetting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seetting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="widraw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\widraw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="c8ed4fc3eb4a75a85a0df5e466c78bfc-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\c8ed4fc3eb4a75a85a0df5e466c78bfc-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MicrosoftTeams-image (4)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MicrosoftTeams-image (4)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="undraw_Safe_re_kiil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\undraw_Safe_re_kiil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,11 +169,14 @@
   <data name="Consignments" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Consignments.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IMG_0057fd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG_0057fd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="User" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\User.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="undraw_Order_delivered_re_v4ab" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\undraw_Order_delivered_re_v4ab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MicrosoftTeams-image (7)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image (7)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,6 +196,9 @@
   <data name="dsadxzc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dsadxzc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="124100673_2696397823932282_3541106210550695838_n1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\124100673_2696397823932282_3541106210550695838_n1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MicrosoftTeams-image (4)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image (4)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -196,14 +208,17 @@
   <data name="MicrosoftTeams-image (8)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image (8)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="undraw_Order_delivered_re_v4ab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\undraw_Order_delivered_re_v4ab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Consignments1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Consignments1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Pdarcel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pdarcel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MicrosoftTeams-image (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MicrosoftTeams-image (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MicrosoftTeams-image1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MicrosoftTeams-image1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MicrosoftTeams-image (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,14 +232,14 @@
   <data name="MicrosoftTeams-image (6)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image (6)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="seetting" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seetting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MicrosoftTeams-image (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MicrosoftTeams-image (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MicrosoftTeams-image (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Withdraw1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Withdraw1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="124100673_2696397823932282_3541106210550695838_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\124100673_2696397823932282_3541106210550695838_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MicrosoftTeams-image (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,6 +250,9 @@
   <data name="MicrosoftTeams-image (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Withdraw1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Withdraw1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -244,13 +262,13 @@
   <data name="MicrosoftTeams-image (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MicrosoftTeams-image (4)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MicrosoftTeams-image (4)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="c8ed4fc3eb4a75a85a0df5e466c78bfc-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\c8ed4fc3eb4a75a85a0df5e466c78bfc-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MicrosoftTeams-image (7)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image (7)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Postman Logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Postman Logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1632147870719" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1632147870719.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
