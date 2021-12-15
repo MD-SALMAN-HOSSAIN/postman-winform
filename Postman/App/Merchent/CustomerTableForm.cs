@@ -12,9 +12,11 @@ namespace Postman.App.Merchent
 {
     public partial class CustomerTableForm : Form
     {
+
         public CustomerTableForm()
         {
             InitializeComponent();
+            this.guna2DataGridView1 = 
         }
     }
 }

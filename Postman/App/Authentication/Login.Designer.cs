@@ -41,16 +41,16 @@ namespace Postman.App.Authentication.Login
             this.passwordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.emailTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ToggleSwitch2 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ShadowPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ShadowPanel1
@@ -69,12 +69,12 @@ namespace Postman.App.Authentication.Login
             this.guna2ShadowPanel1.Controls.Add(this.guna2PictureBox1);
             this.guna2ShadowPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(726, 0);
-            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(538, 0);
+            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.Dropped;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(477, 722);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(364, 587);
             this.guna2ShadowPanel1.TabIndex = 34;
             this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
             // 
@@ -83,10 +83,10 @@ namespace Postman.App.Authentication.Login
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.Red;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(59, 484);
-            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(44, 393);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(105, 22);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(85, 17);
             this.guna2HtmlLabel6.TabIndex = 23;
             this.guna2HtmlLabel6.Text = "Show Password";
             // 
@@ -94,10 +94,10 @@ namespace Postman.App.Authentication.Login
             // 
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(53, 377);
-            this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(40, 306);
+            this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(85, 30);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(70, 23);
             this.guna2HtmlLabel7.TabIndex = 22;
             this.guna2HtmlLabel7.Text = "Password";
             // 
@@ -105,10 +105,10 @@ namespace Postman.App.Authentication.Login
             // 
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(51, 263);
-            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(38, 214);
+            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(197, 25);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(165, 21);
             this.guna2HtmlLabel8.TabIndex = 19;
             this.guna2HtmlLabel8.Text = "Don\'t have any account?";
             // 
@@ -116,10 +116,10 @@ namespace Postman.App.Authentication.Login
             // 
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(51, 220);
-            this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(38, 179);
+            this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(299, 39);
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(242, 32);
             this.guna2HtmlLabel9.TabIndex = 20;
             this.guna2HtmlLabel9.Text = "Sign in to your account";
             // 
@@ -134,11 +134,11 @@ namespace Postman.App.Authentication.Login
             this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button5.ForeColor = System.Drawing.Color.Black;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(245, 532);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button5.Location = new System.Drawing.Point(184, 432);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(140, 46);
+            this.guna2Button5.Size = new System.Drawing.Size(105, 37);
             this.guna2Button5.TabIndex = 18;
             this.guna2Button5.Text = "Sign up";
             this.guna2Button5.UseTransparentBackground = true;
@@ -148,10 +148,10 @@ namespace Postman.App.Authentication.Login
             // 
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(53, 294);
-            this.guna2HtmlLabel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(40, 239);
+            this.guna2HtmlLabel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(50, 30);
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(41, 23);
             this.guna2HtmlLabel10.TabIndex = 12;
             this.guna2HtmlLabel10.Text = "Email";
             // 
@@ -166,11 +166,11 @@ namespace Postman.App.Authentication.Login
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button4.ForeColor = System.Drawing.Color.Black;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(53, 532);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button4.Location = new System.Drawing.Point(40, 432);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(140, 46);
+            this.guna2Button4.Size = new System.Drawing.Size(105, 37);
             this.guna2Button4.TabIndex = 17;
             this.guna2Button4.Text = "Login";
             this.guna2Button4.UseTransparentBackground = true;
@@ -192,14 +192,14 @@ namespace Postman.App.Authentication.Login
             this.passwordTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.passwordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordTextBox.HoverState.Parent = this.passwordTextBox;
-            this.passwordTextBox.Location = new System.Drawing.Point(53, 410);
-            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.passwordTextBox.Location = new System.Drawing.Point(40, 333);
+            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '\0';
             this.passwordTextBox.PlaceholderText = "";
             this.passwordTextBox.SelectedText = "";
             this.passwordTextBox.ShadowDecoration.Parent = this.passwordTextBox;
-            this.passwordTextBox.Size = new System.Drawing.Size(324, 36);
+            this.passwordTextBox.Size = new System.Drawing.Size(243, 29);
             this.passwordTextBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.passwordTextBox.TabIndex = 16;
             this.passwordTextBox.UseSystemPasswordChar = true;
@@ -221,14 +221,14 @@ namespace Postman.App.Authentication.Login
             this.emailTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.emailTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailTextBox.HoverState.Parent = this.emailTextBox;
-            this.emailTextBox.Location = new System.Drawing.Point(53, 332);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.emailTextBox.Location = new System.Drawing.Point(40, 270);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.PasswordChar = '\0';
             this.emailTextBox.PlaceholderText = "";
             this.emailTextBox.SelectedText = "";
             this.emailTextBox.ShadowDecoration.Parent = this.emailTextBox;
-            this.emailTextBox.Size = new System.Drawing.Size(324, 36);
+            this.emailTextBox.Size = new System.Drawing.Size(243, 29);
             this.emailTextBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.emailTextBox.TabIndex = 15;
             this.emailTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
@@ -242,11 +242,11 @@ namespace Postman.App.Authentication.Login
             this.guna2ToggleSwitch2.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch2.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch2.CheckedState.Parent = this.guna2ToggleSwitch2;
-            this.guna2ToggleSwitch2.Location = new System.Drawing.Point(59, 454);
-            this.guna2ToggleSwitch2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2ToggleSwitch2.Location = new System.Drawing.Point(44, 369);
+            this.guna2ToggleSwitch2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ToggleSwitch2.Name = "guna2ToggleSwitch2";
             this.guna2ToggleSwitch2.ShadowDecoration.Parent = this.guna2ToggleSwitch2;
-            this.guna2ToggleSwitch2.Size = new System.Drawing.Size(43, 22);
+            this.guna2ToggleSwitch2.Size = new System.Drawing.Size(32, 18);
             this.guna2ToggleSwitch2.TabIndex = 14;
             this.guna2ToggleSwitch2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.guna2ToggleSwitch2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -254,6 +254,19 @@ namespace Postman.App.Authentication.Login
             this.guna2ToggleSwitch2.UncheckedState.InnerColor = System.Drawing.Color.DimGray;
             this.guna2ToggleSwitch2.UncheckedState.Parent = this.guna2ToggleSwitch2;
             this.guna2ToggleSwitch2.CheckedChanged += new System.EventHandler(this.guna2ToggleSwitch2_CheckedChanged);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2PictureBox1.Image = global::Postman.Properties.Resources.Postman_Logo1;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(364, 175);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 27;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // errorProvider1
             // 
@@ -268,10 +281,9 @@ namespace Postman.App.Authentication.Login
             this.guna2Panel1.Controls.Add(this.guna2Panel2);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(726, 722);
+            this.guna2Panel1.Size = new System.Drawing.Size(538, 587);
             this.guna2Panel1.TabIndex = 35;
             // 
             // guna2Panel2
@@ -281,42 +293,29 @@ namespace Postman.App.Authentication.Login
             this.guna2Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(726, 722);
+            this.guna2Panel2.Size = new System.Drawing.Size(538, 587);
             this.guna2Panel2.TabIndex = 36;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PictureBox1.Image = global::Postman.Properties.Resources.Postman_Logo1;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(477, 206);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 27;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1203, 722);
+            this.ClientSize = new System.Drawing.Size(902, 587);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Login";
             this.Text = "Form1";
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
