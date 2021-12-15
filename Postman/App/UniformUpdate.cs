@@ -25,6 +25,7 @@ namespace Postman.App
         public UniformUpdate(User user)
         {
             this.user = user;
+            Console.WriteLine("Updating user "+ user.name);
             if (user != null)
             {
                 nameBox.Text = user.name;

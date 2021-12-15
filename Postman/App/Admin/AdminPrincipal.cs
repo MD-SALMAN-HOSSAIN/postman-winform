@@ -37,6 +37,7 @@ namespace Postman.App.Admin
         public AdminPrincipal(User user)
         {
             InitializeComponent();
+            Console.WriteLine("User" + user.name);
             userList = userRepo.GetAll();
             consignmentList = parcelRepo.getAll();
             witdrawList = withdrawRepository.GetAll();
@@ -97,6 +98,7 @@ namespace Postman.App.Admin
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
+            top_dash.Text = "SETTINGS";
             container(new UniformUpdate(user));
         }
 

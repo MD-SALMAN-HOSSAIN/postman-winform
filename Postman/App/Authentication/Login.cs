@@ -38,13 +38,13 @@ namespace Postman.App.Authentication.Login
                     if(user.userRole == Models.UserRole.MARCHENT)
                     {
                         this.Hide();
-                        MarchentPrincipal merchent = new MarchentPrincipal();
+                        MarchentPrincipal merchent = new MarchentPrincipal(user);
                         merchent.Show();
                     }
                     else if(user.userRole == Models.UserRole.ADMIN)
                     {
                         this.Hide();
-                        AdminPrincipal admin = new AdminPrincipal();
+                        AdminPrincipal admin = new AdminPrincipal(user);
                         admin.Show();
                     }
                     else if(user.userRole == Models.UserRole.RIDER)

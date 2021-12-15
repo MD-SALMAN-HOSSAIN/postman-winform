@@ -336,7 +336,7 @@ namespace Postman.App.Admin
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(200, 57);
+            this.guna2Panel2.Size = new System.Drawing.Size(388, 57);
             this.guna2Panel2.TabIndex = 4;
             // 
             // top_dash

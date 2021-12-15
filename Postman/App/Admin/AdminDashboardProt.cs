@@ -53,5 +53,10 @@ namespace Postman.App.Admin
         {
 
         }
+
+        private void totalUserCount_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
