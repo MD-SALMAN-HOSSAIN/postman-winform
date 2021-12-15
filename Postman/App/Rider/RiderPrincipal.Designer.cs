@@ -32,7 +32,6 @@ namespace Postman.App.Rider
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RiderPrincipal));
             this.top_dash = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.riderName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.riderEmail = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -42,49 +41,33 @@ namespace Postman.App.Rider
             this.minimizeControlBox = new Guna.UI2.WinForms.Guna2ControlBox();
             this.MaximizeControlBox = new Guna.UI2.WinForms.Guna2ControlBox();
             this.closeControlBox = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.panel_container = new Guna.UI2.WinForms.Guna2Panel();
+            this.dashboard_left = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.dashboardNavButton = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.panel_container = new Guna.UI2.WinForms.Guna2Panel();
-            this.dashboard_left = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
             this.dashboard_top.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             this.dashboard_left.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // top_dash
             // 
             this.top_dash.BackColor = System.Drawing.Color.Transparent;
             this.top_dash.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.top_dash.Location = new System.Drawing.Point(39, 12);
+            this.top_dash.Location = new System.Drawing.Point(52, 15);
+            this.top_dash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.top_dash.Name = "top_dash";
-            this.top_dash.Size = new System.Drawing.Size(129, 32);
+            this.top_dash.Size = new System.Drawing.Size(160, 38);
             this.top_dash.TabIndex = 3;
             this.top_dash.Text = "DASHBOARD";
-            // 
-            // guna2Button5
-            // 
-            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
-            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
-            this.guna2Button5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button5.FillColor = System.Drawing.Color.White;
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button5.HoverState.BorderColor = System.Drawing.Color.Navy;
-            this.guna2Button5.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
-            this.guna2Button5.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(0, 634);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(228, 47);
-            this.guna2Button5.TabIndex = 8;
-            this.guna2Button5.Text = "Info";
             // 
             // guna2Panel1
             // 
@@ -92,27 +75,30 @@ namespace Postman.App.Rider
             this.guna2Panel1.Controls.Add(this.riderName);
             this.guna2Panel1.Controls.Add(this.riderEmail);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 681);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 838);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(228, 73);
+            this.guna2Panel1.Size = new System.Drawing.Size(307, 90);
             this.guna2Panel1.TabIndex = 7;
             // 
             // riderName
             // 
             this.riderName.BackColor = System.Drawing.Color.Transparent;
-            this.riderName.Location = new System.Drawing.Point(71, 46);
+            this.riderName.Location = new System.Drawing.Point(95, 57);
+            this.riderName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.riderName.Name = "riderName";
-            this.riderName.Size = new System.Drawing.Size(29, 15);
+            this.riderName.Size = new System.Drawing.Size(37, 18);
             this.riderName.TabIndex = 1;
             this.riderName.Text = "name";
             // 
             // riderEmail
             // 
             this.riderEmail.BackColor = System.Drawing.Color.Transparent;
-            this.riderEmail.Location = new System.Drawing.Point(71, 25);
+            this.riderEmail.Location = new System.Drawing.Point(95, 31);
+            this.riderEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.riderEmail.Name = "riderEmail";
-            this.riderEmail.Size = new System.Drawing.Size(27, 15);
+            this.riderEmail.Size = new System.Drawing.Size(36, 18);
             this.riderEmail.TabIndex = 0;
             this.riderEmail.Text = "email";
             // 
@@ -129,10 +115,11 @@ namespace Postman.App.Rider
             this.dashboard_top.Controls.Add(this.closeControlBox);
             this.dashboard_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.dashboard_top.FillColor = System.Drawing.SystemColors.Control;
-            this.dashboard_top.Location = new System.Drawing.Point(228, 0);
+            this.dashboard_top.Location = new System.Drawing.Point(307, 0);
+            this.dashboard_top.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dashboard_top.Name = "dashboard_top";
             this.dashboard_top.ShadowDecoration.Parent = this.dashboard_top;
-            this.dashboard_top.Size = new System.Drawing.Size(980, 57);
+            this.dashboard_top.Size = new System.Drawing.Size(1304, 70);
             this.dashboard_top.TabIndex = 4;
             // 
             // minimizeControlBox
@@ -143,10 +130,11 @@ namespace Postman.App.Rider
             this.minimizeControlBox.FillColor = System.Drawing.Color.Transparent;
             this.minimizeControlBox.HoverState.Parent = this.minimizeControlBox;
             this.minimizeControlBox.IconColor = System.Drawing.Color.DimGray;
-            this.minimizeControlBox.Location = new System.Drawing.Point(830, 3);
+            this.minimizeControlBox.Location = new System.Drawing.Point(1104, 4);
+            this.minimizeControlBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.minimizeControlBox.Name = "minimizeControlBox";
             this.minimizeControlBox.ShadowDecoration.Parent = this.minimizeControlBox;
-            this.minimizeControlBox.Size = new System.Drawing.Size(45, 29);
+            this.minimizeControlBox.Size = new System.Drawing.Size(60, 36);
             this.minimizeControlBox.TabIndex = 2;
             // 
             // MaximizeControlBox
@@ -157,10 +145,11 @@ namespace Postman.App.Rider
             this.MaximizeControlBox.FillColor = System.Drawing.Color.Transparent;
             this.MaximizeControlBox.HoverState.Parent = this.MaximizeControlBox;
             this.MaximizeControlBox.IconColor = System.Drawing.Color.DimGray;
-            this.MaximizeControlBox.Location = new System.Drawing.Point(881, 3);
+            this.MaximizeControlBox.Location = new System.Drawing.Point(1172, 4);
+            this.MaximizeControlBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeControlBox.Name = "MaximizeControlBox";
             this.MaximizeControlBox.ShadowDecoration.Parent = this.MaximizeControlBox;
-            this.MaximizeControlBox.Size = new System.Drawing.Size(45, 29);
+            this.MaximizeControlBox.Size = new System.Drawing.Size(60, 36);
             this.MaximizeControlBox.TabIndex = 1;
             // 
             // closeControlBox
@@ -170,11 +159,100 @@ namespace Postman.App.Rider
             this.closeControlBox.FillColor = System.Drawing.Color.Transparent;
             this.closeControlBox.HoverState.Parent = this.closeControlBox;
             this.closeControlBox.IconColor = System.Drawing.Color.DimGray;
-            this.closeControlBox.Location = new System.Drawing.Point(932, 3);
+            this.closeControlBox.Location = new System.Drawing.Point(1240, 4);
+            this.closeControlBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.closeControlBox.Name = "closeControlBox";
             this.closeControlBox.ShadowDecoration.Parent = this.closeControlBox;
-            this.closeControlBox.Size = new System.Drawing.Size(45, 29);
+            this.closeControlBox.Size = new System.Drawing.Size(60, 36);
             this.closeControlBox.TabIndex = 0;
+            // 
+            // guna2GradientPanel1
+            // 
+            this.guna2GradientPanel1.BackColor = System.Drawing.Color.White;
+            this.guna2GradientPanel1.Controls.Add(this.guna2PictureBox1);
+            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(307, 118);
+            this.guna2GradientPanel1.TabIndex = 0;
+            // 
+            // panel_container
+            // 
+            this.panel_container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_container.Location = new System.Drawing.Point(307, 70);
+            this.panel_container.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_container.Name = "panel_container";
+            this.panel_container.ShadowDecoration.Parent = this.panel_container;
+            this.panel_container.Size = new System.Drawing.Size(1304, 858);
+            this.panel_container.TabIndex = 5;
+            // 
+            // dashboard_left
+            // 
+            this.dashboard_left.BackColor = System.Drawing.Color.White;
+            this.dashboard_left.Controls.Add(this.guna2Button5);
+            this.dashboard_left.Controls.Add(this.guna2Panel1);
+            this.dashboard_left.Controls.Add(this.guna2Button4);
+            this.dashboard_left.Controls.Add(this.guna2Button3);
+            this.dashboard_left.Controls.Add(this.guna2Button2);
+            this.dashboard_left.Controls.Add(this.dashboardNavButton);
+            this.dashboard_left.Controls.Add(this.guna2GradientPanel1);
+            this.dashboard_left.Dock = System.Windows.Forms.DockStyle.Left;
+            this.dashboard_left.FillColor = System.Drawing.Color.White;
+            this.dashboard_left.Location = new System.Drawing.Point(0, 0);
+            this.dashboard_left.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dashboard_left.Name = "dashboard_left";
+            this.dashboard_left.ShadowDecoration.Parent = this.dashboard_left;
+            this.dashboard_left.Size = new System.Drawing.Size(307, 928);
+            this.dashboard_left.TabIndex = 3;
+            // 
+            // guna2Button5
+            // 
+            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
+            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
+            this.guna2Button5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Button5.FillColor = System.Drawing.Color.White;
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button5.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button5.HoverState.BorderColor = System.Drawing.Color.Navy;
+            this.guna2Button5.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
+            this.guna2Button5.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.HoverState.Parent = this.guna2Button5;
+            this.guna2Button5.Image = global::Postman.Properties.Resources.MicrosoftTeams_image__7_2;
+            this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button5.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2Button5.Location = new System.Drawing.Point(0, 785);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
+            this.guna2Button5.Size = new System.Drawing.Size(307, 53);
+            this.guna2Button5.TabIndex = 8;
+            this.guna2Button5.Text = "Info";
+            // 
+            // guna2Button6
+            // 
+            this.guna2Button6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
+            this.guna2Button6.BorderRadius = 24;
+            this.guna2Button6.BorderThickness = 1;
+            this.guna2Button6.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.guna2Button6.CheckedState.FillColor = System.Drawing.Color.White;
+            this.guna2Button6.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button6.CheckedState.Image")));
+            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
+            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
+            this.guna2Button6.FillColor = System.Drawing.Color.White;
+            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button6.ForeColor = System.Drawing.Color.White;
+            this.guna2Button6.HoverState.Parent = this.guna2Button6;
+            this.guna2Button6.Image = global::Postman.Properties.Resources.MicrosoftTeams_image1;
+            this.guna2Button6.Location = new System.Drawing.Point(12, 31);
+            this.guna2Button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button6.Name = "guna2Button6";
+            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
+            this.guna2Button6.Size = new System.Drawing.Size(52, 49);
+            this.guna2Button6.TabIndex = 20;
+            this.guna2Button6.UseTransparentBackground = true;
             // 
             // guna2Button4
             // 
@@ -188,10 +266,14 @@ namespace Postman.App.Rider
             this.guna2Button4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.guna2Button4.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(0, 276);
+            this.guna2Button4.Image = global::Postman.Properties.Resources.MicrosoftTeams_image__8_1;
+            this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button4.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2Button4.Location = new System.Drawing.Point(0, 324);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(228, 60);
+            this.guna2Button4.Size = new System.Drawing.Size(307, 64);
             this.guna2Button4.TabIndex = 6;
             this.guna2Button4.Text = "Settings";
             // 
@@ -207,10 +289,14 @@ namespace Postman.App.Rider
             this.guna2Button3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.guna2Button3.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(0, 216);
+            this.guna2Button3.Image = global::Postman.Properties.Resources.MicrosoftTeams_image__4_2;
+            this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button3.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2Button3.Location = new System.Drawing.Point(0, 258);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(228, 60);
+            this.guna2Button3.Size = new System.Drawing.Size(307, 66);
             this.guna2Button3.TabIndex = 4;
             this.guna2Button3.Text = "Withdraw";
             // 
@@ -226,10 +312,14 @@ namespace Postman.App.Rider
             this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(0, 156);
+            this.guna2Button2.Image = global::Postman.Properties.Resources.MicrosoftTeams_image__3_;
+            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button2.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2Button2.Location = new System.Drawing.Point(0, 192);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(228, 60);
+            this.guna2Button2.Size = new System.Drawing.Size(307, 66);
             this.guna2Button2.TabIndex = 3;
             this.guna2Button2.Text = "Consignments";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -246,96 +336,39 @@ namespace Postman.App.Rider
             this.dashboardNavButton.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.dashboardNavButton.HoverState.ForeColor = System.Drawing.Color.White;
             this.dashboardNavButton.HoverState.Parent = this.dashboardNavButton;
-            this.dashboardNavButton.Location = new System.Drawing.Point(0, 96);
+            this.dashboardNavButton.Image = global::Postman.Properties.Resources.MicrosoftTeams_image__6_2;
+            this.dashboardNavButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.dashboardNavButton.ImageSize = new System.Drawing.Size(40, 40);
+            this.dashboardNavButton.Location = new System.Drawing.Point(0, 118);
+            this.dashboardNavButton.Margin = new System.Windows.Forms.Padding(4);
             this.dashboardNavButton.Name = "dashboardNavButton";
             this.dashboardNavButton.ShadowDecoration.Parent = this.dashboardNavButton;
-            this.dashboardNavButton.Size = new System.Drawing.Size(228, 60);
+            this.dashboardNavButton.Size = new System.Drawing.Size(307, 74);
             this.dashboardNavButton.TabIndex = 1;
             this.dashboardNavButton.Text = "Dashboard";
             this.dashboardNavButton.Click += new System.EventHandler(this.dashboardNavButton_Click);
             // 
-            // guna2GradientPanel1
+            // guna2PictureBox1
             // 
-            this.guna2GradientPanel1.BackColor = System.Drawing.Color.White;
-            this.guna2GradientPanel1.Controls.Add(this.guna2HtmlLabel3);
-            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(228, 96);
-            this.guna2GradientPanel1.TabIndex = 0;
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(12, 12);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(195, 56);
-            this.guna2HtmlLabel3.TabIndex = 4;
-            this.guna2HtmlLabel3.Text = "POSTMAN";
-            // 
-            // panel_container
-            // 
-            this.panel_container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_container.Location = new System.Drawing.Point(228, 57);
-            this.panel_container.Name = "panel_container";
-            this.panel_container.ShadowDecoration.Parent = this.panel_container;
-            this.panel_container.Size = new System.Drawing.Size(980, 697);
-            this.panel_container.TabIndex = 5;
-            // 
-            // dashboard_left
-            // 
-            this.dashboard_left.BackColor = System.Drawing.Color.White;
-            this.dashboard_left.Controls.Add(this.guna2Button5);
-            this.dashboard_left.Controls.Add(this.guna2Panel1);
-            this.dashboard_left.Controls.Add(this.guna2Button4);
-            this.dashboard_left.Controls.Add(this.guna2Button3);
-            this.dashboard_left.Controls.Add(this.guna2Button2);
-            this.dashboard_left.Controls.Add(this.dashboardNavButton);
-            this.dashboard_left.Controls.Add(this.guna2GradientPanel1);
-            this.dashboard_left.Dock = System.Windows.Forms.DockStyle.Left;
-            this.dashboard_left.FillColor = System.Drawing.Color.White;
-            this.dashboard_left.Location = new System.Drawing.Point(0, 0);
-            this.dashboard_left.Name = "dashboard_left";
-            this.dashboard_left.ShadowDecoration.Parent = this.dashboard_left;
-            this.dashboard_left.Size = new System.Drawing.Size(228, 754);
-            this.dashboard_left.TabIndex = 3;
-            // 
-            // guna2Button6
-            // 
-            this.guna2Button6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
-            this.guna2Button6.BorderRadius = 24;
-            this.guna2Button6.BorderThickness = 1;
-            this.guna2Button6.CheckedState.BorderColor = System.Drawing.Color.White;
-            this.guna2Button6.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button6.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button6.CheckedState.Image")));
-            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
-            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
-            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.HoverState.Parent = this.guna2Button6;
-            this.guna2Button6.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button6.Image")));
-            this.guna2Button6.Location = new System.Drawing.Point(16, 25);
-            this.guna2Button6.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
-            this.guna2Button6.Size = new System.Drawing.Size(38, 40);
-            this.guna2Button6.TabIndex = 20;
-            this.guna2Button6.UseTransparentBackground = true;
+            this.guna2PictureBox1.Image = global::Postman.Properties.Resources.MicrosoftTeams_image__1_2;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(304, 115);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // RiderPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1208, 754);
+            this.ClientSize = new System.Drawing.Size(1611, 928);
             this.Controls.Add(this.panel_container);
             this.Controls.Add(this.dashboard_top);
             this.Controls.Add(this.dashboard_left);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "RiderPrincipal";
             this.Text = "RiderPrincipal";
             this.guna2Panel1.ResumeLayout(false);
@@ -343,8 +376,8 @@ namespace Postman.App.Rider
             this.dashboard_top.ResumeLayout(false);
             this.dashboard_top.PerformLayout();
             this.guna2GradientPanel1.ResumeLayout(false);
-            this.guna2GradientPanel1.PerformLayout();
             this.dashboard_left.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -368,8 +401,8 @@ namespace Postman.App.Rider
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button dashboardNavButton;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2Panel panel_container;
         private Guna.UI2.WinForms.Guna2Panel dashboard_left;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }
