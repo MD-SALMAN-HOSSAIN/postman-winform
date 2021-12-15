@@ -605,5 +605,8 @@
   <ItemGroup>
     <None Include="Resources\MicrosoftTeams-image1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Postman Logo1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
