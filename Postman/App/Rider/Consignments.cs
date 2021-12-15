@@ -7,14 +7,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Postman.Models;
+using Postman.Repository;
 namespace Postman.App.Rider
 {
     public partial class Consignments : Form
     {
+        User user { get; set; }
+
+        ParcelRepositry parcelRepo = new ParcelRepositry();
         public Consignments()
         {
             InitializeComponent();
         }
+
+        public Consignments(User user)
+        {
+            this.user = user;
+            InitializeComponent();
+            loadGridView(user);
+        }
+        void loadGridView(User user)
+        {
+            try
+            {
+                this.consignmentTableData.DataSource = parcelRepo.getRiderConsignments(user.id);
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Something went wrong in the database" + error, "Error!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
     }
 }
