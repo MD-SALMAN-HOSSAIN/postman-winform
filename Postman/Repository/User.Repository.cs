@@ -33,7 +33,7 @@ namespace Postman.Repository
         {
             var result = ConnectionDB.SelectQuery<User>("SELECT * FROM users WHERE email=@email;", new { user.email });
             if (result.Count == 1) return "duplicate";
-            var query = ConnectionDB.ExecuteQuery("INSERT INTO users VALUES (@name, @email,@password,@userRole, @phone);", new { user.name, user.email, user.password, user.userRole, user.phone });
+            var query = ConnectionDB.ExecuteQuery("INSERT INTO users VALUES (@name, @email,@password,@userRole, @phone, @pickupLocation);", new { user.name, user.email, user.password, user.userRole, user.phone, user.pickupLocation });
             if (query > 0)
             {
                 acc.CreateOne(this.GetUserInfo(user.email).id);

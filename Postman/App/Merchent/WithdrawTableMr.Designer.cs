@@ -131,9 +131,9 @@ namespace Postman.App.Merchent
             this.NumberOfUser.ForeColor = System.Drawing.Color.Blue;
             this.NumberOfUser.Location = new System.Drawing.Point(46, 12);
             this.NumberOfUser.Name = "NumberOfUser";
-            this.NumberOfUser.Size = new System.Drawing.Size(35, 39);
+            this.NumberOfUser.Size = new System.Drawing.Size(19, 39);
             this.NumberOfUser.TabIndex = 0;
-            this.NumberOfUser.Text = "70";
+            this.NumberOfUser.Text = "0";
             // 
             // guna2Panel2
             // 
@@ -160,7 +160,7 @@ namespace Postman.App.Merchent
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(122, 45);
             this.guna2Button2.TabIndex = 1;
-            this.guna2Button2.Text = "Delete User";
+            this.guna2Button2.Text = "Cancel Request";
             // 
             // EditUserButton
             // 
@@ -175,7 +175,7 @@ namespace Postman.App.Merchent
             this.EditUserButton.ShadowDecoration.Parent = this.EditUserButton;
             this.EditUserButton.Size = new System.Drawing.Size(132, 45);
             this.EditUserButton.TabIndex = 0;
-            this.EditUserButton.Text = "Update User";
+            this.EditUserButton.Text = "Create Withdraw Request";
             // 
             // guna2Panel3
             // 

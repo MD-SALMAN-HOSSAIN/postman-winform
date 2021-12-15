@@ -42,19 +42,27 @@ namespace Postman.App.Authentication.Register
                 string password = BCrypt.Net.BCrypt.HashPassword(passwordText.Text);
                 if (riderRadio.Checked || marchentRadio.Checked)
                 {
+
                     User user = new User()
                     {
                         email = emailText.Text,
                         password = password,
                         phone = phoneText.Text,
                         name = fullnameText.Text,
-                        userRole = riderRadio.Checked ? Models.UserRole.RIDER : marchentRadio.Checked ? Models.UserRole.MARCHENT : UserRole.BANNED
+                        pickupLocation = location.Text,
+                        userRole = riderRadio.Checked ? Models.UserRole.RIDER : marchentRadio.Checked ? Models.UserRole.MARCHENT : UserRole.BANNED,
+                        
                     };
                     try
                     {
                         Console.WriteLine("Creating data");
-                            userRepo.RegisterUser(user);
-                    } catch(Exception err)
+                           var result =  userRepo.RegisterUser(user);
+                            if(result == "duplicate") MessageBox.Show("User already exists", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            else if (result == "failed") MessageBox.Show("Failed to registre", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                             else if (result == "success") MessageBox.Show("Registration success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    }
+                    catch (Exception err)
                     {
                         Console.WriteLine("Error: " + err.Message);
                     }
@@ -70,7 +78,7 @@ namespace Postman.App.Authentication.Register
                 }
                 else
                 {
-                    MessageBox.Show("Fill the Field", " Faild", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Fill the Field", " Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
 

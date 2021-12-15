@@ -80,6 +80,7 @@ namespace Postman
             this.guna2Button1.Size = new System.Drawing.Size(57, 22);
             this.guna2Button1.TabIndex = 18;
             this.guna2Button1.Text = "Info";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2HtmlLabel7
             // 
@@ -207,7 +208,7 @@ namespace Postman
             this.ClientSize = new System.Drawing.Size(902, 547);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Postman | Home";
             this.Load += new System.EventHandler(this.Form1_Load);

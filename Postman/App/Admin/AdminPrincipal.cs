@@ -99,5 +99,11 @@ namespace Postman.App.Admin
         {
             container(new UniformUpdate(user));
         }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            Info info = new Info();
+            info.Show();
+        }
     }
 }

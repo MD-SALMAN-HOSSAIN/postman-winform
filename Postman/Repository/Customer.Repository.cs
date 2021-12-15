@@ -28,9 +28,9 @@ namespace Postman.Repository
 
 
         // GET ONE
-        public Customer getOneCustomer(int id)
+        public List<Customer> getOneCustomer(int userId)
         {
-            return ConnectionDB.SelectQuery<Customer>("SELECT * FROM customer WHERE id=@id", new { id }).FirstOrDefault<Customer>();
+            return ConnectionDB.SelectQuery<Customer>("SELECT * FROM customer WHERE userId=@userId", new { userId }).ToList<Customer>();
         }
 
 

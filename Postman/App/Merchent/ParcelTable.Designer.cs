@@ -40,6 +40,7 @@ namespace Postman.App.Merchent
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.EditUserButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.consignmentTableData)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -138,6 +139,7 @@ namespace Postman.App.Merchent
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.guna2Button1);
             this.guna2Panel2.Controls.Add(this.guna2Button2);
             this.guna2Panel2.Controls.Add(this.EditUserButton);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -161,7 +163,7 @@ namespace Postman.App.Merchent
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(122, 45);
             this.guna2Button2.TabIndex = 1;
-            this.guna2Button2.Text = "Cancel Order";
+            this.guna2Button2.Text = "Edit Parcel";
             // 
             // EditUserButton
             // 
@@ -176,7 +178,8 @@ namespace Postman.App.Merchent
             this.EditUserButton.ShadowDecoration.Parent = this.EditUserButton;
             this.EditUserButton.Size = new System.Drawing.Size(132, 45);
             this.EditUserButton.TabIndex = 0;
-            this.EditUserButton.Text = "Update User";
+            this.EditUserButton.Text = "Create Parcel";
+            this.EditUserButton.Click += new System.EventHandler(this.EditUserButton_Click);
             // 
             // guna2Panel3
             // 
@@ -187,6 +190,22 @@ namespace Postman.App.Merchent
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(980, 697);
             this.guna2Panel3.TabIndex = 8;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 5;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Tomato;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(564, 6);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(122, 45);
+            this.guna2Button1.TabIndex = 2;
+            this.guna2Button1.Text = "Detete Parcel";
             // 
             // ParcelTable
             // 
@@ -218,5 +237,6 @@ namespace Postman.App.Merchent
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button EditUserButton;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
