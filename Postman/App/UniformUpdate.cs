@@ -25,10 +25,13 @@ namespace Postman.App
         public UniformUpdate(User user)
         {
             this.user = user;
-            nameBox.Text = user.name;
-            emailBox.Text = user.email;
-            addressBox.Text = user.pickupLocation;
-            phoneBox.Text = user.phone;
+            if (user != null)
+            {
+                nameBox.Text = user.name;
+                emailBox.Text = user.email;
+                addressBox.Text = user.pickupLocation;
+                phoneBox.Text = user.phone;
+            }
             InitializeComponent();
         }
 
