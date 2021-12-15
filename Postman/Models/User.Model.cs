@@ -26,7 +26,9 @@ namespace Postman.Models
 
         public string phone {get; set;}
 
-        public byte[] image {get; set;}
+        public string pickupLocation { get; set; }
+
+
     }
 
 }

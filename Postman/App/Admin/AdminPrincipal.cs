@@ -8,22 +8,41 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Postman.Models;
+using Postman.Repository;
+using Postman.App.Authentication.Login;
 namespace Postman.App.Admin
 {
     public partial class AdminPrincipal : Form
     {
         User user { get; set; }
+
+        List<User> userList { get; set; }
+
+        List<Parcel> consignmentList { get; set; }
+        List<Withdraw> witdrawList { get; set; }
+
+        UserRepository userRepo = new UserRepository();
+        ParcelRepositry parcelRepo = new ParcelRepositry();
+        WithdrawRepository withdrawRepository = new WithdrawRepository();
         public AdminPrincipal()
         {
             InitializeComponent();
-            container(new AdminDashboardProt());
+            if(user == null)
+            {
+                container(new AdminDashboardProt());
+            }
+            
         }
 
         public AdminPrincipal(User user)
         {
             InitializeComponent();
-            container(new AdminDashboardProt());
+            userList = userRepo.GetAll();
+            consignmentList = parcelRepo.getAll();
+            witdrawList = withdrawRepository.GetAll();
+            container(new AdminDashboardProt(user, userList.Count, consignmentList.Count ));
             this.user = user;
+            
         }
 
         private void AdminDashboardProto_Load(object sender, EventArgs e)
@@ -47,7 +66,8 @@ namespace Postman.App.Admin
         private void dashboardNavButton_Click(object sender, EventArgs e)
         {
             top_dash.Text = "DASHBOARD";
-            container(new AdminDashboardProt());
+            if (user != null) container(new AdminDashboardProt(user, userList.Count, consignmentList.Count));
+            else container(new AdminDashboardProt()); 
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -59,18 +79,25 @@ namespace Postman.App.Admin
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             top_dash.Text = "CONSIGNMENTS";
-            container(new ConsignmentTable());
+            container(new ConsignmentTable(consignmentList));
         }
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Login login = new Login();
+            login.Show();
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             top_dash.Text = "WITHDRAW REQUESTS";
-            container(new WithdrawTable());
+            container(new WithdrawTable(witdrawList));
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            container(new UniformUpdate(user));
         }
     }
 }

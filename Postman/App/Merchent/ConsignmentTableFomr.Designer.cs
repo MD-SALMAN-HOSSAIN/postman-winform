@@ -55,6 +55,7 @@ namespace Postman.App.Merchent
             this.guna2Button3.Size = new System.Drawing.Size(135, 51);
             this.guna2Button3.TabIndex = 8;
             this.guna2Button3.Text = "Delete";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2Button2
             // 
@@ -72,6 +73,7 @@ namespace Postman.App.Merchent
             this.guna2Button2.Size = new System.Drawing.Size(120, 51);
             this.guna2Button2.TabIndex = 7;
             this.guna2Button2.Text = "Update";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button1
             // 
@@ -89,6 +91,7 @@ namespace Postman.App.Merchent
             this.guna2Button1.Size = new System.Drawing.Size(124, 51);
             this.guna2Button1.TabIndex = 6;
             this.guna2Button1.Text = "Create";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2DataGridView1
             // 

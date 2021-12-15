@@ -14,12 +14,15 @@ namespace Postman.Repository
             return ConnectionDB.ExecuteQuery("INSERT INTO account (userId) VALUES (@userId);", new { userId});
         }
 
-        public Account GetAccount()
+        public Account GetAllAccount()
         {
             return ConnectionDB.SelectQuery<Account>("SELECT * FROM account;").SingleOrDefault();
         }
 
-
+        public Account GetOneAccount(int userId)
+        {
+            return ConnectionDB.SelectQuery<Account>("SELECT * FROM account WHERE userId=@userId", new { userId }).SingleOrDefault();
+        }
  
 
         public int? WithdrawFromAccount(Account account, int id)

@@ -41,5 +41,27 @@ namespace Postman.Repository
             }
             return "failed";
         }
+
+        public int? UpdateUser(User user, int id)
+        {
+            if (user.password != null)
+            {
+                return ConnectionDB.ExecuteQuery(@"UPDATE users
+			                                            SET  
+				                                            name = @name,
+				                                            email = @email,
+				                                            password=@password,
+				                                            pickupLocation = @pickupLocation
+			                                            WHERE id=@id;",
+                                                        new {user.name, user.email, user.password, user.pickupLocation, id });
+            }
+            return ConnectionDB.ExecuteQuery(@"UPDATE users
+			                                            SET  
+				                                            name = @name,
+				                                            email = @email,
+				                                            pickupLocation = @pickupLocation
+			                                            WHERE id=@id;",
+                                                       new { user.name, user.email,user.pickupLocation, id });
+        }
     }
 }
