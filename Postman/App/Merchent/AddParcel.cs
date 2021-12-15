@@ -35,8 +35,12 @@ namespace Postman.App.Merchent
             this.user = user;
             if (user != null) customer = customerRepo.getOneCustomer(user.id);
             else customer = customerRepo.getAllCustomer();
-            customer.ForEach(e => customerNames.Add(e.name));
-            customerData.DataSource = customerNames;
+            if(customer != null)
+            {
+                customer.ForEach(e => customerNames.Add(e.name));
+                customerData.DataSource = customerNames;
+            }
+            
             InitializeComponent();
         }
 
