@@ -8,11 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Postman.Models;
+using Postman.Repository;
 namespace Postman.App
 {
     public partial class UniformUpdate : Form
     {
         User user { get; set; }
+
+        UserRepository userRepo = new UserRepository();
+
         public UniformUpdate()
         {
             InitializeComponent();
@@ -30,10 +34,13 @@ namespace Postman.App
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if(String.IsNullOrEmpty(passBox.Text) && String.IsNullOrEmpty(confirmPassBox.Text)
+            if(passBox.Text != null && confirmPassBox.Text != null)
             {
-
+                string hashed = BCrypt.Net.BCrypt.HashPassword(passBox.Text);
+                userRepo.UpdateUser(new User { email = emailBox.Text, name = nameBox.Text,password=hashed, pickupLocation = addressBox.Text, phone = phoneBox.Text }, user.id);
+                return;
             }
+            userRepo.UpdateUser(new User { email= emailBox.Text, name= nameBox.Text,  pickupLocation = addressBox.Text, phone = phoneBox.Text }, user.id);
         }
     }
 }

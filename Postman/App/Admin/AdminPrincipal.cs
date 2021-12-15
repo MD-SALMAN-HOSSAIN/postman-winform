@@ -97,8 +97,7 @@ namespace Postman.App.Admin
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            container(new WithdrawTable(witdrawList));
-
+            container(new UniformUpdate(user));
         }
     }
 }

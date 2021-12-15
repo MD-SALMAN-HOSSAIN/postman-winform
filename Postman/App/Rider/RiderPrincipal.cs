@@ -49,5 +49,11 @@ namespace Postman.App.Rider
             panel_container.Tag = fm;
             fm.Show();
         }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            if(user != null) container(new UniformUpdate(user));
+            else container(new Consignments());
+        }
     }
 }
