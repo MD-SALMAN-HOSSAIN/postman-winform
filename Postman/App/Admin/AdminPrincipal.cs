@@ -105,7 +105,7 @@ namespace Postman.App.Admin
         private void guna2Button5_Click(object sender, EventArgs e)
         {
             Info info = new Info();
-            info.Show();
+            info.ShowDialog();
         }
     }
 }

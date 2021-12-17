@@ -24,6 +24,7 @@ namespace Postman.App
 
         public UniformUpdate(User user)
         {
+            InitializeComponent();
             this.user = user;
             Console.WriteLine("Updating user "+ user.name);
             if (user != null)
@@ -33,7 +34,7 @@ namespace Postman.App
                 addressBox.Text = user.pickupLocation;
                 phoneBox.Text = user.phone;
             }
-            InitializeComponent();
+           
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
