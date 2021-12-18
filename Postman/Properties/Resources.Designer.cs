@@ -123,16 +123,6 @@ namespace Postman.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Back_button1 {
-            get {
-                object obj = ResourceManager.GetObject("Back button1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap bc {
             get {
                 object obj = ResourceManager.GetObject("bc", resourceCulture);
@@ -223,9 +213,10 @@ namespace Postman.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap home_5_256 {
+        internal static System.Drawing.Bitmap global_data_security_personal_data_security_cyber_data_security_online_concept_illustration_internet_security_information_privacy_protection_1150_37373 {
             get {
-                object obj = ResourceManager.GetObject("home-5-256", resourceCulture);
+                object obj = ResourceManager.GetObject("global-data-security-personal-data-security-cyber-data-security-online-concept-il" +
+                        "lustration-internet-security-information-privacy-protection_1150-37373", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -496,6 +487,16 @@ namespace Postman.Properties {
         internal static System.Drawing.Bitmap Pdarcel1 {
             get {
                 object obj = ResourceManager.GetObject("Pdarcel1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap poscxzct__man {
+            get {
+                object obj = ResourceManager.GetObject("poscxzct ,man", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

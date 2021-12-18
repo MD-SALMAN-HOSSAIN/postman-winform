@@ -693,5 +693,11 @@
   <ItemGroup>
     <None Include="Resources\Back button1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\global-data-security-personal-data-security-cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection_1150-37373.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poscxzct ,man.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
