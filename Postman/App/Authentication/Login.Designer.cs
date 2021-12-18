@@ -341,6 +341,7 @@ namespace Postman.App.Authentication.Login
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = global::Postman.Properties.Resources.Back;
             this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2Button1.Location = new System.Drawing.Point(12, 25);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -348,6 +349,7 @@ namespace Postman.App.Authentication.Login
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(36, 31);
             this.guna2Button1.TabIndex = 41;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // Login
             // 

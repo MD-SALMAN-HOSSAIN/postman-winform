@@ -699,5 +699,8 @@
   <ItemGroup>
     <None Include="Resources\poscxzct ,man.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
