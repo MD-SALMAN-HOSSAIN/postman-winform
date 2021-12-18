@@ -91,5 +91,110 @@ namespace Postman.App.Merchent
         {
 
         }
+
+        private void inovicetext_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(inovicetext.Text))
+            {
+                inovicetext.Focus();
+                errorProvider1.SetError(this.inovicetext, "Fill The Field");
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+        }
+
+        private void amountToCollect_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(amountToCollect.Text))
+            {
+                amountToCollect.Focus();
+                errorProvider2.SetError(this.amountToCollect, "Fill The Field");
+            }
+            else
+            {
+                errorProvider2.Clear();
+            }
+        }
+
+        private void customerName_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(customerName.Text))
+            {
+                customerName.Focus();
+                errorProvider3.SetError(this.customerName, "Fill The Field");
+            }
+            else
+            {
+                errorProvider3.Clear();
+            }
+        }
+
+        private void weight_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(weight.Text))
+            {
+                weight.Focus();
+                errorProvider4.SetError(this.weight, "Fill The Field");
+            }
+            else
+            {
+                errorProvider4.Clear();
+            }
+            
+        }
+
+        private void customerPhone_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(customerPhone.Text))
+            {
+                customerPhone.Focus();
+                errorProvider5.SetError(this.customerPhone, "Fill The Field");
+            }
+            else
+            {
+                errorProvider5.Clear();
+            }
+        }
+
+        private void customerArea_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(customerArea.Text))
+            {
+                customerArea.Focus();
+                errorProvider6.SetError(this.customerArea, "Fill The Field");
+            }
+            else
+            {
+                errorProvider6.Clear();
+            }
+        }
+
+        private void customerCity_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(customerCity.Text))
+            {
+                customerCity.Focus();
+                errorProvider7.SetError(this.customerCity, "Fill The Field");
+            }
+            else
+            {
+                errorProvider7.Clear();
+            }
+        }
+
+        private void customerAddress_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(customerAddress.Text))
+            {
+                customerAddress.Focus();
+                errorProvider8.SetError(this.customerAddress, "Fill The Field");
+            }
+            else
+            {
+                errorProvider8.Clear();
+            }
+        }
     }
 }
