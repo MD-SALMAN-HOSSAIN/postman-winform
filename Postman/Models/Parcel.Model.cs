@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,7 +18,7 @@ namespace Postman.Models
     {
         PENDING,
         CONFIRMED,
-        DELIVERY,
+        ONDELIVERY,
         DELIVERED,
         CANCELLED
     }
@@ -34,6 +35,7 @@ namespace Postman.Models
 
         public double deliveryFee { get; set; }
 
+        [EnumDataType(typeof(DeliveryStatus))]
         public DeliveryStatus parcelStatus { get; set; }
 
         public Customer customer { get; set; }

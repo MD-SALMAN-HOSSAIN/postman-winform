@@ -46,6 +46,7 @@
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -293,6 +294,12 @@
     <Compile Include="App\Rider\RiderDashboardProt.Designer.cs">
       <DependentUpon>RiderDashboardProt.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Rider\RiderParcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Rider\RiderParcel.Designer.cs">
+      <DependentUpon>RiderParcel.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\Rider\RiderPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -322,6 +329,12 @@
     </Compile>
     <Compile Include="App\UniformUpdate.Designer.cs">
       <DependentUpon>UniformUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\UniformWIthdraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\UniformWIthdraw.Designer.cs">
+      <DependentUpon>UniformWIthdraw.cs</DependentUpon>
     </Compile>
     <Compile Include="DataAccess\ConnectionDB.cs" />
     <Compile Include="Form1.cs">
@@ -461,6 +474,9 @@
     <EmbeddedResource Include="App\Rider\RiderDashboardProt.resx">
       <DependentUpon>RiderDashboardProt.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="App\Rider\RiderParcel.resx">
+      <DependentUpon>RiderParcel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Rider\RiderPrincipal.resx">
       <DependentUpon>RiderPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -475,6 +491,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\UniformUpdate.resx">
       <DependentUpon>UniformUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\UniformWIthdraw.resx">
+      <DependentUpon>UniformWIthdraw.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

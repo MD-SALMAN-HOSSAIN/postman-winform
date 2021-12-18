@@ -60,7 +60,9 @@ namespace Postman.Repository
 
         public int? AssignParcelToRider(int id, int riderId)
         {
-            return ConnectionDB.ExecuteQuery("UPDATE parcel SET riderId=@riderId WHERE id=@id", new {riderId, id });
+            return  ConnectionDB.ExecuteQuery("UPDATE parcel SET status=@status,riderId=@riderId WHERE id=@id;",
+                new {status=DeliveryStatus.ONDELIVERY,riderId, id });
+        
         }
 
 

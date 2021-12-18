@@ -34,7 +34,7 @@ namespace Postman.App.Rider
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            container(new Consignments());
+            container(new Consignments(user));
 
         }
 
@@ -73,6 +73,11 @@ namespace Postman.App.Rider
         private void guna2Button4_Click_1(object sender, EventArgs e)
         {
             container(new UniformUpdate(user));
+        }
+
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            container(new RiderParcel(user));
         }
     }
 }
