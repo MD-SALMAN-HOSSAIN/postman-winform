@@ -21,17 +21,19 @@ namespace Postman.App.Merchent
 
         User user { get; set; }
 
-
+        CallbackDelegate Loadgridviewcallback { get; set; }
         public AddParcel()
         {
             InitializeComponent();
         }
 
-        public AddParcel(User user)
+        public AddParcel(User user, CallbackDelegate callback)
         {
             this.user = user;
            
             InitializeComponent();
+            Loadgridviewcallback = callback;
+            
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -44,14 +46,39 @@ namespace Postman.App.Merchent
                 name = customerName.Text,
                 phone = customerPhone.Text
             };
-            parcelRepo.createone(new Parcel
+            try
             {
-                invoiceNo = inovicetext.Text,
-                amountToCollect = Convert.ToDouble(ammountToCollect.Text),
-                deliveryFee = 80,
-                customer = customer,
-                paymetMethod = methodType.Text == "ONLINE" ? DeliveryMethod.ONLINE : DeliveryMethod.CASH,
-            },  user.id);
+                var count = parcelRepo.createone(new Parcel
+                {
+                    invoiceNo = inovicetext.Text,
+                    amountToCollect = Convert.ToDouble(amountToCollect.Text),
+                    deliveryFee = 80,
+                    parcelStatus= DeliveryStatus.PENDING,
+                    customer = customer,
+                    paymetMethod = methodType.Text == "ONLINE" ? DeliveryMethod.ONLINE : DeliveryMethod.CASH,
+                }, user.id);
+                if (count > 0)
+                {
+                     var result = MessageBox.Show("Successfully created parcel", "SUCCESS", MessageBoxButtons.RetryCancel, MessageBoxIcon.Information);
+                     if (result == DialogResult.Retry)
+                    {
+                        inovicetext.Text = "";
+                        amountToCollect.Text = "";
+                        methodType.Text = "";
+                        weight.Text = "";
+                        Loadgridviewcallback();
+                    }
+                     else if(result == DialogResult.Cancel)
+                    {
+                        this.Hide();
+                        Loadgridviewcallback();
+                    }
+                }
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Failed to create parcel," + error.Message, "FAILED", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)

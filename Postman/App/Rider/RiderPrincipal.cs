@@ -69,5 +69,10 @@ namespace Postman.App.Rider
             Login login = new Login();
             login.Show();
         }
+
+        private void guna2Button4_Click_1(object sender, EventArgs e)
+        {
+            container(new UniformUpdate(user));
+        }
     }
 }

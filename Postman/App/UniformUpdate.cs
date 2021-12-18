@@ -27,7 +27,6 @@ namespace Postman.App
             InitializeComponent();
             this.user = user;
             Console.WriteLine("Updating user "+ user.name);
-            InitializeComponent();
             if (user != null)
             {
                 nameBox.Text ="" + user.name;
@@ -52,6 +51,11 @@ namespace Postman.App
             var result2=userRepo.UpdateUser(new User { email= emailBox.Text, name= nameBox.Text,  pickupLocation = addressBox.Text, phone = phoneBox.Text }, user.id);
             if (result2 > 0) MessageBox.Show("Successfully updated", "success", MessageBoxButtons.OK, MessageBoxIcon.Question);
             else MessageBox.Show("Failed to update", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

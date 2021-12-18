@@ -10,7 +10,7 @@ using Dapper;
 
 namespace Postman.DataAccess
 {
-    public class ConnectionDB
+    public class  ConnectionDB
     {
 
         private static readonly string dbstring = ConfigurationManager.ConnectionStrings["dbstring"].ConnectionString;
@@ -27,6 +27,11 @@ namespace Postman.DataAccess
             var affectedRows = sqlcon.Execute(sql, p);
             return affectedRows;
 
+        }
+
+        public static IDbConnection getConnection()
+        {
+            return sqlcon;
         }
     }
 }

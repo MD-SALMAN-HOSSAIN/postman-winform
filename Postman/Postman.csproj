@@ -159,6 +159,7 @@
     <Compile Include="App\Authentication\Reset.Designer.cs">
       <DependentUpon>Reset.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\CallBackDeligate.cs" />
     <Compile Include="App\Dashboard\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>

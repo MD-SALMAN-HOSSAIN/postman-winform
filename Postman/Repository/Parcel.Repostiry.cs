@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Postman.Models;
 using Postman.DataAccess;
+using System.Configuration;
+using Dapper;
 namespace Postman.Repository
 {
     class ParcelRepositry
@@ -18,25 +20,41 @@ namespace Postman.Repository
             if (customer != null) customerId = customer.id;
             else
             {
-                customerRepo.CreateCustomer(customer);
+                customerRepo.CreateCustomer(parcel.customer, userId);
                 var customer2 = customerRepo.getOneCustomer(parcel.customer.phone);
                 if (customer2 != null) customerId = customer2.id;
             }
             if (customerId < 0) return -1;
-            return ConnectionDB.ExecuteQuery(@"	INSERT INTO parcel VALUES
+            Console.WriteLine(parcel.paymetMethod);
+            return ConnectionDB.ExecuteQuery(@"INSERT INTO parcel VALUES
                                                 (
                                                     @invoiceNo,
-                                                    @method,
+                                                    @paymetMethod,
                                                     @packageWeight,
                                                     @amountToCollect,
                                                     @deliveryFee,
-                                                    @status,  @customerId,@userId,null);",
-                new { parcel.invoiceNo, parcel.paymetMethod, parcel.packageWeight, parcel.amountToCollect, parcel.deliveryFee,customerId, userId});
+                                                    @parcelStatus,  @customerId,@userId,null);",
+                new { parcel.invoiceNo, parcel.paymetMethod, parcel.packageWeight, parcel.amountToCollect, parcel.deliveryFee, parcel.parcelStatus,customerId, userId});
         }
 
         public List<Parcel> getAllUser(int id)
         {
-            return ConnectionDB.SelectQuery<Parcel>("SELECT * FROM parcel WHERE userId=@id", new { id }).ToList();
+            return ConnectionDB.getConnection().Query<Parcel, Customer, Parcel>(@"SELECT 
+		                                                    *
+	                                                    FROM parcel P  INNER JOIN customer C on P.customerId=C.id WHERE P.userId=@id;", (b,a) => { b.customer = a; return b; }, new { id }, splitOn: "id").ToList();
+        }
+
+        public List<Parcel> getRiderParcel(int id)
+        {
+            return ConnectionDB.getConnection().Query<Parcel, Customer, Parcel>(@"SELECT 
+		                                                    *
+	                                                    FROM parcel P  INNER JOIN customer C on P.customerId=C.id WHERE P.riderId=@id;", (b, a) => { b.customer = a; return b; }, new { id }, splitOn: "id").ToList();
+        }
+        public List<Parcel> getAvaialblePacel(int id)
+        {
+            return ConnectionDB.getConnection().Query<Parcel, Customer, Parcel>(@"SELECT 
+		                                                    *
+	                                                    FROM parcel P  INNER JOIN customer C on P.customerId=C.id WHERE P.status='PENDING';", (b, a) => { b.customer = a; return b; }, new { id }, splitOn: "id").ToList();
         }
 
 
@@ -48,7 +66,7 @@ namespace Postman.Repository
 
         public List<Parcel> getRiderConsignments(int riderId)
         {
-            return ConnectionDB.SelectQuery<Parcel>("SELECT * FROM parcel WHERE riderId=@riderId", new { riderId }).ToList();
+            return ConnectionDB.SelectQuery<Parcel>("SELECT * FROM parcel WHERE riderId=@riderId;", new { riderId }).ToList();
         }
 
         public List<Parcel> getAll()
