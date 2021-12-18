@@ -17,12 +17,14 @@ namespace Postman.App.Merchent
         public CustomerTableForm()
         {
             InitializeComponent();
-            this.guna2DataGridView1.DataSource = customer.getAllCustomer();
+           
         }
+
         public CustomerTableForm(User user)
         {
             InitializeComponent();
-            this.guna2DataGridView1.DataSource = customer.getOneCustomer(user.phone);
+            this.guna2DataGridView1.DataSource = customer.getAllCustomer(user);
         }
+        
     }
 }

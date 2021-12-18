@@ -33,7 +33,7 @@ namespace Postman.Repository
                                                     @packageWeight,
                                                     @amountToCollect,
                                                     @deliveryFee,
-                                                    @parcelStatus,  @customerId,@userId,null);",
+                                                    @parcelStatus,  @customerId,@userId,null,null);",
                 new { parcel.invoiceNo, parcel.paymetMethod, parcel.packageWeight, parcel.amountToCollect, parcel.deliveryFee, parcel.parcelStatus,customerId, userId});
         }
 
@@ -76,7 +76,9 @@ namespace Postman.Repository
 
         public Parcel getOneParcel(int id)
         {
-            return ConnectionDB.SelectQuery<Parcel>("SELECT * FROM parcel;").SingleOrDefault();
+            return ConnectionDB.getConnection().Query<Parcel, Customer, Parcel>(@"SELECT 
+		                                                    *
+	                                                   FROM parcel P  INNER JOIN customer C on P.customerId=C.id WHERE P.id=@id", (b, a) => { b.customer = a; return b; }, new { id }, splitOn: "id").SingleOrDefault();
         }
         public int? updateOne(int id, Parcel parcel)
         {

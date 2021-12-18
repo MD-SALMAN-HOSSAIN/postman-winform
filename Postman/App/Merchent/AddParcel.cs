@@ -84,5 +84,10 @@ namespace Postman.App.Merchent
         private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
+
+        private void methodType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

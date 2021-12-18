@@ -27,7 +27,7 @@ namespace Postman.Models
         public string invoiceNo { get; set; }
 
         public DeliveryMethod paymetMethod { get; set; }
-        
+
         public double packageWeight { get; set; }
 
         public double amountToCollect { get; set; }
@@ -41,6 +41,7 @@ namespace Postman.Models
 
         public User rider { get; set; }
 
+        public DateTime createdAt {get; set;}
 
     }
 }

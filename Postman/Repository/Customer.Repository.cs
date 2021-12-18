@@ -21,9 +21,9 @@ namespace Postman.Repository
         }
 
         // GET ALL
-        public List<Customer> getAllCustomer ()
+        public List<Customer> getAllCustomer (User user)
         {
-            return ConnectionDB.SelectQuery<Customer>("SELECT * FROM customer;").ToList<Customer>();
+            return ConnectionDB.SelectQuery<Customer>("SELECT * FROM customer where userId=@id;", new { user.id }).ToList<Customer>();
         }
 
 

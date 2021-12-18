@@ -8,11 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Postman.Models;
+using Postman.Repository;
+using System.Linq;
 namespace Postman.App.Merchent
 {
     public partial class MarchentDashboardProt : Form
     {
         User user { get; set; }
+        List<Parcel> parcelList { get; set; }
+        List<Customer> customerList { get; set; }
+
+        ParcelRepositry pr = new ParcelRepositry();
+
+        CustomerRepostiroy cr = new CustomerRepostiroy();
         public MarchentDashboardProt()
         {
             InitializeComponent();
@@ -27,6 +35,14 @@ namespace Postman.App.Merchent
                 userName.Text = user.name;
                 addressLabel.Text = user.pickupLocation;
                 phoneLabel.Text = user.phone;
+                parcelList = pr.getAllUser(user.id);
+                customerList = cr.getAllCustomer(user);
+                customerCounts.Text = $"{customerList.Count}";
+                ParcelCount.Text = $"{parcelList.Count}";
+                todayParcel.Text =$"{parcelList.Count}" ;
+                DeliveredToday.Text = $"{parcelList.FindAll(elem => elem.createdAt.Day == new DateTime().Day && elem.parcelStatus == DeliveryStatus.DELIVERED).Count}";
+                ParcelThisMonth.Text = $"{parcelList.FindAll(elem => elem.createdAt.Month == new DateTime().Day).Count}";
+                CustomerThisMonth.Text = $"{customerList.Count}";
             }
            
         }

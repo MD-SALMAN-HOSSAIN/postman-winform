@@ -29,16 +29,17 @@ namespace Postman.App.Merchent
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MarchentDashboardProt));
             this.PendingLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.withdrawLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel23 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.CustomerThisMonth = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ParcelThisMonth = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DeliveredToday = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.totalParcel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.todayParcel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.todayDelivery = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.balanceLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -50,14 +51,18 @@ namespace Postman.App.Merchent
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ParcelCount = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.customerCount = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.customerCounts = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // PendingLabel
@@ -126,16 +131,16 @@ namespace Postman.App.Merchent
             this.DeliveredToday.TabIndex = 20;
             this.DeliveredToday.Text = "00";
             // 
-            // totalParcel
+            // todayParcel
             // 
-            this.totalParcel.BackColor = System.Drawing.Color.Transparent;
-            this.totalParcel.Font = new System.Drawing.Font("Segoe UI Semibold", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalParcel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.totalParcel.Location = new System.Drawing.Point(55, 460);
-            this.totalParcel.Name = "totalParcel";
-            this.totalParcel.Size = new System.Drawing.Size(109, 130);
-            this.totalParcel.TabIndex = 19;
-            this.totalParcel.Text = "00";
+            this.todayParcel.BackColor = System.Drawing.Color.Transparent;
+            this.todayParcel.Font = new System.Drawing.Font("Segoe UI Semibold", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.todayParcel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.todayParcel.Location = new System.Drawing.Point(55, 460);
+            this.todayParcel.Name = "todayParcel";
+            this.todayParcel.Size = new System.Drawing.Size(109, 130);
+            this.todayParcel.TabIndex = 19;
+            this.todayParcel.Text = "00";
             // 
             // guna2HtmlLabel15
             // 
@@ -157,15 +162,15 @@ namespace Postman.App.Merchent
             this.guna2HtmlLabel14.TabIndex = 17;
             this.guna2HtmlLabel14.Text = "TOTAL PARCEL THIS MONTH";
             // 
-            // guna2HtmlLabel13
+            // todayDelivery
             // 
-            this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel13.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel13.Location = new System.Drawing.Point(244, 427);
-            this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
-            this.guna2HtmlLabel13.Size = new System.Drawing.Size(167, 27);
-            this.guna2HtmlLabel13.TabIndex = 16;
-            this.guna2HtmlLabel13.Text = "DELIVERED TODAY";
+            this.todayDelivery.BackColor = System.Drawing.Color.Transparent;
+            this.todayDelivery.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.todayDelivery.Location = new System.Drawing.Point(244, 427);
+            this.todayDelivery.Name = "todayDelivery";
+            this.todayDelivery.Size = new System.Drawing.Size(167, 27);
+            this.todayDelivery.TabIndex = 16;
+            this.todayDelivery.Text = "DELIVERED TODAY";
             // 
             // guna2HtmlLabel12
             // 
@@ -226,7 +231,7 @@ namespace Postman.App.Merchent
             this.phoneLabel.BackColor = System.Drawing.Color.Transparent;
             this.phoneLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phoneLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.phoneLabel.Location = new System.Drawing.Point(83, 290);
+            this.phoneLabel.Location = new System.Drawing.Point(83, 302);
             this.phoneLabel.Name = "phoneLabel";
             this.phoneLabel.Size = new System.Drawing.Size(133, 19);
             this.phoneLabel.TabIndex = 8;
@@ -273,7 +278,7 @@ namespace Postman.App.Merchent
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(89, 15);
             this.guna2HtmlLabel5.TabIndex = 4;
-            this.guna2HtmlLabel5.Text = "Account Created";
+            this.guna2HtmlLabel5.Text = "Customer added";
             // 
             // ParcelCount
             // 
@@ -286,16 +291,16 @@ namespace Postman.App.Merchent
             this.ParcelCount.TabIndex = 3;
             this.ParcelCount.Text = "00";
             // 
-            // customerCount
+            // customerCounts
             // 
-            this.customerCount.BackColor = System.Drawing.Color.Transparent;
-            this.customerCount.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerCount.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.customerCount.Location = new System.Drawing.Point(53, 47);
-            this.customerCount.Name = "customerCount";
-            this.customerCount.Size = new System.Drawing.Size(39, 47);
-            this.customerCount.TabIndex = 2;
-            this.customerCount.Text = "00";
+            this.customerCounts.BackColor = System.Drawing.Color.Transparent;
+            this.customerCounts.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customerCounts.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.customerCounts.Location = new System.Drawing.Point(53, 47);
+            this.customerCounts.Name = "customerCounts";
+            this.customerCounts.Size = new System.Drawing.Size(39, 47);
+            this.customerCounts.TabIndex = 2;
+            this.customerCounts.Text = "00";
             // 
             // guna2HtmlLabel2
             // 
@@ -321,13 +326,15 @@ namespace Postman.App.Merchent
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.White;
+            this.guna2Panel1.Controls.Add(this.guna2PictureBox2);
+            this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Controls.Add(this.phoneLabel);
             this.guna2Panel1.Controls.Add(this.addressLabel);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel7);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel6);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel5);
             this.guna2Panel1.Controls.Add(this.ParcelCount);
-            this.guna2Panel1.Controls.Add(this.customerCount);
+            this.guna2Panel1.Controls.Add(this.customerCounts);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel1.Location = new System.Drawing.Point(612, 27);
@@ -364,6 +371,31 @@ namespace Postman.App.Merchent
             this.guna2Panel2.Size = new System.Drawing.Size(593, 365);
             this.guna2Panel2.TabIndex = 14;
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackgroundImage = global::Postman.Properties.Resources.home_5_256;
+            this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2PictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.InitialImage")));
+            this.guna2PictureBox1.Location = new System.Drawing.Point(38, 239);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(39, 31);
+            this.guna2PictureBox1.TabIndex = 9;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.BackgroundImage")));
+            this.guna2PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.InitialImage = null;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(38, 290);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(39, 31);
+            this.guna2PictureBox2.TabIndex = 10;
+            this.guna2PictureBox2.TabStop = false;
+            // 
             // MarchentDashboardProt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -372,10 +404,10 @@ namespace Postman.App.Merchent
             this.Controls.Add(this.CustomerThisMonth);
             this.Controls.Add(this.ParcelThisMonth);
             this.Controls.Add(this.DeliveredToday);
-            this.Controls.Add(this.totalParcel);
+            this.Controls.Add(this.todayParcel);
             this.Controls.Add(this.guna2HtmlLabel15);
             this.Controls.Add(this.guna2HtmlLabel14);
-            this.Controls.Add(this.guna2HtmlLabel13);
+            this.Controls.Add(this.todayDelivery);
             this.Controls.Add(this.guna2HtmlLabel12);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Panel2);
@@ -386,6 +418,8 @@ namespace Postman.App.Merchent
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -399,10 +433,10 @@ namespace Postman.App.Merchent
         private Guna.UI2.WinForms.Guna2HtmlLabel CustomerThisMonth;
         private Guna.UI2.WinForms.Guna2HtmlLabel ParcelThisMonth;
         private Guna.UI2.WinForms.Guna2HtmlLabel DeliveredToday;
-        private Guna.UI2.WinForms.Guna2HtmlLabel totalParcel;
+        private Guna.UI2.WinForms.Guna2HtmlLabel todayParcel;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel15;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
+        private Guna.UI2.WinForms.Guna2HtmlLabel todayDelivery;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel24;
         private Guna.UI2.WinForms.Guna2HtmlLabel balanceLabel;
@@ -414,11 +448,13 @@ namespace Postman.App.Merchent
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel ParcelCount;
-        private Guna.UI2.WinForms.Guna2HtmlLabel customerCount;
+        private Guna.UI2.WinForms.Guna2HtmlLabel customerCounts;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
     }
 }

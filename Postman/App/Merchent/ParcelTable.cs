@@ -51,5 +51,32 @@ namespace Postman.App.Merchent
             AddParcel parcelForm = new AddParcel(user, callbackDelegate);
             parcelForm.Show();
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            CallbackDelegate callbackDelegate = new CallbackDelegate(loadGridView);
+            
+            if(consignmentTableData.SelectedRows.Count != 0)
+            {
+                DataGridViewRow row = this.consignmentTableData.SelectedRows[0];
+                int parcelId = Convert.ToInt32(row.Cells["id"].Value);
+
+                try
+                {
+                    var parcel = parcelRepo.getOneParcel(parcelId);
+                    if(parcel != null)
+                    {
+                        UpdateParcel parcelForm = new UpdateParcel(parcel, callbackDelegate);
+                        parcelForm.Show();
+                    }
+
+                }
+                catch(Exception erro)
+                {
+                    MessageBox.Show("Something went wrong! ", erro.Message);
+                }
+            }
+          
+        }
     }
 }

@@ -180,6 +180,7 @@ namespace Postman.App.Merchent
             this.guna2Button2.Size = new System.Drawing.Size(122, 45);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Edit Parcel";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // EditUserButton
             // 

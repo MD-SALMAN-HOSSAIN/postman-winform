@@ -256,6 +256,12 @@
     <Compile Include="App\Merchent\ParcelTableForm.Designer.cs">
       <DependentUpon>ParcelTableForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Merchent\UpdateParcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Merchent\UpdateParcel.Designer.cs">
+      <DependentUpon>UpdateParcel.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\Merchent\WithdrawSettingsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -435,6 +441,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Merchent\ParcelTableForm.resx">
       <DependentUpon>ParcelTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Merchent\UpdateParcel.resx">
+      <DependentUpon>UpdateParcel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Merchent\WithdrawSettingsForm.resx">
       <DependentUpon>WithdrawSettingsForm.cs</DependentUpon>
@@ -657,6 +666,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MicrosoftTeams-image %289%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-5-256.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
