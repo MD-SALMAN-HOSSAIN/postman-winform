@@ -178,8 +178,15 @@ namespace Postman.App.Authentication.Register
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            Form1 frm = new Form1();
-            frm.Show();
+            Login.Login login = new Login.Login();
+            login.Show();
+            this.Hide();
+        }
+
+        private void guna2HtmlLabel3_Click(object sender, EventArgs e)
+        {
+            Login.Login login = new Login.Login();
+            login.Show();
             this.Hide();
         }
     }

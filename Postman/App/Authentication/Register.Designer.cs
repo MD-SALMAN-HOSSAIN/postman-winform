@@ -135,6 +135,7 @@ namespace Postman.App.Authentication.Register
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(42, 22);
             this.guna2HtmlLabel3.TabIndex = 39;
             this.guna2HtmlLabel3.Text = "Login";
+            this.guna2HtmlLabel3.Click += new System.EventHandler(this.guna2HtmlLabel3_Click);
             // 
             // guna2HtmlLabel2
             // 

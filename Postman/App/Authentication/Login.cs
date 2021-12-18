@@ -132,8 +132,8 @@ namespace Postman.App.Authentication.Login
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            login.Show();
+            Form1 frm = new Form1();
+            frm.Show();
             this.Hide();
         }
     }
