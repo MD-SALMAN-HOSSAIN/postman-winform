@@ -137,7 +137,7 @@ namespace Postman.App.Merchent
             this.todayParcel.Font = new System.Drawing.Font("Segoe UI Semibold", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.todayParcel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.todayParcel.Location = new System.Drawing.Point(45, 470);
-            this.todayParcel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.todayParcel.Margin = new System.Windows.Forms.Padding(2);
             this.todayParcel.Name = "todayParcel";
             this.todayParcel.Size = new System.Drawing.Size(109, 130);
             this.todayParcel.TabIndex = 19;
@@ -168,7 +168,7 @@ namespace Postman.App.Merchent
             this.todayDelivery.BackColor = System.Drawing.Color.Transparent;
             this.todayDelivery.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.todayDelivery.Location = new System.Drawing.Point(249, 427);
-            this.todayDelivery.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.todayDelivery.Margin = new System.Windows.Forms.Padding(2);
             this.todayDelivery.Name = "todayDelivery";
             this.todayDelivery.Size = new System.Drawing.Size(167, 27);
             this.todayDelivery.TabIndex = 16;
@@ -234,7 +234,7 @@ namespace Postman.App.Merchent
             this.phoneLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phoneLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.phoneLabel.Location = new System.Drawing.Point(83, 290);
-            this.phoneLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.phoneLabel.Margin = new System.Windows.Forms.Padding(2);
             this.phoneLabel.Name = "phoneLabel";
             this.phoneLabel.Size = new System.Drawing.Size(133, 19);
             this.phoneLabel.TabIndex = 8;
@@ -300,7 +300,7 @@ namespace Postman.App.Merchent
             this.customerCounts.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customerCounts.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.customerCounts.Location = new System.Drawing.Point(53, 45);
-            this.customerCounts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.customerCounts.Margin = new System.Windows.Forms.Padding(2);
             this.customerCounts.Name = "customerCounts";
             this.customerCounts.Size = new System.Drawing.Size(39, 47);
             this.customerCounts.TabIndex = 2;
@@ -354,7 +354,7 @@ namespace Postman.App.Merchent
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.InitialImage = null;
             this.guna2PictureBox2.Location = new System.Drawing.Point(29, 290);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
             this.guna2PictureBox2.Size = new System.Drawing.Size(29, 25);
@@ -363,10 +363,11 @@ namespace Postman.App.Merchent
             // 
             // guna2PictureBox1
             // 
-            this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.InitialImage")));
             this.guna2PictureBox1.Location = new System.Drawing.Point(29, 242);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(29, 25);

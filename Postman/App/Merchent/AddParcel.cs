@@ -56,6 +56,8 @@ namespace Postman.App.Merchent
                     parcelStatus= DeliveryStatus.PENDING,
                     customer = customer,
                     paymetMethod = methodType.Text == "ONLINE" ? DeliveryMethod.ONLINE : DeliveryMethod.CASH,
+                    packageWeight= Convert.ToDouble(weight.Text),
+                    createdAt = new DateTime()
                 }, user.id);
                 if (count > 0)
                 {

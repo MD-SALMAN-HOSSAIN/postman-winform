@@ -78,5 +78,35 @@ namespace Postman.App.Merchent
             }
           
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+           var ans= MessageBox.Show("Are you sure you wanted to delete parcel?", "CONFIRM", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(ans == DialogResult.No)
+            {
+                return;
+            }    
+            if (consignmentTableData.SelectedRows.Count != 0)
+            {
+                DataGridViewRow row = this.consignmentTableData.SelectedRows[0];
+                int parcelId = Convert.ToInt32(row.Cells["id"].Value);
+
+                try
+                {
+                    var result = parcelRepo.deleteOne(parcelId);
+                    if(result> 0)
+                    {
+                        loadGridView();
+                        MessageBox.Show("Parcel Deleted successfully", "DELETED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+
+                }
+                catch (Exception erro)
+                {
+                    MessageBox.Show("Something went wrong! ", erro.Message);
+                }
+            }
+        }
     }
 }
