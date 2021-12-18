@@ -72,7 +72,7 @@ namespace Postman.App.Merchent
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
             this.guna2ShadowPanel2.Radius = 5;
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel2.Size = new System.Drawing.Size(557, 69);
+            this.guna2ShadowPanel2.Size = new System.Drawing.Size(726, 69);
             this.guna2ShadowPanel2.TabIndex = 7;
             // 
             // guna2Button4
@@ -167,7 +167,7 @@ namespace Postman.App.Merchent
             this.guna2ShadowPanel3.Name = "guna2ShadowPanel3";
             this.guna2ShadowPanel3.Radius = 10;
             this.guna2ShadowPanel3.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel3.Size = new System.Drawing.Size(557, 390);
+            this.guna2ShadowPanel3.Size = new System.Drawing.Size(734, 521);
             this.guna2ShadowPanel3.TabIndex = 8;
             // 
             // guna2Button6
@@ -425,7 +425,7 @@ namespace Postman.App.Merchent
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.Radius = 8;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(230, 220);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(230, 216);
             this.guna2ShadowPanel1.TabIndex = 9;
             // 
             // guna2TextBox2
@@ -444,7 +444,7 @@ namespace Postman.App.Merchent
             this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(47, 141);
+            this.guna2TextBox2.Location = new System.Drawing.Point(47, 160);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
@@ -470,7 +470,7 @@ namespace Postman.App.Merchent
             this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(47, 111);
+            this.guna2TextBox1.Location = new System.Drawing.Point(47, 132);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
@@ -483,7 +483,7 @@ namespace Postman.App.Merchent
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = global::Postman.Properties.Resources.Pdarcel1;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(64, 13);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(64, 34);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;

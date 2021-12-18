@@ -668,7 +668,10 @@
     <None Include="Resources\MicrosoftTeams-image %289%291.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\home-5-256.png" />
+    <None Include="Resources\Back button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back button1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
