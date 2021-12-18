@@ -35,12 +35,12 @@ namespace Postman.App.Merchent
             this.consignmentTableData = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.NumberOfUser = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.parcelCount = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.EditUserButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.consignmentTableData)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -108,7 +108,7 @@ namespace Postman.App.Merchent
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel1.Controls.Add(this.NumberOfUser);
+            this.guna2Panel1.Controls.Add(this.parcelCount);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -126,16 +126,16 @@ namespace Postman.App.Merchent
             this.guna2HtmlLabel1.TabIndex = 1;
             this.guna2HtmlLabel1.Text = "Parcels";
             // 
-            // NumberOfUser
+            // parcelCount
             // 
-            this.NumberOfUser.BackColor = System.Drawing.Color.Transparent;
-            this.NumberOfUser.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumberOfUser.ForeColor = System.Drawing.Color.Blue;
-            this.NumberOfUser.Location = new System.Drawing.Point(46, 12);
-            this.NumberOfUser.Name = "NumberOfUser";
-            this.NumberOfUser.Size = new System.Drawing.Size(19, 39);
-            this.NumberOfUser.TabIndex = 0;
-            this.NumberOfUser.Text = "0";
+            this.parcelCount.BackColor = System.Drawing.Color.Transparent;
+            this.parcelCount.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.parcelCount.ForeColor = System.Drawing.Color.Blue;
+            this.parcelCount.Location = new System.Drawing.Point(46, 12);
+            this.parcelCount.Name = "parcelCount";
+            this.parcelCount.Size = new System.Drawing.Size(19, 39);
+            this.parcelCount.TabIndex = 0;
+            this.parcelCount.Text = "0";
             // 
             // guna2Panel2
             // 
@@ -148,6 +148,22 @@ namespace Postman.App.Merchent
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(980, 59);
             this.guna2Panel2.TabIndex = 7;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 5;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Tomato;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(564, 6);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(122, 45);
+            this.guna2Button1.TabIndex = 2;
+            this.guna2Button1.Text = "Detete Parcel";
             // 
             // guna2Button2
             // 
@@ -191,22 +207,6 @@ namespace Postman.App.Merchent
             this.guna2Panel3.Size = new System.Drawing.Size(980, 697);
             this.guna2Panel3.TabIndex = 8;
             // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderRadius = 5;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Tomato;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(564, 6);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(122, 45);
-            this.guna2Button1.TabIndex = 2;
-            this.guna2Button1.Text = "Detete Parcel";
-            // 
             // ParcelTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -232,7 +232,7 @@ namespace Postman.App.Merchent
         private Guna.UI2.WinForms.Guna2DataGridView consignmentTableData;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel NumberOfUser;
+        private Guna.UI2.WinForms.Guna2HtmlLabel parcelCount;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button EditUserButton;

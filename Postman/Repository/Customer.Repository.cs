@@ -11,9 +11,9 @@ namespace Postman.Repository
     {
 
         // CREATE 
-        public bool CreateCustomer (Customer customer)
+        public bool CreateCustomer (Customer customer, int userId)
         {
-            var query = ConnectionDB.ExecuteQuery("INSERT INTO customer VALUES (@name, @phone, @address, @area, @city);", new { customer.name, customer.phone, customer.address, customer.area, customer.city});
+            var query = ConnectionDB.ExecuteQuery("INSERT INTO customer VALUES (@name, @phone, @address, @area, @city, @userId);", new { customer.name, customer.phone, customer.address, customer.area, customer.city, userId});
 
             if (query > 0) return true;
 
@@ -28,9 +28,9 @@ namespace Postman.Repository
 
 
         // GET ONE
-        public List<Customer> getOneCustomer(int userId)
+        public Customer getOneCustomer(string phone)
         {
-            return ConnectionDB.SelectQuery<Customer>("SELECT * FROM customer WHERE userId=@userId", new { userId }).ToList<Customer>();
+            return ConnectionDB.SelectQuery<Customer>("SELECT * FROM customer WHERE phone=@phone", new { phone }).SingleOrDefault<Customer>();
         }
 
 

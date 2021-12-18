@@ -22,7 +22,7 @@ namespace Postman.App.Merchent
         public CustomerTableForm(User user)
         {
             InitializeComponent();
-            this.guna2DataGridView1.DataSource = customer.getOneCustomer(user.id);
+            this.guna2DataGridView1.DataSource = customer.getOneCustomer(user.phone);
         }
     }
 }

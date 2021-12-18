@@ -14,51 +14,75 @@ namespace Postman.App.Merchent
     public partial class AddParcel : Form
     {
 
-        List<Customer> customer { get; set; }
 
-        List<string> customerNames { get; set; }
+       
 
         ParcelRepositry parcelRepo = new ParcelRepositry();
 
         User user { get; set; }
 
-        Customer selectedCustomer { get; set; }
-
-        CustomerRepostiroy customerRepo = new CustomerRepostiroy();
+        CallbackDelegate Loadgridviewcallback { get; set; }
         public AddParcel()
         {
             InitializeComponent();
         }
 
-        public AddParcel(User user)
+        public AddParcel(User user, CallbackDelegate callback)
         {
             this.user = user;
-            if (user != null) customer = customerRepo.getOneCustomer(user.id);
-            else customer = customerRepo.getAllCustomer();
-            if(customer != null)
-            {
-                customer.ForEach(e => customerNames.Add(e.name));
-                customerData.DataSource = customerNames;
-            }
-            
+           
             InitializeComponent();
+            Loadgridviewcallback = callback;
+            
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            parcelRepo.createone(new Parcel
+            Customer customer = new Customer()
             {
-                invoiceNo = inovicetext.Text,
-                amountToCollect = Convert.ToDouble(ammountToCollect.Text),
-                deliveryFee = 80,
-                customer = selectedCustomer,
-                paymetMethod = methodType.Text == "ONLINE" ? DeliveryMethod.ONLINE : DeliveryMethod.CASH
-            }, selectedCustomer.id, user.id);
+                address = customerAddress.Text,
+                city = customerCity.Text,
+                area = customerArea.Text,
+                name = customerName.Text,
+                phone = customerPhone.Text
+            };
+            try
+            {
+                var count = parcelRepo.createone(new Parcel
+                {
+                    invoiceNo = inovicetext.Text,
+                    amountToCollect = Convert.ToDouble(amountToCollect.Text),
+                    deliveryFee = 80,
+                    parcelStatus= DeliveryStatus.PENDING,
+                    customer = customer,
+                    paymetMethod = methodType.Text == "ONLINE" ? DeliveryMethod.ONLINE : DeliveryMethod.CASH,
+                }, user.id);
+                if (count > 0)
+                {
+                     var result = MessageBox.Show("Successfully created parcel", "SUCCESS", MessageBoxButtons.RetryCancel, MessageBoxIcon.Information);
+                     if (result == DialogResult.Retry)
+                    {
+                        inovicetext.Text = "";
+                        amountToCollect.Text = "";
+                        methodType.Text = "";
+                        weight.Text = "";
+                        Loadgridviewcallback();
+                    }
+                     else if(result == DialogResult.Cancel)
+                    {
+                        this.Hide();
+                        Loadgridviewcallback();
+                    }
+                }
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Failed to create parcel," + error.Message, "FAILED", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            selectedCustomer = customer.Find(item => item.name.Contains(customerData.Text));
         }
     }
 }

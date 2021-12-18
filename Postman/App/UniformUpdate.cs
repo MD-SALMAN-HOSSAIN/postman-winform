@@ -24,27 +24,38 @@ namespace Postman.App
 
         public UniformUpdate(User user)
         {
+            InitializeComponent();
             this.user = user;
             Console.WriteLine("Updating user "+ user.name);
             if (user != null)
             {
-                nameBox.Text = user.name;
+                nameBox.Text ="" + user.name;
                 emailBox.Text = user.email;
                 addressBox.Text = user.pickupLocation;
                 phoneBox.Text = user.phone;
             }
-            InitializeComponent();
+           
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             if(passBox.Text != null && confirmPassBox.Text != null)
             {
-                string hashed = BCrypt.Net.BCrypt.HashPassword(passBox.Text);
-                userRepo.UpdateUser(new User { email = emailBox.Text, name = nameBox.Text,password=hashed, pickupLocation = addressBox.Text, phone = phoneBox.Text }, user.id);
+               string hashed = BCrypt.Net.BCrypt.HashPassword(passBox.Text);
+               var result=  userRepo.UpdateUser(new User { email = emailBox.Text, name = nameBox.Text,password=hashed, pickupLocation = addressBox.Text, phone = phoneBox.Text }, user.id);
+                if (result > 0) MessageBox.Show("Successfully updated", "success", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                else  MessageBox.Show("Failed to update", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 return;
             }
-            userRepo.UpdateUser(new User { email= emailBox.Text, name= nameBox.Text,  pickupLocation = addressBox.Text, phone = phoneBox.Text }, user.id);
+            var result2=userRepo.UpdateUser(new User { email= emailBox.Text, name= nameBox.Text,  pickupLocation = addressBox.Text, phone = phoneBox.Text }, user.id);
+            if (result2 > 0) MessageBox.Show("Successfully updated", "success", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            else MessageBox.Show("Failed to update", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

@@ -413,6 +413,7 @@ namespace Postman.App.Admin
             this.Controls.Add(this.dashboard_left);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminDashboardProto";
             this.Load += new System.EventHandler(this.AdminDashboardProto_Load);
             this.dashboard_left.ResumeLayout(false);

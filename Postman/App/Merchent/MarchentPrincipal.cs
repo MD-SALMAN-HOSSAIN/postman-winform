@@ -14,6 +14,7 @@ namespace Postman.App.Merchent
     public partial class MarchentPrincipal : Form
     {
         User user { get; set; }
+
         public MarchentPrincipal()
         {
             InitializeComponent();
@@ -24,7 +25,14 @@ namespace Postman.App.Merchent
         {
             InitializeComponent();
             this.user = user;
-            container(new MarchentDashboardProt());
+           
+            emailLabel.Text = user.email;
+            nameLabel.Text = $"{user.name} | {user.userRole}";
+            if (user != null)
+            {
+                container(new MarchentDashboardProt(user));
+            }
+            else new MarchentDashboardProt();
         }
 
         private void container(object _form)
@@ -42,7 +50,8 @@ namespace Postman.App.Merchent
 
         private void dashboardNavButton_Click(object sender, EventArgs e)
         {
-            container(new MarchentDashboardProt());
+            if (this.user != null) container(new MarchentDashboardProt(user));
+            else container(new MarchentDashboardProt());
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -72,6 +81,11 @@ namespace Postman.App.Merchent
             this.Hide();
             Login login = new Login();
             login.Show();
+        }
+
+        private void guna2Button4_Click_1(object sender, EventArgs e)
+        {
+            container(new UniformUpdate(user));
         }
     }
 }
