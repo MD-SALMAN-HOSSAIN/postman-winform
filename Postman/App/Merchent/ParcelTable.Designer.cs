@@ -34,6 +34,7 @@ namespace Postman.App.Merchent
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.consignmentTableData = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.parcelCount = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -41,7 +42,6 @@ namespace Postman.App.Merchent
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.EditUserButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.consignmentTableData)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -76,14 +76,13 @@ namespace Postman.App.Merchent
             this.consignmentTableData.DefaultCellStyle = dataGridViewCellStyle3;
             this.consignmentTableData.EnableHeadersVisualStyles = false;
             this.consignmentTableData.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.consignmentTableData.Location = new System.Drawing.Point(29, 82);
-            this.consignmentTableData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.consignmentTableData.Location = new System.Drawing.Point(22, 67);
             this.consignmentTableData.Name = "consignmentTableData";
             this.consignmentTableData.RowHeadersVisible = false;
             this.consignmentTableData.RowHeadersWidth = 51;
             this.consignmentTableData.RowTemplate.Height = 50;
             this.consignmentTableData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.consignmentTableData.Size = new System.Drawing.Size(1261, 695);
+            this.consignmentTableData.Size = new System.Drawing.Size(946, 565);
             this.consignmentTableData.TabIndex = 0;
             this.consignmentTableData.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.consignmentTableData.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -115,20 +114,34 @@ namespace Postman.App.Merchent
             this.guna2Panel1.Controls.Add(this.parcelCount);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1307, 75);
+            this.guna2Panel1.Size = new System.Drawing.Size(980, 61);
             this.guna2Panel1.TabIndex = 6;
+            // 
+            // guna2Button3
+            // 
+            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
+            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
+            this.guna2Button3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.HoverState.Parent = this.guna2Button3;
+            this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2Button3.Location = new System.Drawing.Point(0, 21);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
+            this.guna2Button3.Size = new System.Drawing.Size(27, 25);
+            this.guna2Button3.TabIndex = 41;
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(116, 31);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(88, 21);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(65, 26);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(53, 20);
             this.guna2HtmlLabel1.TabIndex = 1;
             this.guna2HtmlLabel1.Text = "Parcels";
             // 
@@ -137,10 +150,9 @@ namespace Postman.App.Merchent
             this.parcelCount.BackColor = System.Drawing.Color.Transparent;
             this.parcelCount.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.parcelCount.ForeColor = System.Drawing.Color.Blue;
-            this.parcelCount.Location = new System.Drawing.Point(61, 15);
-            this.parcelCount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.parcelCount.Location = new System.Drawing.Point(46, 12);
             this.parcelCount.Name = "parcelCount";
-            this.parcelCount.Size = new System.Drawing.Size(23, 48);
+            this.parcelCount.Size = new System.Drawing.Size(19, 39);
             this.parcelCount.TabIndex = 0;
             this.parcelCount.Text = "0";
             // 
@@ -150,11 +162,10 @@ namespace Postman.App.Merchent
             this.guna2Panel2.Controls.Add(this.guna2Button2);
             this.guna2Panel2.Controls.Add(this.EditUserButton);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 785);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 638);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(1307, 73);
+            this.guna2Panel2.Size = new System.Drawing.Size(980, 59);
             this.guna2Panel2.TabIndex = 7;
             // 
             // guna2Button1
@@ -166,11 +177,10 @@ namespace Postman.App.Merchent
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(752, 7);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button1.Location = new System.Drawing.Point(564, 6);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(163, 55);
+            this.guna2Button1.Size = new System.Drawing.Size(122, 45);
             this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Text = "Detete Parcel";
             // 
@@ -183,11 +193,10 @@ namespace Postman.App.Merchent
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(923, 7);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button2.Location = new System.Drawing.Point(692, 6);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(163, 55);
+            this.guna2Button2.Size = new System.Drawing.Size(122, 45);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Edit Parcel";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -200,11 +209,10 @@ namespace Postman.App.Merchent
             this.EditUserButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.EditUserButton.ForeColor = System.Drawing.Color.White;
             this.EditUserButton.HoverState.Parent = this.EditUserButton;
-            this.EditUserButton.Location = new System.Drawing.Point(1093, 7);
-            this.EditUserButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EditUserButton.Location = new System.Drawing.Point(820, 6);
             this.EditUserButton.Name = "EditUserButton";
             this.EditUserButton.ShadowDecoration.Parent = this.EditUserButton;
-            this.EditUserButton.Size = new System.Drawing.Size(176, 55);
+            this.EditUserButton.Size = new System.Drawing.Size(132, 45);
             this.EditUserButton.TabIndex = 0;
             this.EditUserButton.Text = "Create Parcel";
             this.EditUserButton.Click += new System.EventHandler(this.EditUserButton_Click);
@@ -214,38 +222,20 @@ namespace Postman.App.Merchent
             this.guna2Panel3.Controls.Add(this.consignmentTableData);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(1307, 858);
+            this.guna2Panel3.Size = new System.Drawing.Size(980, 697);
             this.guna2Panel3.TabIndex = 8;
-            // 
-            // guna2Button3
-            // 
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Image = global::Postman.Properties.Resources.Back_button1;
-            this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button3.Location = new System.Drawing.Point(0, 26);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(36, 31);
-            this.guna2Button3.TabIndex = 41;
             // 
             // ParcelTable
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1307, 858);
+            this.ClientSize = new System.Drawing.Size(980, 697);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ParcelTable";
             this.Text = "ParcelTable";
             ((System.ComponentModel.ISupportInitialize)(this.consignmentTableData)).EndInit();

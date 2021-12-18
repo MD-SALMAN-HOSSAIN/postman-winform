@@ -158,7 +158,6 @@ namespace Postman.App.Merchent
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Image = global::Postman.Properties.Resources.Back_button1;
             this.guna2Button4.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2Button4.Location = new System.Drawing.Point(12, 396);
             this.guna2Button4.Name = "guna2Button4";
