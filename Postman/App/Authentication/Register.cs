@@ -28,9 +28,8 @@ namespace Postman.App.Authentication.Register
         }
         private void signupButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Login.Login login = new Login.Login ();
-            login.Show();
+            
+            
 
             if (CheckNull(fullnameText) && CheckNull(passwordText) && CheckNull(phoneText) && CheckNull(emailText) && CheckNull(confirmPasswordText))
             {
@@ -57,10 +56,17 @@ namespace Postman.App.Authentication.Register
                     {
                         Console.WriteLine("Creating data");
                            var result =  userRepo.RegisterUser(user);
+                        MessageBox.Show(result);
                             if(result == "duplicate") MessageBox.Show("User already exists", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             else if (result == "failed") MessageBox.Show("Failed to registre", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                             else if (result == "success") MessageBox.Show("Registration success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                             else if (result == "success") 
+                        {
+                            MessageBox.Show("Registration success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            this.Hide();
+                            Login.Login login = new Login.Login();
+                            login.Show();
 
+                        }
                     }
                     catch (Exception err)
                     {
@@ -76,10 +82,14 @@ namespace Postman.App.Authentication.Register
                    // }
                     //.Close();
                 }
-                else
-                {
-                    MessageBox.Show("Fill the Field", " Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                 
+             //Error Builder
+                
+            }
+            else
+
+            {
+                MessageBox.Show("Fill the Field", " Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -160,6 +170,10 @@ namespace Postman.App.Authentication.Register
                 errorProvider5.Clear();
             }
         }
-        
+
+        private void guna2HtmlLabel5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
