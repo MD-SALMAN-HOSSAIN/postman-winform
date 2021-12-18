@@ -33,18 +33,26 @@ namespace Postman.App.Merchent
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.methodType = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.weight = new Guna.UI2.WinForms.Guna2TextBox();
             this.ammountToCollect = new Guna.UI2.WinForms.Guna2TextBox();
             this.inovicetext = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.methodType = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.customerData = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.customerName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.customerPhone = new Guna.UI2.WinForms.Guna2TextBox();
+            this.customerArea = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.customerCity = new Guna.UI2.WinForms.Guna2TextBox();
+            this.customerAddress = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -56,7 +64,7 @@ namespace Postman.App.Merchent
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(743, 12);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(776, 12);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
@@ -81,10 +89,10 @@ namespace Postman.App.Merchent
             // 
             this.guna2Panel1.Controls.Add(this.guna2Button1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 370);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 508);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(800, 80);
+            this.guna2Panel1.Size = new System.Drawing.Size(833, 80);
             this.guna2Panel1.TabIndex = 7;
             // 
             // guna2Panel2
@@ -95,12 +103,30 @@ namespace Postman.App.Merchent
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(800, 52);
+            this.guna2Panel2.Size = new System.Drawing.Size(833, 52);
             this.guna2Panel2.TabIndex = 8;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(12, 12);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(106, 32);
+            this.guna2HtmlLabel1.TabIndex = 1;
+            this.guna2HtmlLabel1.Text = "Add Parcel";
             // 
             // guna2Panel3
             // 
-            this.guna2Panel3.Controls.Add(this.customerData);
+            this.guna2Panel3.Controls.Add(this.guna2HtmlLabel10);
+            this.guna2Panel3.Controls.Add(this.customerAddress);
+            this.guna2Panel3.Controls.Add(this.customerCity);
+            this.guna2Panel3.Controls.Add(this.guna2HtmlLabel9);
+            this.guna2Panel3.Controls.Add(this.guna2HtmlLabel8);
+            this.guna2Panel3.Controls.Add(this.customerArea);
+            this.guna2Panel3.Controls.Add(this.customerPhone);
+            this.guna2Panel3.Controls.Add(this.guna2HtmlLabel7);
+            this.guna2Panel3.Controls.Add(this.customerName);
             this.guna2Panel3.Controls.Add(this.guna2HtmlLabel6);
             this.guna2Panel3.Controls.Add(this.guna2HtmlLabel5);
             this.guna2Panel3.Controls.Add(this.guna2HtmlLabel4);
@@ -114,8 +140,66 @@ namespace Postman.App.Merchent
             this.guna2Panel3.Location = new System.Drawing.Point(0, 52);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(800, 318);
+            this.guna2Panel3.Size = new System.Drawing.Size(833, 456);
             this.guna2Panel3.TabIndex = 9;
+            // 
+            // guna2HtmlLabel5
+            // 
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(481, 30);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(85, 15);
+            this.guna2HtmlLabel5.TabIndex = 15;
+            this.guna2HtmlLabel5.Text = "Amount to collect";
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(119, 211);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(79, 15);
+            this.guna2HtmlLabel4.TabIndex = 14;
+            this.guna2HtmlLabel4.Text = "package weight";
+            // 
+            // methodType
+            // 
+            this.methodType.BackColor = System.Drawing.Color.Transparent;
+            this.methodType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.methodType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.methodType.FocusedColor = System.Drawing.Color.Empty;
+            this.methodType.FocusedState.Parent = this.methodType;
+            this.methodType.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.methodType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.methodType.FormattingEnabled = true;
+            this.methodType.HoverState.Parent = this.methodType;
+            this.methodType.ItemHeight = 30;
+            this.methodType.Items.AddRange(new object[] {
+            "ONLINE",
+            "CASH"});
+            this.methodType.ItemsAppearance.Parent = this.methodType;
+            this.methodType.Location = new System.Drawing.Point(119, 138);
+            this.methodType.Name = "methodType";
+            this.methodType.ShadowDecoration.Parent = this.methodType;
+            this.methodType.Size = new System.Drawing.Size(200, 36);
+            this.methodType.TabIndex = 13;
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(119, 117);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(38, 15);
+            this.guna2HtmlLabel3.TabIndex = 12;
+            this.guna2HtmlLabel3.Text = "method";
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(119, 30);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(54, 15);
+            this.guna2HtmlLabel2.TabIndex = 11;
+            this.guna2HtmlLabel2.Text = "InvoiceNO";
             // 
             // weight
             // 
@@ -183,108 +267,166 @@ namespace Postman.App.Merchent
             this.inovicetext.Size = new System.Drawing.Size(200, 36);
             this.inovicetext.TabIndex = 6;
             // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(12, 12);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(106, 32);
-            this.guna2HtmlLabel1.TabIndex = 1;
-            this.guna2HtmlLabel1.Text = "Add Parcel";
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(119, 30);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(54, 15);
-            this.guna2HtmlLabel2.TabIndex = 11;
-            this.guna2HtmlLabel2.Text = "InvoiceNO";
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(119, 117);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(38, 15);
-            this.guna2HtmlLabel3.TabIndex = 12;
-            this.guna2HtmlLabel3.Text = "method";
-            // 
-            // methodType
-            // 
-            this.methodType.BackColor = System.Drawing.Color.Transparent;
-            this.methodType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.methodType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.methodType.FocusedColor = System.Drawing.Color.Empty;
-            this.methodType.FocusedState.Parent = this.methodType;
-            this.methodType.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.methodType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.methodType.FormattingEnabled = true;
-            this.methodType.HoverState.Parent = this.methodType;
-            this.methodType.ItemHeight = 30;
-            this.methodType.Items.AddRange(new object[] {
-            "ONLINE",
-            "CASH"});
-            this.methodType.ItemsAppearance.Parent = this.methodType;
-            this.methodType.Location = new System.Drawing.Point(119, 138);
-            this.methodType.Name = "methodType";
-            this.methodType.ShadowDecoration.Parent = this.methodType;
-            this.methodType.Size = new System.Drawing.Size(200, 36);
-            this.methodType.TabIndex = 13;
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(119, 211);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(79, 15);
-            this.guna2HtmlLabel4.TabIndex = 14;
-            this.guna2HtmlLabel4.Text = "package weight";
-            // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(481, 30);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(85, 15);
-            this.guna2HtmlLabel5.TabIndex = 15;
-            this.guna2HtmlLabel5.Text = "Amount to collect";
-            // 
             // guna2HtmlLabel6
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Location = new System.Drawing.Point(481, 117);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(70, 15);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(75, 15);
             this.guna2HtmlLabel6.TabIndex = 16;
-            this.guna2HtmlLabel6.Text = "Find Customer";
+            this.guna2HtmlLabel6.Text = "CustomerName";
             // 
-            // customerData
+            // customerName
             // 
-            this.customerData.BackColor = System.Drawing.Color.Transparent;
-            this.customerData.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.customerData.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.customerData.FocusedColor = System.Drawing.Color.Empty;
-            this.customerData.FocusedState.Parent = this.customerData;
-            this.customerData.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.customerData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.customerData.FormattingEnabled = true;
-            this.customerData.HoverState.Parent = this.customerData;
-            this.customerData.ItemHeight = 30;
-            this.customerData.ItemsAppearance.Parent = this.customerData;
-            this.customerData.Location = new System.Drawing.Point(481, 138);
-            this.customerData.Name = "customerData";
-            this.customerData.ShadowDecoration.Parent = this.customerData;
-            this.customerData.Size = new System.Drawing.Size(200, 36);
-            this.customerData.TabIndex = 17;
-            this.customerData.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
+            this.customerName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.customerName.DefaultText = "";
+            this.customerName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.customerName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.customerName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.customerName.DisabledState.Parent = this.customerName;
+            this.customerName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.customerName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.customerName.FocusedState.Parent = this.customerName;
+            this.customerName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.customerName.HoverState.Parent = this.customerName;
+            this.customerName.Location = new System.Drawing.Point(481, 138);
+            this.customerName.Name = "customerName";
+            this.customerName.PasswordChar = '\0';
+            this.customerName.PlaceholderText = "";
+            this.customerName.SelectedText = "";
+            this.customerName.ShadowDecoration.Parent = this.customerName;
+            this.customerName.Size = new System.Drawing.Size(200, 36);
+            this.customerName.TabIndex = 17;
+            // 
+            // guna2HtmlLabel7
+            // 
+            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(481, 211);
+            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(78, 15);
+            this.guna2HtmlLabel7.TabIndex = 18;
+            this.guna2HtmlLabel7.Text = "CustomerPhone";
+            // 
+            // customerPhone
+            // 
+            this.customerPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.customerPhone.DefaultText = "";
+            this.customerPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.customerPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.customerPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.customerPhone.DisabledState.Parent = this.customerPhone;
+            this.customerPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.customerPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.customerPhone.FocusedState.Parent = this.customerPhone;
+            this.customerPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.customerPhone.HoverState.Parent = this.customerPhone;
+            this.customerPhone.Location = new System.Drawing.Point(481, 232);
+            this.customerPhone.Name = "customerPhone";
+            this.customerPhone.PasswordChar = '\0';
+            this.customerPhone.PlaceholderText = "";
+            this.customerPhone.SelectedText = "";
+            this.customerPhone.ShadowDecoration.Parent = this.customerPhone;
+            this.customerPhone.Size = new System.Drawing.Size(200, 36);
+            this.customerPhone.TabIndex = 19;
+            // 
+            // customerArea
+            // 
+            this.customerArea.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.customerArea.DefaultText = "";
+            this.customerArea.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.customerArea.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.customerArea.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.customerArea.DisabledState.Parent = this.customerArea;
+            this.customerArea.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.customerArea.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.customerArea.FocusedState.Parent = this.customerArea;
+            this.customerArea.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.customerArea.HoverState.Parent = this.customerArea;
+            this.customerArea.Location = new System.Drawing.Point(119, 321);
+            this.customerArea.Name = "customerArea";
+            this.customerArea.PasswordChar = '\0';
+            this.customerArea.PlaceholderText = "";
+            this.customerArea.SelectedText = "";
+            this.customerArea.ShadowDecoration.Parent = this.customerArea;
+            this.customerArea.Size = new System.Drawing.Size(200, 36);
+            this.customerArea.TabIndex = 20;
+            // 
+            // guna2HtmlLabel8
+            // 
+            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(119, 300);
+            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(25, 15);
+            this.guna2HtmlLabel8.TabIndex = 21;
+            this.guna2HtmlLabel8.Text = "Area";
+            // 
+            // guna2HtmlLabel9
+            // 
+            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(481, 300);
+            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(20, 15);
+            this.guna2HtmlLabel9.TabIndex = 22;
+            this.guna2HtmlLabel9.Text = "City";
+            // 
+            // customerCity
+            // 
+            this.customerCity.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.customerCity.DefaultText = "";
+            this.customerCity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.customerCity.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.customerCity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.customerCity.DisabledState.Parent = this.customerCity;
+            this.customerCity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.customerCity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.customerCity.FocusedState.Parent = this.customerCity;
+            this.customerCity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.customerCity.HoverState.Parent = this.customerCity;
+            this.customerCity.Location = new System.Drawing.Point(481, 321);
+            this.customerCity.Name = "customerCity";
+            this.customerCity.PasswordChar = '\0';
+            this.customerCity.PlaceholderText = "";
+            this.customerCity.SelectedText = "";
+            this.customerCity.ShadowDecoration.Parent = this.customerCity;
+            this.customerCity.Size = new System.Drawing.Size(200, 36);
+            this.customerCity.TabIndex = 23;
+            // 
+            // customerAddress
+            // 
+            this.customerAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.customerAddress.DefaultText = "";
+            this.customerAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.customerAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.customerAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.customerAddress.DisabledState.Parent = this.customerAddress;
+            this.customerAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.customerAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.customerAddress.FocusedState.Parent = this.customerAddress;
+            this.customerAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.customerAddress.HoverState.Parent = this.customerAddress;
+            this.customerAddress.Location = new System.Drawing.Point(119, 390);
+            this.customerAddress.Name = "customerAddress";
+            this.customerAddress.PasswordChar = '\0';
+            this.customerAddress.PlaceholderText = "";
+            this.customerAddress.SelectedText = "";
+            this.customerAddress.ShadowDecoration.Parent = this.customerAddress;
+            this.customerAddress.Size = new System.Drawing.Size(562, 36);
+            this.customerAddress.TabIndex = 24;
+            // 
+            // guna2HtmlLabel10
+            // 
+            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(124, 369);
+            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(41, 15);
+            this.guna2HtmlLabel10.TabIndex = 25;
+            this.guna2HtmlLabel10.Text = "Address";
             // 
             // AddParcel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(833, 588);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
@@ -308,8 +450,6 @@ namespace Postman.App.Merchent
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Guna.UI2.WinForms.Guna2ComboBox customerData;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2ComboBox methodType;
@@ -318,5 +458,15 @@ namespace Postman.App.Merchent
         private Guna.UI2.WinForms.Guna2TextBox weight;
         private Guna.UI2.WinForms.Guna2TextBox ammountToCollect;
         private Guna.UI2.WinForms.Guna2TextBox inovicetext;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
+        private Guna.UI2.WinForms.Guna2TextBox customerAddress;
+        private Guna.UI2.WinForms.Guna2TextBox customerCity;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
+        private Guna.UI2.WinForms.Guna2TextBox customerArea;
+        private Guna.UI2.WinForms.Guna2TextBox customerPhone;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private Guna.UI2.WinForms.Guna2TextBox customerName;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
     }
 }

@@ -9,8 +9,20 @@ namespace Postman.Repository
 {
     class ParcelRepositry
     {
-        public int? createone(Parcel parcel ,int customerId, int userId)
+
+        CustomerRepostiroy customerRepo = new CustomerRepostiroy();
+        public int? createone(Parcel parcel , int userId)
         {
+            int customerId = -1;
+            var customer = customerRepo.getOneCustomer(parcel.customer.phone);
+            if (customer != null) customerId = customer.id;
+            else
+            {
+                customerRepo.CreateCustomer(customer);
+                var customer2 = customerRepo.getOneCustomer(parcel.customer.phone);
+                if (customer2 != null) customerId = customer2.id;
+            }
+            if (customerId < 0) return -1;
             return ConnectionDB.ExecuteQuery(@"	INSERT INTO parcel VALUES
                                                 (
                                                     @invoiceNo,

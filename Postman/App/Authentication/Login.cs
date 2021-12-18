@@ -30,11 +30,13 @@ namespace Postman.App.Authentication.Login
             if(emailTextBox != null && passwordTextBox != null)
             {
                 var user = userRepo.GetUserInfo(emailTextBox.Text);
+                string hash = BCrypt.Net.BCrypt.HashPassword(passwordTextBox.Text);
+                Console.WriteLine(hash);
+
                 bool verify = BCrypt.Net.BCrypt.Verify(passwordTextBox.Text, user.password);
                 if (verify)
                 {
-                  
-                    Console.WriteLine(user.userRole);
+                    
                     if(user.userRole == Models.UserRole.MARCHENT)
                     {
                         this.Hide();

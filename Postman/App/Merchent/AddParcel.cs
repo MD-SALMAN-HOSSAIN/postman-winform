@@ -14,17 +14,14 @@ namespace Postman.App.Merchent
     public partial class AddParcel : Form
     {
 
-        List<Customer> customer { get; set; }
 
-        List<string> customerNames { get; set; }
+       
 
         ParcelRepositry parcelRepo = new ParcelRepositry();
 
         User user { get; set; }
 
-        Customer selectedCustomer { get; set; }
 
-        CustomerRepostiroy customerRepo = new CustomerRepostiroy();
         public AddParcel()
         {
             InitializeComponent();
@@ -33,32 +30,32 @@ namespace Postman.App.Merchent
         public AddParcel(User user)
         {
             this.user = user;
-            if (user != null) customer = customerRepo.getOneCustomer(user.id);
-            else customer = customerRepo.getAllCustomer();
-            if(customer != null)
-            {
-                customer.ForEach(e => customerNames.Add(e.name));
-                customerData.DataSource = customerNames;
-            }
-            
+           
             InitializeComponent();
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            Customer customer = new Customer()
+            {
+                address = customerAddress.Text,
+                city = customerCity.Text,
+                area = customerArea.Text,
+                name = customerName.Text,
+                phone = customerPhone.Text
+            };
             parcelRepo.createone(new Parcel
             {
                 invoiceNo = inovicetext.Text,
                 amountToCollect = Convert.ToDouble(ammountToCollect.Text),
                 deliveryFee = 80,
-                customer = selectedCustomer,
-                paymetMethod = methodType.Text == "ONLINE" ? DeliveryMethod.ONLINE : DeliveryMethod.CASH
-            }, selectedCustomer.id, user.id);
+                customer = customer,
+                paymetMethod = methodType.Text == "ONLINE" ? DeliveryMethod.ONLINE : DeliveryMethod.CASH,
+            },  user.id);
         }
 
         private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            selectedCustomer = customer.Find(item => item.name.Contains(customerData.Text));
         }
     }
 }

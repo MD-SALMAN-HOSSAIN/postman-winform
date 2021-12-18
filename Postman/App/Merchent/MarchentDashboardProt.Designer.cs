@@ -228,9 +228,9 @@ namespace Postman.App.Merchent
             this.guna2HtmlLabel9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.guna2HtmlLabel9.Location = new System.Drawing.Point(83, 290);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(121, 19);
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(133, 19);
             this.guna2HtmlLabel9.TabIndex = 8;
-            this.guna2HtmlLabel9.Text = "Please enter phone";
+            this.guna2HtmlLabel9.Text = "Please Update phone";
             // 
             // guna2HtmlLabel8
             // 
@@ -239,9 +239,9 @@ namespace Postman.App.Merchent
             this.guna2HtmlLabel8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.guna2HtmlLabel8.Location = new System.Drawing.Point(83, 248);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(129, 19);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(141, 19);
             this.guna2HtmlLabel8.TabIndex = 7;
-            this.guna2HtmlLabel8.Text = "Please enter address";
+            this.guna2HtmlLabel8.Text = "Please Update address";
             // 
             // guna2HtmlLabel7
             // 
