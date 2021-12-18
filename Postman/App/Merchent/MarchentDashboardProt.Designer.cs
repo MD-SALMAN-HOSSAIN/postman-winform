@@ -424,7 +424,6 @@ namespace Postman.App.Merchent
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1307, 858);
-            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.CustomerThisMonth);
             this.Controls.Add(this.ParcelThisMonth);
             this.Controls.Add(this.DeliveredToday);
