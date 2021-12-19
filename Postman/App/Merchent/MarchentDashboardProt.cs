@@ -42,6 +42,13 @@ namespace Postman.App.Merchent
                 DeliveredToday.Text = $"{parcelList.FindAll(elem => elem.createdAt.Day == new DateTime().Day && elem.status == "DELIVERED").Count}";
                 ParcelThisMonth.Text = $"{parcelList.FindAll(elem => elem.createdAt.Month == new DateTime().Day).Count}";
                 CustomerThisMonth.Text = $"{customerList.Count}";
+
+                var account = new AccountRepository().GetOneAccount(user.id);
+                if(account != null)
+                {
+                    balanceLabel.Text = account.balance.ToString();
+                    withdrawLabel.Text = account.withdraw.ToString();
+                }
             }
            
         }

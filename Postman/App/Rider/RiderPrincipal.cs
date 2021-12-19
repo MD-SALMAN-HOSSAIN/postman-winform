@@ -79,5 +79,10 @@ namespace Postman.App.Rider
         {
             container(new RiderParcel(user));
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            container(new WithdrawTable());
+        }
     }
 }

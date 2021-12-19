@@ -41,7 +41,7 @@ namespace Postman.App.Admin
             userList = userRepo.GetAll();
             consignmentList = parcelRepo.getAll();
             witdrawList = withdrawRepository.GetAll();
-            container(new AdminDashboardProt(user, userList.Count, consignmentList.Count ));
+            container(new AdminDashboardProt(user, userList, consignmentList ));
             this.user = user;
             
         }
@@ -67,7 +67,7 @@ namespace Postman.App.Admin
         private void dashboardNavButton_Click(object sender, EventArgs e)
         {
             top_dash.Text = "DASHBOARD";
-            if (user != null) container(new AdminDashboardProt(user, userList.Count, consignmentList.Count));
+            if (user != null) container(new AdminDashboardProt(user, userList, consignmentList));
             else container(new AdminDashboardProt()); 
         }
 

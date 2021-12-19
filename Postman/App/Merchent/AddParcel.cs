@@ -14,7 +14,7 @@ namespace Postman.App.Merchent
     public partial class AddParcel : Form
     {
 
-
+        AccountRepository accountRepo = new AccountRepository();
        
 
         ParcelRepositry parcelRepo = new ParcelRepositry();
@@ -48,19 +48,22 @@ namespace Postman.App.Merchent
             };
             try
             {
-                var count = parcelRepo.createone(new Parcel
+                Parcel parcel = new Parcel
                 {
                     invoiceNo = inovicetext.Text,
                     amountToCollect = Convert.ToDouble(amountToCollect.Text),
                     deliveryFee = 80,
-                    status="PENDING",
+                    status = "PENDING",
                     customer = customer,
-                    method =methodType.Text,
-                    packageWeight= Convert.ToDouble(weight.Text),
+                    method = methodType.Text,
+                    packageWeight = Convert.ToDouble(weight.Text),
                     createdAt = new DateTime()
-                }, user.id);
+                };
+                var count = parcelRepo.createone(parcel, user.id);
                 if (count > 0)
                 {
+                    var acc = accountRepo.GetOneAccount(user.id);
+                    var rep = accountRepo.AddIncomeToAccount(parcel.amountToCollect+acc.balance,acc.deposit + parcel.amountToCollect, user.id);
                      var result = MessageBox.Show("Successfully created parcel", "SUCCESS", MessageBoxButtons.RetryCancel, MessageBoxIcon.Information);
                      if (result == DialogResult.Retry)
                     {

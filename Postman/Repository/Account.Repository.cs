@@ -34,5 +34,15 @@ namespace Postman.Repository
 		                            WHERE id=@id;",
                     new { account.balance, account.withdraw, id });
         }
+
+        public int? AddIncomeToAccount(double balance, double deposit, int id)
+        {
+            return ConnectionDB.ExecuteQuery(@"
+	                            UPDATE account 
+		                            SET balance=@balance,
+                                        deposit=@deposit
+		                            WHERE id=@id;",
+                    new { balance, deposit, id });
+        }
     }
 }

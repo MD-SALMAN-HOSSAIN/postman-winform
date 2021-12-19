@@ -30,7 +30,6 @@ namespace Postman.App.Merchent
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MarchentDashboardProt));
-            this.PendingLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.withdrawLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel23 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.CustomerThisMonth = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -41,7 +40,6 @@ namespace Postman.App.Merchent
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.todayDelivery = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.balanceLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel20 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.userName = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -65,23 +63,12 @@ namespace Postman.App.Merchent
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // PendingLabel
-            // 
-            this.PendingLabel.BackColor = System.Drawing.Color.Transparent;
-            this.PendingLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PendingLabel.ForeColor = System.Drawing.Color.White;
-            this.PendingLabel.Location = new System.Drawing.Point(307, 290);
-            this.PendingLabel.Name = "PendingLabel";
-            this.PendingLabel.Size = new System.Drawing.Size(48, 32);
-            this.PendingLabel.TabIndex = 7;
-            this.PendingLabel.Text = "TK. 0";
-            // 
             // withdrawLabel
             // 
             this.withdrawLabel.BackColor = System.Drawing.Color.Transparent;
             this.withdrawLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.withdrawLabel.ForeColor = System.Drawing.Color.White;
-            this.withdrawLabel.Location = new System.Drawing.Point(307, 235);
+            this.withdrawLabel.Location = new System.Drawing.Point(318, 277);
             this.withdrawLabel.Name = "withdrawLabel";
             this.withdrawLabel.Size = new System.Drawing.Size(48, 32);
             this.withdrawLabel.TabIndex = 5;
@@ -92,7 +79,7 @@ namespace Postman.App.Merchent
             this.guna2HtmlLabel23.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel23.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel23.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel23.Location = new System.Drawing.Point(51, 235);
+            this.guna2HtmlLabel23.Location = new System.Drawing.Point(62, 277);
             this.guna2HtmlLabel23.Name = "guna2HtmlLabel23";
             this.guna2HtmlLabel23.Size = new System.Drawing.Size(185, 32);
             this.guna2HtmlLabel23.TabIndex = 4;
@@ -184,23 +171,12 @@ namespace Postman.App.Merchent
             this.guna2HtmlLabel12.TabIndex = 15;
             this.guna2HtmlLabel12.Text = "TODAY\'S PARCEL";
             // 
-            // guna2HtmlLabel24
-            // 
-            this.guna2HtmlLabel24.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel24.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel24.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel24.Location = new System.Drawing.Point(51, 290);
-            this.guna2HtmlLabel24.Name = "guna2HtmlLabel24";
-            this.guna2HtmlLabel24.Size = new System.Drawing.Size(213, 32);
-            this.guna2HtmlLabel24.TabIndex = 6;
-            this.guna2HtmlLabel24.Text = "PENDING WITHDRAW";
-            // 
             // balanceLabel
             // 
             this.balanceLabel.BackColor = System.Drawing.Color.Transparent;
             this.balanceLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.balanceLabel.ForeColor = System.Drawing.Color.White;
-            this.balanceLabel.Location = new System.Drawing.Point(307, 175);
+            this.balanceLabel.Location = new System.Drawing.Point(318, 217);
             this.balanceLabel.Name = "balanceLabel";
             this.balanceLabel.Size = new System.Drawing.Size(48, 32);
             this.balanceLabel.TabIndex = 3;
@@ -211,7 +187,7 @@ namespace Postman.App.Merchent
             this.guna2HtmlLabel20.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel20.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel20.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel20.Location = new System.Drawing.Point(51, 175);
+            this.guna2HtmlLabel20.Location = new System.Drawing.Point(62, 217);
             this.guna2HtmlLabel20.Name = "guna2HtmlLabel20";
             this.guna2HtmlLabel20.Size = new System.Drawing.Size(154, 32);
             this.guna2HtmlLabel20.TabIndex = 2;
@@ -388,8 +364,6 @@ namespace Postman.App.Merchent
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
-            this.guna2Panel2.Controls.Add(this.PendingLabel);
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel24);
             this.guna2Panel2.Controls.Add(this.withdrawLabel);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel23);
             this.guna2Panel2.Controls.Add(this.balanceLabel);
@@ -432,8 +406,6 @@ namespace Postman.App.Merchent
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2HtmlLabel PendingLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel withdrawLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel23;
         private Guna.UI2.WinForms.Guna2HtmlLabel CustomerThisMonth;
@@ -444,7 +416,6 @@ namespace Postman.App.Merchent
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;
         private Guna.UI2.WinForms.Guna2HtmlLabel todayDelivery;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel24;
         private Guna.UI2.WinForms.Guna2HtmlLabel balanceLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel20;
         private Guna.UI2.WinForms.Guna2HtmlLabel userName;

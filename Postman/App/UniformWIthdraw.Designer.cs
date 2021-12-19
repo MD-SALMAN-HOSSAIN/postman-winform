@@ -41,6 +41,9 @@ namespace Postman.App
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.paymentMethod = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.balanceLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -94,6 +97,7 @@ namespace Postman.App
             this.guna2Button2.Size = new System.Drawing.Size(180, 45);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Cancel";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button1
             // 
@@ -219,11 +223,43 @@ namespace Postman.App
             this.paymentMethod.Size = new System.Drawing.Size(313, 36);
             this.paymentMethod.TabIndex = 58;
             // 
+            // guna2HtmlLabel5
+            // 
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(82, 110);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(201, 32);
+            this.guna2HtmlLabel5.TabIndex = 59;
+            this.guna2HtmlLabel5.Text = "Your current balance: ";
+            // 
+            // guna2HtmlLabel6
+            // 
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(457, 110);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(3, 2);
+            this.guna2HtmlLabel6.TabIndex = 60;
+            // 
+            // balanceLabel
+            // 
+            this.balanceLabel.BackColor = System.Drawing.Color.Transparent;
+            this.balanceLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.balanceLabel.Location = new System.Drawing.Point(289, 110);
+            this.balanceLabel.Name = "balanceLabel";
+            this.balanceLabel.Size = new System.Drawing.Size(14, 32);
+            this.balanceLabel.TabIndex = 61;
+            this.balanceLabel.Text = "0";
+            // 
             // UniformWIthdraw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(980, 697);
+            this.Controls.Add(this.balanceLabel);
+            this.Controls.Add(this.guna2HtmlLabel6);
+            this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.paymentMethod);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2Button3);
@@ -259,5 +295,8 @@ namespace Postman.App
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2ComboBox paymentMethod;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
+        private Guna.UI2.WinForms.Guna2HtmlLabel balanceLabel;
     }
 }

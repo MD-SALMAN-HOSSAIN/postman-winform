@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Postman.Models;
 using Postman.Repository;
+using System.Windows.Forms.DataVisualization.Charting;
+
 namespace Postman.App.Admin
 {
     public partial class AdminDashboardProt : Form
@@ -23,28 +25,26 @@ namespace Postman.App.Admin
             
         }
 
-        public AdminDashboardProt(User user, int totalUser, int delivery)
+        public AdminDashboardProt(User user, List<User> totalUser, List<Parcel> delivery)
         {
             InitializeComponent();
             this.user = user;
             acc = accountRepo.GetOneAccount(user.id);
-            totalParcel.Text = delivery.ToString();
+            totalParcel.Text = delivery.Count.ToString();
             totalUserCount.Text = totalUser.ToString();
-            todayParcel.Text = delivery.ToString();
-            deliveryTodayLabel.Text = delivery.ToString();
-            parcelThisMonth.Text = delivery.ToString();
-            userThisMonth.Text = totalUser.ToString();
+            todayParcel.Text = delivery.Count.ToString();
+            deliveryTodayLabel.Text = delivery.Count.ToString();
+            parcelThisMonth.Text = delivery.Count.ToString();
+            userThisMonth.Text = totalUser.Count.ToString();
             userAddress.Text = user.pickupLocation !=null ? "Pickup location not set" : user.pickupLocation;
+            
             loadAllData(user);
+            
         }
 
         void loadAllData(User user)
         {
-           if(acc != null)
-            {
-                totalBalance.Text = acc.balance.ToString();
-                totalWithdraw.Text = acc.withdraw.ToString();
-            }
+          
             HomePageName.Text = user.name.ToString();
             userPhone.Text = user.phone.ToString();
         }

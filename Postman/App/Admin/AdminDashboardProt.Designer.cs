@@ -40,12 +40,6 @@ namespace Postman.App.Admin
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.PendingWithdraw = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.totalWithdraw = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel23 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.totalBalance = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel20 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.HomePageName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -179,12 +173,6 @@ namespace Postman.App.Admin
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
-            this.guna2Panel2.Controls.Add(this.PendingWithdraw);
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel24);
-            this.guna2Panel2.Controls.Add(this.totalWithdraw);
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel23);
-            this.guna2Panel2.Controls.Add(this.totalBalance);
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel20);
             this.guna2Panel2.Controls.Add(this.HomePageName);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel10);
             this.guna2Panel2.Location = new System.Drawing.Point(13, 12);
@@ -194,78 +182,12 @@ namespace Postman.App.Admin
             this.guna2Panel2.TabIndex = 1;
             this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
-            // PendingWithdraw
-            // 
-            this.PendingWithdraw.BackColor = System.Drawing.Color.Transparent;
-            this.PendingWithdraw.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PendingWithdraw.ForeColor = System.Drawing.Color.White;
-            this.PendingWithdraw.Location = new System.Drawing.Point(307, 290);
-            this.PendingWithdraw.Name = "PendingWithdraw";
-            this.PendingWithdraw.Size = new System.Drawing.Size(48, 32);
-            this.PendingWithdraw.TabIndex = 7;
-            this.PendingWithdraw.Text = "TK. 0";
-            // 
-            // guna2HtmlLabel24
-            // 
-            this.guna2HtmlLabel24.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel24.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel24.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel24.Location = new System.Drawing.Point(51, 290);
-            this.guna2HtmlLabel24.Name = "guna2HtmlLabel24";
-            this.guna2HtmlLabel24.Size = new System.Drawing.Size(213, 32);
-            this.guna2HtmlLabel24.TabIndex = 6;
-            this.guna2HtmlLabel24.Text = "PENDING WITHDRAW";
-            // 
-            // totalWithdraw
-            // 
-            this.totalWithdraw.BackColor = System.Drawing.Color.Transparent;
-            this.totalWithdraw.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalWithdraw.ForeColor = System.Drawing.Color.White;
-            this.totalWithdraw.Location = new System.Drawing.Point(307, 235);
-            this.totalWithdraw.Name = "totalWithdraw";
-            this.totalWithdraw.Size = new System.Drawing.Size(48, 32);
-            this.totalWithdraw.TabIndex = 5;
-            this.totalWithdraw.Text = "TK. 0";
-            // 
-            // guna2HtmlLabel23
-            // 
-            this.guna2HtmlLabel23.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel23.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel23.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel23.Location = new System.Drawing.Point(51, 235);
-            this.guna2HtmlLabel23.Name = "guna2HtmlLabel23";
-            this.guna2HtmlLabel23.Size = new System.Drawing.Size(185, 32);
-            this.guna2HtmlLabel23.TabIndex = 4;
-            this.guna2HtmlLabel23.Text = "TOTAL WITHDRAW";
-            // 
-            // totalBalance
-            // 
-            this.totalBalance.BackColor = System.Drawing.Color.Transparent;
-            this.totalBalance.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalBalance.ForeColor = System.Drawing.Color.White;
-            this.totalBalance.Location = new System.Drawing.Point(307, 175);
-            this.totalBalance.Name = "totalBalance";
-            this.totalBalance.Size = new System.Drawing.Size(48, 32);
-            this.totalBalance.TabIndex = 3;
-            this.totalBalance.Text = "TK. 0";
-            // 
-            // guna2HtmlLabel20
-            // 
-            this.guna2HtmlLabel20.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel20.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel20.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel20.Location = new System.Drawing.Point(51, 175);
-            this.guna2HtmlLabel20.Name = "guna2HtmlLabel20";
-            this.guna2HtmlLabel20.Size = new System.Drawing.Size(154, 32);
-            this.guna2HtmlLabel20.TabIndex = 2;
-            this.guna2HtmlLabel20.Text = "YOUR BALANCE";
-            // 
             // HomePageName
             // 
             this.HomePageName.BackColor = System.Drawing.Color.Transparent;
             this.HomePageName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomePageName.ForeColor = System.Drawing.Color.White;
-            this.HomePageName.Location = new System.Drawing.Point(93, 60);
+            this.HomePageName.Location = new System.Drawing.Point(180, 22);
             this.HomePageName.Name = "HomePageName";
             this.HomePageName.Size = new System.Drawing.Size(167, 32);
             this.HomePageName.TabIndex = 1;
@@ -406,8 +328,6 @@ namespace Postman.App.Admin
         private Guna.UI2.WinForms.Guna2HtmlLabel totalUserCount;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel totalBalance;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel20;
         private Guna.UI2.WinForms.Guna2HtmlLabel HomePageName;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
@@ -418,9 +338,5 @@ namespace Postman.App.Admin
         private Guna.UI2.WinForms.Guna2HtmlLabel deliveryTodayLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel parcelThisMonth;
         private Guna.UI2.WinForms.Guna2HtmlLabel userThisMonth;
-        private Guna.UI2.WinForms.Guna2HtmlLabel PendingWithdraw;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel24;
-        private Guna.UI2.WinForms.Guna2HtmlLabel totalWithdraw;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel23;
     }
 }
