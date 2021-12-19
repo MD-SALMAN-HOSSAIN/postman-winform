@@ -33,7 +33,7 @@ namespace Postman.App.Rider
         {
             try
             {
-                listOfParcels = parcelRepo.getAll().FindAll(e=> (int)e.parcelStatus == (int) DeliveryStatus.PENDING);
+                listOfParcels = parcelRepo.getAll().FindAll(e=> e.status == "PENDING");
                 numberOfParcels.Text = $"{listOfParcels.Count}";
                 consignmentTableData.DataSource = listOfParcels;
             }

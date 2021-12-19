@@ -12,6 +12,8 @@ namespace Postman.App.Rider
 {
     public partial class RiderDashboardProt : Form
     {
+        User user { get; set; }
+
         public RiderDashboardProt()
         {
             InitializeComponent();
@@ -22,7 +24,9 @@ namespace Postman.App.Rider
             
             if(user != null)
             {
-                
+                this.user = user;
+                UserName.Text = user.name;
+
             }
             InitializeComponent();
 

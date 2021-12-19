@@ -1,7 +1,7 @@
 ﻿
 namespace Postman.App.Rider
 {
-    partial class Consignments
+    partial class WithdrawTable
     {
         /// <summary>
         /// Required designer variable.
@@ -32,113 +32,20 @@ namespace Postman.App.Rider
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.consignmentTableData = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.NumberOfUser = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.numberOfParcels = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.EditUserButton = new Guna.UI2.WinForms.Guna2Button();
-            this.consignmentTableData = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            ((System.ComponentModel.ISupportInitialize)(this.consignmentTableData)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.consignmentTableData)).BeginInit();
             this.guna2Panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.guna2Button1);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel1.Controls.Add(this.NumberOfUser);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(948, 61);
-            this.guna2Panel1.TabIndex = 6;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button1.Location = new System.Drawing.Point(9, 21);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(27, 25);
-            this.guna2Button1.TabIndex = 41;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(70, 23);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(99, 20);
-            this.guna2HtmlLabel1.TabIndex = 1;
-            this.guna2HtmlLabel1.Text = "Consignments";
-            // 
-            // NumberOfUser
-            // 
-            this.NumberOfUser.BackColor = System.Drawing.Color.Transparent;
-            this.NumberOfUser.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumberOfUser.ForeColor = System.Drawing.Color.Blue;
-            this.NumberOfUser.Location = new System.Drawing.Point(46, 12);
-            this.NumberOfUser.Name = "NumberOfUser";
-            this.NumberOfUser.Size = new System.Drawing.Size(19, 39);
-            this.NumberOfUser.TabIndex = 0;
-            this.NumberOfUser.Text = "0";
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.Controls.Add(this.guna2Button3);
-            this.guna2Panel2.Controls.Add(this.guna2Button2);
-            this.guna2Panel2.Controls.Add(this.EditUserButton);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 560);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(948, 59);
-            this.guna2Panel2.TabIndex = 7;
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.BorderRadius = 5;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(641, 6);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(132, 45);
-            this.guna2Button2.TabIndex = 1;
-            this.guna2Button2.Text = "Cancel Delivery";
-            // 
-            // EditUserButton
-            // 
-            this.EditUserButton.BorderRadius = 5;
-            this.EditUserButton.CheckedState.Parent = this.EditUserButton;
-            this.EditUserButton.CustomImages.Parent = this.EditUserButton;
-            this.EditUserButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.EditUserButton.ForeColor = System.Drawing.Color.White;
-            this.EditUserButton.HoverState.Parent = this.EditUserButton;
-            this.EditUserButton.Location = new System.Drawing.Point(794, 6);
-            this.EditUserButton.Name = "EditUserButton";
-            this.EditUserButton.ShadowDecoration.Parent = this.EditUserButton;
-            this.EditUserButton.Size = new System.Drawing.Size(132, 45);
-            this.EditUserButton.TabIndex = 0;
-            this.EditUserButton.Text = "Update Status";
             // 
             // consignmentTableData
             // 
@@ -174,7 +81,7 @@ namespace Postman.App.Rider
             this.consignmentTableData.RowHeadersWidth = 51;
             this.consignmentTableData.RowTemplate.Height = 50;
             this.consignmentTableData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.consignmentTableData.Size = new System.Drawing.Size(924, 487);
+            this.consignmentTableData.Size = new System.Drawing.Size(924, 473);
             this.consignmentTableData.TabIndex = 0;
             this.consignmentTableData.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.consignmentTableData.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -199,6 +106,81 @@ namespace Postman.App.Rider
             this.consignmentTableData.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.consignmentTableData.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.guna2Button1);
+            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2Panel1.Controls.Add(this.numberOfParcels);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(948, 61);
+            this.guna2Panel1.TabIndex = 12;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2Button1.Location = new System.Drawing.Point(9, 21);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(27, 25);
+            this.guna2Button1.TabIndex = 41;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(71, 26);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(140, 20);
+            this.guna2HtmlLabel1.TabIndex = 1;
+            this.guna2HtmlLabel1.Text = "Withdraw Requested";
+            // 
+            // numberOfParcels
+            // 
+            this.numberOfParcels.BackColor = System.Drawing.Color.Transparent;
+            this.numberOfParcels.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberOfParcels.ForeColor = System.Drawing.Color.Blue;
+            this.numberOfParcels.Location = new System.Drawing.Point(46, 12);
+            this.numberOfParcels.Name = "numberOfParcels";
+            this.numberOfParcels.Size = new System.Drawing.Size(19, 39);
+            this.numberOfParcels.TabIndex = 0;
+            this.numberOfParcels.Text = "0";
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Controls.Add(this.guna2Button2);
+            this.guna2Panel2.Controls.Add(this.EditUserButton);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 546);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(948, 73);
+            this.guna2Panel2.TabIndex = 13;
+            // 
+            // EditUserButton
+            // 
+            this.EditUserButton.BorderRadius = 5;
+            this.EditUserButton.CheckedState.Parent = this.EditUserButton;
+            this.EditUserButton.CustomImages.Parent = this.EditUserButton;
+            this.EditUserButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.EditUserButton.ForeColor = System.Drawing.Color.White;
+            this.EditUserButton.HoverState.Parent = this.EditUserButton;
+            this.EditUserButton.Location = new System.Drawing.Point(804, 11);
+            this.EditUserButton.Name = "EditUserButton";
+            this.EditUserButton.ShadowDecoration.Parent = this.EditUserButton;
+            this.EditUserButton.Size = new System.Drawing.Size(132, 45);
+            this.EditUserButton.TabIndex = 0;
+            this.EditUserButton.Text = "Create Request";
+            // 
             // guna2Panel3
             // 
             this.guna2Panel3.Controls.Add(this.consignmentTableData);
@@ -207,26 +189,25 @@ namespace Postman.App.Rider
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(948, 619);
-            this.guna2Panel3.TabIndex = 8;
+            this.guna2Panel3.TabIndex = 14;
             // 
-            // guna2Button3
+            // guna2Button2
             // 
-            this.guna2Button3.BorderRadius = 5;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.Teal;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(489, 6);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(132, 45);
-            this.guna2Button3.TabIndex = 2;
-            this.guna2Button3.Text = "Show Detail";
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            this.guna2Button2.BorderRadius = 5;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Location = new System.Drawing.Point(666, 11);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(132, 45);
+            this.guna2Button2.TabIndex = 1;
+            this.guna2Button2.Text = "Cancel Request";
             // 
-            // Consignments
+            // WithdrawTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -235,12 +216,12 @@ namespace Postman.App.Rider
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Consignments";
-            this.Text = "Consignments";
+            this.Name = "WithdrawTable";
+            this.Text = "WithdrawTable";
+            ((System.ComponentModel.ISupportInitialize)(this.consignmentTableData)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.consignmentTableData)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -248,15 +229,14 @@ namespace Postman.App.Rider
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel NumberOfUser;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2Button EditUserButton;
         private Guna.UI2.WinForms.Guna2DataGridView consignmentTableData;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel numberOfParcels;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button EditUserButton;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
     }
 }

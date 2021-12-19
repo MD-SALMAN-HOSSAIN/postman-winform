@@ -25,7 +25,7 @@ namespace Postman.Repository
                 if (customer2 != null) customerId = customer2.id;
             }
             if (customerId < 0) return -1;
-            Console.WriteLine(parcel.paymetMethod);
+            Console.WriteLine(parcel.method);
             return ConnectionDB.ExecuteQuery(@"INSERT INTO parcel VALUES
                                                 (
                                                     @invoiceNo,
@@ -34,7 +34,7 @@ namespace Postman.Repository
                                                     @amountToCollect,
                                                     @deliveryFee,
                                                     @parcelStatus,  @customerId,@userId,null, CURRENT_TIMESTAMP);",
-                new { parcel.invoiceNo, parcel.paymetMethod, parcel.packageWeight, parcel.amountToCollect, parcel.deliveryFee, parcel.parcelStatus,customerId, userId});
+                new { parcel.invoiceNo, parcel.method, parcel.packageWeight, parcel.amountToCollect, parcel.deliveryFee, parcel.status,customerId, userId});
         }
 
         public List<Parcel> getAllUser(int id)
@@ -61,7 +61,7 @@ namespace Postman.Repository
         public int? AssignParcelToRider(int id, int riderId)
         {
             return  ConnectionDB.ExecuteQuery("UPDATE parcel SET status=@status,riderId=@riderId WHERE id=@id;",
-                new {status=DeliveryStatus.ONDELIVERY,riderId, id });
+                new {status="ONDELIVERY",riderId, id });
         
         }
 
@@ -78,9 +78,13 @@ namespace Postman.Repository
 
         public Parcel getOneParcel(int id)
         {
-            return ConnectionDB.getConnection().Query<Parcel, Customer, Parcel>(@"SELECT 
+            return ConnectionDB.getConnection().Query<Parcel, Customer, Parcel>(@"
+                                                        SELECT 
 		                                                    *
-	                                                   FROM parcel P  INNER JOIN customer C on P.customerId=C.id WHERE P.id=@id", (b, a) => { b.customer = a; return b; }, new { id }, splitOn: "id").SingleOrDefault();
+	                                                   FROM parcel P  
+                                                    INNER JOIN customer C on P.customerId=C.id 
+           
+                                                    WHERE P.id=@id", (b, a) => { b.customer = a; return b; }, new { id }, splitOn: "id").SingleOrDefault();
         }
         public int? updateOne(int id, Parcel parcel)
         {
@@ -92,7 +96,7 @@ namespace Postman.Repository
 			                                        status=@status
 		                                        WHERE
 			                                        id= @id;",
-                    new { parcel.invoiceNo, parcel.paymetMethod, parcel.packageWeight, parcel.deliveryFee, parcel.parcelStatus, id });
+                    new { parcel.invoiceNo, parcel.method, parcel.packageWeight, parcel.deliveryFee, parcel.status, id });
         }
 
 

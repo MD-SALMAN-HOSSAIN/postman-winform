@@ -329,7 +329,7 @@ namespace Postman.App.Rider
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(231, 22);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(228, 22);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(125, 19);
             this.guna2HtmlLabel2.TabIndex = 1;

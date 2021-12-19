@@ -31,7 +31,7 @@ namespace Postman.App.Merchent
                 this.parcel = parcel;
                 inovicetext.Text = parcel.invoiceNo;
                 amountToCollect.Text = parcel.amountToCollect.ToString();
-                methodType.Text = parcel.paymetMethod.ToString();
+                methodType.Text = parcel.method.ToString();
                 weight.Text = parcel.packageWeight.ToString();
                 customerName.Text = parcel.customer.name.ToString();
                 customerPhone.Text = parcel.customer.phone.ToString();
@@ -57,7 +57,7 @@ namespace Postman.App.Merchent
             {
                 invoiceNo = inovicetext.Text,
                 amountToCollect = Convert.ToDouble(amountToCollect.Text),
-                paymetMethod = methodType.Text == "ONLINE" ? DeliveryMethod.ONLINE : DeliveryMethod.CASH,
+                method = methodType.Text,
                 packageWeight = Convert.ToDouble(weight.Text),
                 customer = customer
             };

@@ -53,9 +53,9 @@ namespace Postman.App.Merchent
                     invoiceNo = inovicetext.Text,
                     amountToCollect = Convert.ToDouble(amountToCollect.Text),
                     deliveryFee = 80,
-                    parcelStatus="PENDING",
+                    status="PENDING",
                     customer = customer,
-                    paymetMethod =methodType.Text,
+                    method =methodType.Text,
                     packageWeight= Convert.ToDouble(weight.Text),
                     createdAt = new DateTime()
                 }, user.id);

@@ -39,7 +39,7 @@ namespace Postman.App.Merchent
                 customerCounts.Text = $"{customerList.Count}";
                 ParcelCount.Text = $"{parcelList.Count}";
                 todayParcel.Text =$"{parcelList.Count}" ;
-                DeliveredToday.Text = $"{parcelList.FindAll(elem => elem.createdAt.Day == new DateTime().Day && elem.parcelStatus == DeliveryStatus.DELIVERED).Count}";
+                DeliveredToday.Text = $"{parcelList.FindAll(elem => elem.createdAt.Day == new DateTime().Day && elem.status == "DELIVERED").Count}";
                 ParcelThisMonth.Text = $"{parcelList.FindAll(elem => elem.createdAt.Month == new DateTime().Day).Count}";
                 CustomerThisMonth.Text = $"{customerList.Count}";
             }

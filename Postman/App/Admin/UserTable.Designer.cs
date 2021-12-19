@@ -33,6 +33,7 @@ namespace Postman.App.Admin
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.NumberOfUser = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -40,7 +41,7 @@ namespace Postman.App.Admin
             this.EditUserButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.userTableData = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -54,19 +55,33 @@ namespace Postman.App.Admin
             this.guna2Panel1.Controls.Add(this.NumberOfUser);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1285, 75);
+            this.guna2Panel1.Size = new System.Drawing.Size(964, 61);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2Button1.Location = new System.Drawing.Point(0, 20);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(27, 25);
+            this.guna2Button1.TabIndex = 41;
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(116, 31);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(87, 25);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(39, 18);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(30, 15);
             this.guna2HtmlLabel1.TabIndex = 1;
             this.guna2HtmlLabel1.Text = "Users";
             // 
@@ -75,23 +90,22 @@ namespace Postman.App.Admin
             this.NumberOfUser.BackColor = System.Drawing.Color.Transparent;
             this.NumberOfUser.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NumberOfUser.ForeColor = System.Drawing.Color.Blue;
-            this.NumberOfUser.Location = new System.Drawing.Point(61, 15);
-            this.NumberOfUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NumberOfUser.Location = new System.Drawing.Point(46, 12);
             this.NumberOfUser.Name = "NumberOfUser";
-            this.NumberOfUser.Size = new System.Drawing.Size(23, 48);
+            this.NumberOfUser.Size = new System.Drawing.Size(19, 39);
             this.NumberOfUser.TabIndex = 0;
             this.NumberOfUser.Text = "0";
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.guna2Button3);
             this.guna2Panel2.Controls.Add(this.guna2Button2);
             this.guna2Panel2.Controls.Add(this.EditUserButton);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 737);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 599);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(1285, 73);
+            this.guna2Panel2.Size = new System.Drawing.Size(964, 59);
             this.guna2Panel2.TabIndex = 1;
             // 
             // guna2Button2
@@ -103,11 +117,10 @@ namespace Postman.App.Admin
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(923, 7);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button2.Location = new System.Drawing.Point(692, 6);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(163, 55);
+            this.guna2Button2.Size = new System.Drawing.Size(122, 45);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Delete User";
             // 
@@ -119,11 +132,10 @@ namespace Postman.App.Admin
             this.EditUserButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.EditUserButton.ForeColor = System.Drawing.Color.White;
             this.EditUserButton.HoverState.Parent = this.EditUserButton;
-            this.EditUserButton.Location = new System.Drawing.Point(1093, 7);
-            this.EditUserButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EditUserButton.Location = new System.Drawing.Point(820, 6);
             this.EditUserButton.Name = "EditUserButton";
             this.EditUserButton.ShadowDecoration.Parent = this.EditUserButton;
-            this.EditUserButton.Size = new System.Drawing.Size(176, 55);
+            this.EditUserButton.Size = new System.Drawing.Size(132, 45);
             this.EditUserButton.TabIndex = 0;
             this.EditUserButton.Text = "Update User";
             // 
@@ -131,11 +143,10 @@ namespace Postman.App.Admin
             // 
             this.guna2Panel3.Controls.Add(this.userTableData);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel3.Location = new System.Drawing.Point(0, 75);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel3.Location = new System.Drawing.Point(0, 61);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(1285, 662);
+            this.guna2Panel3.Size = new System.Drawing.Size(964, 538);
             this.guna2Panel3.TabIndex = 2;
             // 
             // userTableData
@@ -166,14 +177,13 @@ namespace Postman.App.Admin
             this.userTableData.DefaultCellStyle = dataGridViewCellStyle3;
             this.userTableData.EnableHeadersVisualStyles = false;
             this.userTableData.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.userTableData.Location = new System.Drawing.Point(29, 0);
-            this.userTableData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.userTableData.Location = new System.Drawing.Point(22, 3);
             this.userTableData.Name = "userTableData";
             this.userTableData.RowHeadersVisible = false;
             this.userTableData.RowHeadersWidth = 51;
             this.userTableData.RowTemplate.Height = 50;
             this.userTableData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.userTableData.Size = new System.Drawing.Size(1240, 658);
+            this.userTableData.Size = new System.Drawing.Size(930, 532);
             this.userTableData.TabIndex = 0;
             this.userTableData.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.userTableData.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -199,31 +209,31 @@ namespace Postman.App.Admin
             this.userTableData.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.userTableData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.userTableData_CellContentClick);
             // 
-            // guna2Button1
+            // guna2Button3
             // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button1.Location = new System.Drawing.Point(0, 25);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(36, 31);
-            this.guna2Button1.TabIndex = 41;
+            this.guna2Button3.BorderRadius = 5;
+            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
+            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
+            this.guna2Button3.FillColor = System.Drawing.Color.Tomato;
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.HoverState.Parent = this.guna2Button3;
+            this.guna2Button3.Location = new System.Drawing.Point(564, 6);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
+            this.guna2Button3.Size = new System.Drawing.Size(122, 45);
+            this.guna2Button3.TabIndex = 2;
+            this.guna2Button3.Text = "Ban User";
             // 
             // UserTable
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1285, 810);
+            this.ClientSize = new System.Drawing.Size(964, 658);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UserTable";
             this.Text = "UserTable";
             this.guna2Panel1.ResumeLayout(false);
@@ -246,5 +256,6 @@ namespace Postman.App.Admin
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button EditUserButton;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
     }
 }

@@ -56,5 +56,18 @@ namespace Postman.App.Admin
             }
 
         }
+
+        private void EditUserButton_Click(object sender, EventArgs e)
+        {
+            if (consignmentTableData.SelectedRows.Count != 0)
+            {
+                DataGridViewRow row = this.consignmentTableData.SelectedRows[0];
+                int parcelId = Convert.ToInt32(row.Cells["id"].Value);
+
+                ViewParcelDetails viewParcelDetails = new ViewParcelDetails(parcelId);
+                viewParcelDetails.Show();
+            }
+
+        }
     }
 }

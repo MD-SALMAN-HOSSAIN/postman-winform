@@ -300,23 +300,11 @@
     <Compile Include="App\Rider\RiderPrincipal.Designer.cs">
       <DependentUpon>RiderPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Rider\RiderSettings.cs">
+    <Compile Include="App\Rider\WithdrawTable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="App\Rider\RiderSettings.Designer.cs">
-      <DependentUpon>RiderSettings.cs</DependentUpon>
-    </Compile>
-    <Compile Include="App\Rider\TripsTableForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="App\Rider\TripsTableForm.Designer.cs">
-      <DependentUpon>TripsTableForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="App\Rider\WithdrawTableForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="App\Rider\WithdrawTableForm.Designer.cs">
-      <DependentUpon>WithdrawTableForm.cs</DependentUpon>
+    <Compile Include="App\Rider\WithdrawTable.Designer.cs">
+      <DependentUpon>WithdrawTable.cs</DependentUpon>
     </Compile>
     <Compile Include="App\UniformUpdate.cs">
       <SubType>Form</SubType>
@@ -329,6 +317,12 @@
     </Compile>
     <Compile Include="App\UniformWIthdraw.Designer.cs">
       <DependentUpon>UniformWIthdraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\ViewParcelDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\ViewParcelDetails.Designer.cs">
+      <DependentUpon>ViewParcelDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="DataAccess\ConnectionDB.cs" />
     <Compile Include="Form1.cs">
@@ -471,20 +465,17 @@
     <EmbeddedResource Include="App\Rider\RiderPrincipal.resx">
       <DependentUpon>RiderPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Rider\RiderSettings.resx">
-      <DependentUpon>RiderSettings.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Rider\TripsTableForm.resx">
-      <DependentUpon>TripsTableForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Rider\WithdrawTableForm.resx">
-      <DependentUpon>WithdrawTableForm.cs</DependentUpon>
+    <EmbeddedResource Include="App\Rider\WithdrawTable.resx">
+      <DependentUpon>WithdrawTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\UniformUpdate.resx">
       <DependentUpon>UniformUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\UniformWIthdraw.resx">
       <DependentUpon>UniformWIthdraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\ViewParcelDetails.resx">
+      <DependentUpon>ViewParcelDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

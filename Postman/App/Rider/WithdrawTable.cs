@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Postman.App.Rider
 {
-    public partial class WithdrawTableForm : Form
+    public partial class WithdrawTable : Form
     {
-        public WithdrawTableForm()
+        public WithdrawTable()
         {
             InitializeComponent();
         }
