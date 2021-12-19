@@ -49,24 +49,32 @@ namespace Postman.App.Authentication.Register
                         phone = phoneText.Text,
                         name = fullnameText.Text,
                         pickupLocation = location.Text,
-                        userRole = riderRadio.Checked ? Models.UserRole.RIDER : marchentRadio.Checked ? Models.UserRole.MARCHENT : UserRole.BANNED,
-                        
+                        userRole = riderRadio.Checked ? Models.UserRole.RIDER : marchentRadio.Checked ? Models.UserRole.MARCHENT : UserRole.BANNED,                        
                     };
                     try
                     {
                         Console.WriteLine("Creating data");
-                           var result =  userRepo.RegisterUser(user);
-                        MessageBox.Show(result);
-                            if(result == "duplicate") MessageBox.Show("User already exists", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            else if (result == "failed") MessageBox.Show("Failed to registre", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                             else if (result == "success") 
+                        var result =  userRepo.RegisterUser(user);
+                        if(result == SignUPStatus.SUCCESS)
                         {
-                            MessageBox.Show("Registration success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            this.Hide();
+                            MessageBox.Show("User Succesfully Registered!", "Signup Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             Login.Login login = new Login.Login();
+                            this.Hide();
                             login.Show();
+                        }
+                        else if(result == SignUPStatus.EXISTS)
+                        {
+                            MessageBox.Show("Account already exists! Please login", "Existing account", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            Login.Login login = new Login.Login();
+                            this.Hide();
+                            login.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to register your account!", "Something went wrong", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                         }
+
                     }
                     catch (Exception err)
                     {

@@ -23,5 +23,7 @@ namespace Postman.Models
 
         public User owner { get; set; }
 
+        public DateTime createdAt { get; set; }
+
     }
 }

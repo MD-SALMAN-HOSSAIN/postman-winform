@@ -8,26 +8,15 @@ using System.Threading.Tasks;
 namespace Postman.Models
 {
 
-    public enum DeliveryMethod
-    {
-        ONLINE,
-        CASH
-    }
+    
 
-    public enum DeliveryStatus
-    {
-        PENDING,
-        CONFIRMED,
-        ONDELIVERY,
-        DELIVERED,
-        CANCELLED
-    }
+   
     public class Parcel
     {
         public int id { get; }
         public string invoiceNo { get; set; }
 
-        public DeliveryMethod paymetMethod { get; set; }
+        public string paymetMethod { get; set; }
 
         public double packageWeight { get; set; }
 
@@ -35,8 +24,8 @@ namespace Postman.Models
 
         public double deliveryFee { get; set; }
 
-        [EnumDataType(typeof(DeliveryStatus))]
-        public DeliveryStatus parcelStatus { get; set; }
+       
+        public string parcelStatus { get; set; }
 
         public Customer customer { get; set; }
 

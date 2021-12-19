@@ -28,6 +28,7 @@ namespace Postman.Models
 
         public string pickupLocation { get; set; }
 
+        public DateTime createdAt { get; set; }
 
     }
 

@@ -13,7 +13,7 @@ namespace Postman.Repository
         // CREATE 
         public bool CreateCustomer (Customer customer, int userId)
         {
-            var query = ConnectionDB.ExecuteQuery("INSERT INTO customer VALUES (@name, @phone, @address, @area, @city, @userId);", new { customer.name, customer.phone, customer.address, customer.area, customer.city, userId});
+            var query = ConnectionDB.ExecuteQuery("INSERT INTO customer VALUES (@name, @phone, @address, @area, @city, @userId, CURRENT_TIMESTAMP);", new { customer.name, customer.phone, customer.address, customer.area, customer.city, userId});
 
             if (query > 0) return true;
 

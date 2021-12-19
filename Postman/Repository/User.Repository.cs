@@ -8,9 +8,18 @@ using Postman.Models;
 using Postman.Repository;
 namespace Postman.Repository
 {
+
+    public enum SignUPStatus
+    {
+        SUCCESS,
+        FAILED,
+        EXISTS
+    }
     public class UserRepository
     {
         // Login
+
+        
         AccountRepository acc = new AccountRepository();
         public bool VerifyUser (string email, string password)
         {
@@ -29,17 +38,23 @@ namespace Postman.Repository
             return ConnectionDB.SelectQuery<User>("SELECT * FROM users;").ToList();
         }
 
-        public string RegisterUser (User user)
+        public SignUPStatus RegisterUser (User user)
         {
             var result = ConnectionDB.SelectQuery<User>("SELECT * FROM users WHERE email=@email;", new { user.email });
-            if (result.Count == 1) return "duplicate";
-            var query = ConnectionDB.ExecuteQuery("INSERT INTO users VALUES (@name, @email,@password,@userRole, @phone, @pickupLocation);", new { user.name, user.email, user.password, user.userRole, user.phone, user.pickupLocation });
+            if (result.Count == 1) return SignUPStatus.EXISTS;
+            var query = ConnectionDB.ExecuteQuery("INSERT INTO users VALUES (@name, @email,@password,@userRole, @phone, @pickupLocation, CURRENT_TIMESTAMP);", new { user.name, user.email, user.password, user.userRole, user.phone, user.pickupLocation });
             if (query > 0)
             {
-                acc.CreateOne(this.GetUserInfo(user.email).id);
-                return "success";
+                var userInfo = this.GetUserInfo(user.email);
+                if(userInfo != null)
+                {
+                    var account = acc.CreateOne(userInfo.id);
+                    if (account > 0) Console.WriteLine("Account Created successfully");
+                    else Console.WriteLine("Something went wrong, " + account);
+                }
+                return SignUPStatus.SUCCESS;
             }
-            return "failed";
+            return SignUPStatus.FAILED;
         }
 
         public int? UpdateUser(User user, int id)

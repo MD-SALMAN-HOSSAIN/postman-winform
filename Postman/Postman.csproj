@@ -155,12 +155,6 @@
     <Compile Include="App\Authentication\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Authentication\Reset.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="App\Authentication\Reset.Designer.cs">
-      <DependentUpon>Reset.cs</DependentUpon>
-    </Compile>
     <Compile Include="App\CallBackDeligate.cs" />
     <Compile Include="App\Dashboard\Dashboard.cs">
       <SubType>Form</SubType>
@@ -404,9 +398,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Authentication\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Authentication\Reset.resx">
-      <DependentUpon>Reset.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Dashboard\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>

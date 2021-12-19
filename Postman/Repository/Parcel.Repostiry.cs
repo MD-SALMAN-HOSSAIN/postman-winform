@@ -33,7 +33,7 @@ namespace Postman.Repository
                                                     @packageWeight,
                                                     @amountToCollect,
                                                     @deliveryFee,
-                                                    @parcelStatus,  @customerId,@userId,null,null);",
+                                                    @parcelStatus,  @customerId,@userId,null, CURRENT_TIMESTAMP);",
                 new { parcel.invoiceNo, parcel.paymetMethod, parcel.packageWeight, parcel.amountToCollect, parcel.deliveryFee, parcel.parcelStatus,customerId, userId});
         }
 

@@ -53,9 +53,9 @@ namespace Postman.App.Merchent
                     invoiceNo = inovicetext.Text,
                     amountToCollect = Convert.ToDouble(amountToCollect.Text),
                     deliveryFee = 80,
-                    parcelStatus= DeliveryStatus.PENDING,
+                    parcelStatus="PENDING",
                     customer = customer,
-                    paymetMethod = methodType.Text == "ONLINE" ? DeliveryMethod.ONLINE : DeliveryMethod.CASH,
+                    paymetMethod =methodType.Text,
                     packageWeight= Convert.ToDouble(weight.Text),
                     createdAt = new DateTime()
                 }, user.id);
@@ -68,6 +68,10 @@ namespace Postman.App.Merchent
                         amountToCollect.Text = "";
                         methodType.Text = "";
                         weight.Text = "";
+                        customerAddress.Text = "";
+                        customerArea.Text = "";
+                        customerName.Text = "";
+                        customerCity.Text = "";
                         Loadgridviewcallback();
                     }
                      else if(result == DialogResult.Cancel)
