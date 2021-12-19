@@ -51,7 +51,7 @@ namespace Postman.App
                 }
                 catch(Exception err)
                 {
-                    MessageBox.Show("Error")
+                    MessageBox.Show("Error");
                 }
             }
         }
