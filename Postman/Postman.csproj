@@ -294,6 +294,12 @@
     <Compile Include="App\Rider\RiderParcel.Designer.cs">
       <DependentUpon>RiderParcel.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Rider\RiderParcelUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Rider\RiderParcelUpdate.Designer.cs">
+      <DependentUpon>RiderParcelUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\Rider\RiderPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -461,6 +467,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Rider\RiderParcel.resx">
       <DependentUpon>RiderParcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Rider\RiderParcelUpdate.resx">
+      <DependentUpon>RiderParcelUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Rider\RiderPrincipal.resx">
       <DependentUpon>RiderPrincipal.cs</DependentUpon>

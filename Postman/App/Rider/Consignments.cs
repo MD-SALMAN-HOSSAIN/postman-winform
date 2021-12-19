@@ -14,7 +14,7 @@ namespace Postman.App.Rider
     public partial class Consignments : Form
     {
         User user { get; set; }
-
+        List<Parcel> listOfparcel {get; set;}
         ParcelRepositry parcelRepo = new ParcelRepositry();
         public Consignments()
         {
@@ -25,13 +25,15 @@ namespace Postman.App.Rider
         {
             this.user = user;
             InitializeComponent();
-            loadGridView(user);
+            loadGridView();
         }
-        void loadGridView(User user)
+        void loadGridView()
         {
             try
             {
-                this.consignmentTableData.DataSource = parcelRepo.getRiderConsignments(user.id);
+                listOfparcel = parcelRepo.getRiderConsignments(user.id);
+                this.consignmentTableData.DataSource = listOfparcel;
+                NumberOfUser.Text = $"{listOfparcel.Count}";
             }
             catch (Exception error)
             {
@@ -49,6 +51,20 @@ namespace Postman.App.Rider
 
                 ViewParcelDetails viewParcelDetails = new ViewParcelDetails(parcelId);
                 viewParcelDetails.Show();
+            }
+        }
+
+        private void EditUserButton_Click(object sender, EventArgs e)
+        {
+            
+            if (consignmentTableData.SelectedRows.Count != 0)
+            {
+                DataGridViewRow row = this.consignmentTableData.SelectedRows[0];
+                int parcelId = Convert.ToInt32(row.Cells["id"].Value);
+                CallbackDelegate callbackDelegate = new CallbackDelegate(loadGridView);
+
+                RiderParcelUpdate update = new RiderParcelUpdate(parcelId, callbackDelegate);
+                update.Show();
             }
         }
     }

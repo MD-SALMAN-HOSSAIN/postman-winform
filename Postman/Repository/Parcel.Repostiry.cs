@@ -29,11 +29,11 @@ namespace Postman.Repository
             return ConnectionDB.ExecuteQuery(@"INSERT INTO parcel VALUES
                                                 (
                                                     @invoiceNo,
-                                                    @paymetMethod,
+                                                    @method,
                                                     @packageWeight,
                                                     @amountToCollect,
                                                     @deliveryFee,
-                                                    @parcelStatus,  @customerId,@userId,null, CURRENT_TIMESTAMP);",
+                                                    @status,  @customerId,@userId,null, CURRENT_TIMESTAMP);",
                 new { parcel.invoiceNo, parcel.method, parcel.packageWeight, parcel.amountToCollect, parcel.deliveryFee, parcel.status,customerId, userId});
         }
 
@@ -55,6 +55,11 @@ namespace Postman.Repository
             return ConnectionDB.getConnection().Query<Parcel, Customer, Parcel>(@"SELECT 
 		                                                    *
 	                                                    FROM parcel P  INNER JOIN customer C on P.customerId=C.id WHERE P.status='PENDING';", (b, a) => { b.customer = a; return b; }, new { id }, splitOn: "id").ToList();
+        }
+
+        public int? updateParcelStatus(int id, string status)
+        {
+            return ConnectionDB.ExecuteQuery("UPDATE parcel SET status=@status WHERE id=@id", new { id, status });
         }
 
 
@@ -90,7 +95,7 @@ namespace Postman.Repository
         {
             return ConnectionDB.ExecuteQuery(@"UPDATE parcel 
 		                                        SET invoiceNo=@invoiceNo,
-			                                        method=@method',
+			                                        method=@method,
 			                                        packageWeight=@packageWeight,
 			                                        deliveryFee=@deliveryFee,
 			                                        status=@status

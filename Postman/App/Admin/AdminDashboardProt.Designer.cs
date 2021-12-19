@@ -192,6 +192,7 @@ namespace Postman.App.Admin
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(593, 365);
             this.guna2Panel2.TabIndex = 1;
+            this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
             // PendingWithdraw
             // 

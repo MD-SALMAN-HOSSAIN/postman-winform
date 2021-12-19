@@ -55,6 +55,10 @@ namespace Postman.App.Authentication.Login
                         RiderPrincipal rider = new RiderPrincipal(user);
                         rider.Show();
                     }
+                    else if(user.userRole == Models.UserRole.BANNED)
+                    {
+                        MessageBox.Show("You are banned from the system", "BANNED", MessageBoxButtons.OK);
+                    }
                    
                 }
                 else
