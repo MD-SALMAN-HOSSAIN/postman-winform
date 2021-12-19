@@ -32,9 +32,9 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel25 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel22 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel23 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.deliveredThisMonth = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.parcelThisMonth = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.deliveriedToday = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.parcelToday = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -46,13 +46,13 @@ namespace Postman.App.Rider
             this.UserName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.phoneRider = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.emailRider = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pendingDelivery = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.deliveredParcels = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -93,38 +93,38 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel23.TabIndex = 4;
             this.guna2HtmlLabel23.Text = "TOTAL WITHDRAW";
             // 
-            // guna2HtmlLabel19
+            // deliveredThisMonth
             // 
-            this.guna2HtmlLabel19.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel19.Font = new System.Drawing.Font("Segoe UI Semibold", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel19.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabel19.Location = new System.Drawing.Point(808, 539);
-            this.guna2HtmlLabel19.Name = "guna2HtmlLabel19";
-            this.guna2HtmlLabel19.Size = new System.Drawing.Size(109, 130);
-            this.guna2HtmlLabel19.TabIndex = 22;
-            this.guna2HtmlLabel19.Text = "00";
+            this.deliveredThisMonth.BackColor = System.Drawing.Color.Transparent;
+            this.deliveredThisMonth.Font = new System.Drawing.Font("Segoe UI Semibold", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deliveredThisMonth.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.deliveredThisMonth.Location = new System.Drawing.Point(808, 539);
+            this.deliveredThisMonth.Name = "deliveredThisMonth";
+            this.deliveredThisMonth.Size = new System.Drawing.Size(109, 130);
+            this.deliveredThisMonth.TabIndex = 22;
+            this.deliveredThisMonth.Text = "00";
             // 
-            // guna2HtmlLabel18
+            // parcelThisMonth
             // 
-            this.guna2HtmlLabel18.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel18.Font = new System.Drawing.Font("Segoe UI Semibold", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel18.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabel18.Location = new System.Drawing.Point(808, 398);
-            this.guna2HtmlLabel18.Name = "guna2HtmlLabel18";
-            this.guna2HtmlLabel18.Size = new System.Drawing.Size(109, 130);
-            this.guna2HtmlLabel18.TabIndex = 21;
-            this.guna2HtmlLabel18.Text = "00";
+            this.parcelThisMonth.BackColor = System.Drawing.Color.Transparent;
+            this.parcelThisMonth.Font = new System.Drawing.Font("Segoe UI Semibold", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.parcelThisMonth.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.parcelThisMonth.Location = new System.Drawing.Point(808, 398);
+            this.parcelThisMonth.Name = "parcelThisMonth";
+            this.parcelThisMonth.Size = new System.Drawing.Size(109, 130);
+            this.parcelThisMonth.TabIndex = 21;
+            this.parcelThisMonth.Text = "00";
             // 
-            // guna2HtmlLabel17
+            // deliveriedToday
             // 
-            this.guna2HtmlLabel17.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel17.Font = new System.Drawing.Font("Segoe UI Semibold", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel17.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabel17.Location = new System.Drawing.Point(267, 460);
-            this.guna2HtmlLabel17.Name = "guna2HtmlLabel17";
-            this.guna2HtmlLabel17.Size = new System.Drawing.Size(109, 130);
-            this.guna2HtmlLabel17.TabIndex = 20;
-            this.guna2HtmlLabel17.Text = "00";
+            this.deliveriedToday.BackColor = System.Drawing.Color.Transparent;
+            this.deliveriedToday.Font = new System.Drawing.Font("Segoe UI Semibold", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deliveriedToday.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.deliveriedToday.Location = new System.Drawing.Point(267, 460);
+            this.deliveriedToday.Name = "deliveriedToday";
+            this.deliveriedToday.Size = new System.Drawing.Size(109, 130);
+            this.deliveriedToday.TabIndex = 20;
+            this.deliveriedToday.Text = "00";
             // 
             // parcelToday
             // 
@@ -173,9 +173,9 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel12.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel12.Location = new System.Drawing.Point(32, 427);
             this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            this.guna2HtmlLabel12.Size = new System.Drawing.Size(152, 27);
+            this.guna2HtmlLabel12.Size = new System.Drawing.Size(171, 27);
             this.guna2HtmlLabel12.TabIndex = 15;
-            this.guna2HtmlLabel12.Text = "TODAY\'S PARCEL";
+            this.guna2HtmlLabel12.Text = "AVAILABLE PARCEL";
             // 
             // guna2HtmlLabel24
             // 
@@ -249,27 +249,27 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel10.TabIndex = 0;
             this.guna2HtmlLabel10.Text = "Good Morning,";
             // 
-            // guna2HtmlLabel9
+            // phoneRider
             // 
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(83, 290);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(132, 19);
-            this.guna2HtmlLabel9.TabIndex = 8;
-            this.guna2HtmlLabel9.Text = "Please update phone ";
+            this.phoneRider.BackColor = System.Drawing.Color.Transparent;
+            this.phoneRider.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneRider.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.phoneRider.Location = new System.Drawing.Point(83, 290);
+            this.phoneRider.Name = "phoneRider";
+            this.phoneRider.Size = new System.Drawing.Size(132, 19);
+            this.phoneRider.TabIndex = 8;
+            this.phoneRider.Text = "Please update phone ";
             // 
-            // guna2HtmlLabel8
+            // emailRider
             // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(83, 248);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(142, 19);
-            this.guna2HtmlLabel8.TabIndex = 7;
-            this.guna2HtmlLabel8.Text = "Please update Address";
+            this.emailRider.BackColor = System.Drawing.Color.Transparent;
+            this.emailRider.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailRider.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.emailRider.Location = new System.Drawing.Point(83, 248);
+            this.emailRider.Name = "emailRider";
+            this.emailRider.Size = new System.Drawing.Size(127, 19);
+            this.emailRider.TabIndex = 7;
+            this.emailRider.Text = "Please update Email";
             // 
             // guna2HtmlLabel7
             // 
@@ -277,20 +277,20 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.Location = new System.Drawing.Point(29, 214);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(131, 19);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(136, 19);
             this.guna2HtmlLabel7.TabIndex = 6;
-            this.guna2HtmlLabel7.Text = "USER INFORMISSION";
+            this.guna2HtmlLabel7.Text = "RIDER INFORMISSION";
             // 
             // guna2HtmlLabel6
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(245, 100);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(266, 100);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(80, 15);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(47, 15);
             this.guna2HtmlLabel6.TabIndex = 5;
-            this.guna2HtmlLabel6.Text = "Parcels created";
+            this.guna2HtmlLabel6.Text = "Pending";
             // 
             // guna2HtmlLabel5
             // 
@@ -299,41 +299,41 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.guna2HtmlLabel5.Location = new System.Drawing.Point(27, 100);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(89, 15);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(80, 15);
             this.guna2HtmlLabel5.TabIndex = 4;
-            this.guna2HtmlLabel5.Text = "Account Created";
+            this.guna2HtmlLabel5.Text = "Parcel Shipped";
             // 
-            // guna2HtmlLabel4
+            // pendingDelivery
             // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(266, 47);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(39, 47);
-            this.guna2HtmlLabel4.TabIndex = 3;
-            this.guna2HtmlLabel4.Text = "00";
+            this.pendingDelivery.BackColor = System.Drawing.Color.Transparent;
+            this.pendingDelivery.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pendingDelivery.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pendingDelivery.Location = new System.Drawing.Point(266, 47);
+            this.pendingDelivery.Name = "pendingDelivery";
+            this.pendingDelivery.Size = new System.Drawing.Size(39, 47);
+            this.pendingDelivery.TabIndex = 3;
+            this.pendingDelivery.Text = "00";
             // 
-            // guna2HtmlLabel3
+            // deliveredParcels
             // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(53, 47);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(39, 47);
-            this.guna2HtmlLabel3.TabIndex = 2;
-            this.guna2HtmlLabel3.Text = "00";
+            this.deliveredParcels.BackColor = System.Drawing.Color.Transparent;
+            this.deliveredParcels.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deliveredParcels.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.deliveredParcels.Location = new System.Drawing.Point(53, 47);
+            this.deliveredParcels.Name = "deliveredParcels";
+            this.deliveredParcels.Size = new System.Drawing.Size(39, 47);
+            this.deliveredParcels.TabIndex = 2;
+            this.deliveredParcels.Text = "00";
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(228, 22);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(223, 22);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(125, 19);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(130, 19);
             this.guna2HtmlLabel2.TabIndex = 1;
-            this.guna2HtmlLabel2.Text = "PENDING DELIVERY";
+            this.guna2HtmlLabel2.Text = "ASSIGNED DELIVERY";
             // 
             // guna2HtmlLabel1
             // 
@@ -348,13 +348,13 @@ namespace Postman.App.Rider
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.White;
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel9);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel8);
+            this.guna2Panel1.Controls.Add(this.phoneRider);
+            this.guna2Panel1.Controls.Add(this.emailRider);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel7);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel6);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel5);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel4);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel3);
+            this.guna2Panel1.Controls.Add(this.pendingDelivery);
+            this.guna2Panel1.Controls.Add(this.deliveredParcels);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel1.Location = new System.Drawing.Point(612, 27);
@@ -368,9 +368,9 @@ namespace Postman.App.Rider
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(980, 697);
-            this.Controls.Add(this.guna2HtmlLabel19);
-            this.Controls.Add(this.guna2HtmlLabel18);
-            this.Controls.Add(this.guna2HtmlLabel17);
+            this.Controls.Add(this.deliveredThisMonth);
+            this.Controls.Add(this.parcelThisMonth);
+            this.Controls.Add(this.deliveriedToday);
             this.Controls.Add(this.parcelToday);
             this.Controls.Add(this.guna2HtmlLabel15);
             this.Controls.Add(this.guna2HtmlLabel14);
@@ -395,9 +395,9 @@ namespace Postman.App.Rider
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel25;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel22;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel23;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel19;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel18;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;
+        private Guna.UI2.WinForms.Guna2HtmlLabel deliveredThisMonth;
+        private Guna.UI2.WinForms.Guna2HtmlLabel parcelThisMonth;
+        private Guna.UI2.WinForms.Guna2HtmlLabel deliveriedToday;
         private Guna.UI2.WinForms.Guna2HtmlLabel parcelToday;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel15;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;
@@ -409,13 +409,13 @@ namespace Postman.App.Rider
         private Guna.UI2.WinForms.Guna2HtmlLabel UserName;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
+        private Guna.UI2.WinForms.Guna2HtmlLabel phoneRider;
+        private Guna.UI2.WinForms.Guna2HtmlLabel emailRider;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel pendingDelivery;
+        private Guna.UI2.WinForms.Guna2HtmlLabel deliveredParcels;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;

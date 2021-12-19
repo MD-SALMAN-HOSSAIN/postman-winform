@@ -22,14 +22,14 @@ namespace Postman.App.Rider
         {
             InitializeComponent();
             this.user = user;
-            container(new RiderDashboardProt());
+            container(new RiderDashboardProt(user));
             riderEmail.Text = this.user.email;
             riderName.Text = this.user.name;
         }
 
         private void dashboardNavButton_Click(object sender, EventArgs e)
         {
-            container(new RiderDashboardProt());
+            container(new RiderDashboardProt(user));
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
