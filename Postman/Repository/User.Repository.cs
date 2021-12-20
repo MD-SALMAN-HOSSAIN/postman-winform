@@ -64,17 +64,7 @@ namespace Postman.Repository
 
         public int? UpdateUser(User user, int id)
         {
-            if (user.password != null)
-            {
-                return ConnectionDB.ExecuteQuery(@"UPDATE users
-			                                            SET  
-				                                            name = @name,
-				                                            email = @email,
-				                                            password=@password,
-				                                            pickupLocation = @pickupLocation
-			                                            WHERE id=@id;",
-                                                        new {user.name, user.email, user.password, user.pickupLocation, id });
-            }
+            
             return ConnectionDB.ExecuteQuery(@"UPDATE users
 			                                            SET  
 				                                            name = @name,
@@ -82,6 +72,20 @@ namespace Postman.Repository
 				                                            pickupLocation = @pickupLocation
 			                                            WHERE id=@id;",
                                                        new { user.name, user.email,user.pickupLocation, id });
+        }
+
+        public int? UpdateUserWithPassword(User user, int id)
+        {
+            
+            return ConnectionDB.ExecuteQuery(@"UPDATE users
+			                                        SET  
+				                                        name = @name,
+				                                        email = @email,
+				                                        password=@password,
+				                                        pickupLocation = @pickupLocation
+			                                        WHERE id=@id;",
+                                                    new { user.name, user.email, user.password, user.pickupLocation, id });
+           
         }
     }
 }

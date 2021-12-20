@@ -25,7 +25,7 @@ namespace Postman.Repository
         }
  
 
-        public int? WithdrawFromAccount(Account account, int id)
+        /*public int? WithdrawFromAccount(doube ammount, int id)
         {
             return ConnectionDB.ExecuteQuery(@"
 	                            UPDATE account 
@@ -33,7 +33,7 @@ namespace Postman.Repository
 			                            withdraw=@withdraw
 		                            WHERE id=@id;",
                     new { account.balance, account.withdraw, id });
-        }
+        }*/
 
         public int? AddIncomeToAccount(double balance, double deposit, int id)
         {
@@ -43,6 +43,26 @@ namespace Postman.Repository
                                         deposit=@deposit
 		                            WHERE id=@id;",
                     new { balance, deposit, id });
+        }
+
+
+        public int? ConfirmWithdrawRequest(double balance, double withdraw, int id)
+        {
+            return ConnectionDB.ExecuteQuery(@"
+	                            UPDATE account 
+		                            SET withdraw=@withdraw,
+                                        balance=@balance
+		                            WHERE id=@id;",
+                   new { withdraw, balance, id });
+        }
+        public int? CreateWithdrawRequst( double withdraw,double balance ,int id)
+        {
+            return ConnectionDB.ExecuteQuery(@"
+	                            UPDATE account 
+		                            SET withdraw=@withdraw,
+                                        balance=@balance
+		                            WHERE id=@id;",
+                    new { withdraw, balance, id });
         }
     }
 }

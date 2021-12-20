@@ -39,13 +39,14 @@ namespace Postman.App
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if(passBox.Text != null && confirmPassBox.Text != null)
+            if(String.IsNullOrEmpty(passBox.Text) && String.IsNullOrEmpty(confirmPassBox.Text))
             {
-               string hashed = BCrypt.Net.BCrypt.HashPassword(passBox.Text);
-               var result=  userRepo.UpdateUser(new User { email = emailBox.Text, name = nameBox.Text,password=hashed, pickupLocation = addressBox.Text, phone = phoneBox.Text }, user.id);
+                if (passBox.Text != confirmPassBox.Text)
+                    MessageBox.Show("Confirm password did not match!");
+                string hashed = BCrypt.Net.BCrypt.HashPassword(passBox.Text);
+                var result=  userRepo.UpdateUser(new User { email = emailBox.Text, name = nameBox.Text,password=hashed, pickupLocation = addressBox.Text, phone = phoneBox.Text }, user.id);
                 if (result > 0) MessageBox.Show("Successfully updated", "success", MessageBoxButtons.OK, MessageBoxIcon.Question);
                 else  MessageBox.Show("Failed to update", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
                 return;
             }
             var result2=userRepo.UpdateUser(new User { email= emailBox.Text, name= nameBox.Text,  pickupLocation = addressBox.Text, phone = phoneBox.Text }, user.id);

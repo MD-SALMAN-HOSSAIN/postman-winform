@@ -31,12 +31,12 @@ namespace Postman.App.Admin
             this.user = user;
             acc = accountRepo.GetOneAccount(user.id);
             totalParcel.Text = delivery.Count.ToString();
-            totalUserCount.Text = totalUser.ToString();
+            totalUserCount.Text = totalUser.Count.ToString();
             todayParcel.Text = delivery.Count.ToString();
             deliveryTodayLabel.Text = delivery.Count.ToString();
             parcelThisMonth.Text = delivery.Count.ToString();
             userThisMonth.Text = totalUser.Count.ToString();
-            userAddress.Text = user.pickupLocation !=null ? "Pickup location not set" : user.pickupLocation;
+            userAddress.Text = user.pickupLocation ==null ? "Pickup location not set" : user.pickupLocation;
             
             loadAllData(user);
             

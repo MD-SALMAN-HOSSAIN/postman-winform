@@ -33,23 +33,21 @@ namespace Postman.App.Rider
 
         void loadGridView()
         {
-            void loadGridView()
+
+            try
             {
-                try
-                {
-                    withdrawList = withdrawRepo.GetAllByUser(user.id);
-                    numberOfParcels.Text = $"{withdrawList.Count}";
-                }
-                catch (Exception e)
-                {
-                    MessageBox.Show("Something went wrong, " + e.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                withdrawList = withdrawRepo.GetAllByUser(user.id);
+                numberOfParcels.Text = $"{withdrawList.Count}";
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Something went wrong, " + e.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void EditUserButton_Click(object sender, EventArgs e)
         {
-            UniformWIthdraw withdraw = new UniformWIthdraw(user);
+            UniformWIthdraw withdraw = new UniformWIthdraw(user, new CallbackDelegate(loadGridView));
             withdraw.Show();
         }
     }

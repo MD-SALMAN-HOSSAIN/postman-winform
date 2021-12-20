@@ -46,8 +46,8 @@ namespace Postman.App.Merchent
                 var account = new AccountRepository().GetOneAccount(user.id);
                 if(account != null)
                 {
-                    balanceLabel.Text = account.balance.ToString();
-                    withdrawLabel.Text = account.withdraw.ToString();
+                    balanceLabel.Text ="TK."+ account.balance.ToString();
+                    withdrawLabel.Text ="TK."+ account.withdraw.ToString();
                 }
             }
            

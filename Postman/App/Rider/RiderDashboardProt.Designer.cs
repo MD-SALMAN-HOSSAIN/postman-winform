@@ -286,7 +286,7 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(266, 100);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(253, 100);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(47, 15);
             this.guna2HtmlLabel6.TabIndex = 5;
@@ -308,7 +308,7 @@ namespace Postman.App.Rider
             this.pendingDelivery.BackColor = System.Drawing.Color.Transparent;
             this.pendingDelivery.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pendingDelivery.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.pendingDelivery.Location = new System.Drawing.Point(266, 47);
+            this.pendingDelivery.Location = new System.Drawing.Point(253, 47);
             this.pendingDelivery.Name = "pendingDelivery";
             this.pendingDelivery.Size = new System.Drawing.Size(39, 47);
             this.pendingDelivery.TabIndex = 3;
@@ -329,7 +329,7 @@ namespace Postman.App.Rider
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(223, 22);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(205, 22);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(130, 19);
             this.guna2HtmlLabel2.TabIndex = 1;

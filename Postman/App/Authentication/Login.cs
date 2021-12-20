@@ -26,45 +26,57 @@ namespace Postman.App.Authentication.Login
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-           
-            if(emailTextBox != null && passwordTextBox != null)
-            {
-                var user = userRepo.GetUserInfo(emailTextBox.Text);
-                string hash = BCrypt.Net.BCrypt.HashPassword(passwordTextBox.Text);
-                Console.WriteLine(hash);
 
-                bool verify = BCrypt.Net.BCrypt.Verify(passwordTextBox.Text, user.password);
-                if (verify)
+            try
+            {
+                if (emailTextBox != null && passwordTextBox != null)
                 {
-                    
-                    if(user.userRole == Models.UserRole.MARCHENT)
+                    var user = userRepo.GetUserInfo(emailTextBox.Text);
+                    string hash = BCrypt.Net.BCrypt.HashPassword(passwordTextBox.Text);
+                    Console.WriteLine(hash);
+                    if(user == null)
                     {
-                        this.Hide();
-                        MarchentPrincipal merchent = new MarchentPrincipal(user);
-                        merchent.Show();
+                        MessageBox.Show("User not found");
+                        return;
                     }
-                    else if(user.userRole == Models.UserRole.ADMIN)
+                    bool verify = BCrypt.Net.BCrypt.Verify(passwordTextBox.Text, user.password);
+                    if (verify)
                     {
-                        this.Hide();
-                        AdminPrincipal admin = new AdminPrincipal(user);
-                        admin.Show();
+
+                        if (user.userRole == Models.UserRole.MARCHENT)
+                        {
+                            this.Hide();
+                            MarchentPrincipal merchent = new MarchentPrincipal(user);
+                            merchent.Show();
+                        }
+                        else if (user.userRole == Models.UserRole.ADMIN)
+                        {
+
+                            this.Hide();
+                            AdminPrincipal admin = new AdminPrincipal(user);
+                            admin.Show();
+                        }
+                        else if (user.userRole == Models.UserRole.RIDER)
+                        {
+                            this.Hide();
+                            RiderPrincipal rider = new RiderPrincipal(user);
+                            rider.Show();
+                        }
+                        else if (user.userRole == Models.UserRole.BANNED)
+                        {
+                            MessageBox.Show("You are banned from the system", "BANNED", MessageBoxButtons.OK);
+                        }
+
                     }
-                    else if(user.userRole == Models.UserRole.RIDER)
+                    else
                     {
-                        this.Hide();
-                        RiderPrincipal rider = new RiderPrincipal(user);
-                        rider.Show();
+                        MessageBox.Show("Check your email and password", "Login failed!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                    else if(user.userRole == Models.UserRole.BANNED)
-                    {
-                        MessageBox.Show("You are banned from the system", "BANNED", MessageBoxButtons.OK);
-                    }
-                   
                 }
-                else
-                {
-                    MessageBox.Show("Check your email and password", "Login failed!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+            }
+            catch(Exception error)
+            {
+                MessageBox.Show("Error occured" + error.Message);
             }
            
         }

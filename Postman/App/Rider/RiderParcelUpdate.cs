@@ -60,7 +60,7 @@ namespace Postman.App.Rider
                 }
                 catch(Exception err)
                 {
-                    MessageBox.Show("Error Occured while updating");
+                    MessageBox.Show("Error Occured while updating"+ err.Message);
                 }
             }
         }

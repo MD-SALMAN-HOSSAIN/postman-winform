@@ -12,8 +12,8 @@ namespace Postman.Repository
 
         public int? CreateOne(Withdraw withdraw, int userId)
         {
-            return ConnectionDB.ExecuteQuery("INSERT INTO  withdraw VALUES(@accountNumber, @amount, @status, @createdAt , null, @userId);",
-                new { withdraw.accountNumber, withdraw.amount, withdraw.status, withdraw.createdAt, userId });
+            return ConnectionDB.ExecuteQuery("INSERT INTO  withdraw VALUES(@accountNumber, @amount, @status,@method ,CURRENT_TIMESTAMP , null, @userId);",
+                new { withdraw.accountNumber, withdraw.amount,method= withdraw.bankName, status ="PENDING", withdraw.createdAt, userId });
         }
 
 
@@ -22,12 +22,21 @@ namespace Postman.Repository
             return ConnectionDB.SelectQuery<Withdraw>("SELECT * FROM withdraw WHERE userId= @userId;", new { userId }).ToList();
         }
 
+        public int? ChangeStatus(int id, string status)
+        {
+            return ConnectionDB.ExecuteQuery("UPDATE withdraw SET status=@status WHERE id= @id;", new { id, status });
+        }
+
 
         public List<Withdraw> GetAll()
         {
             return ConnectionDB.SelectQuery<Withdraw>("SELECT * FROM withdraw;").ToList();
         }
 
+        public Withdraw GetOne(int id)
+        {
+            return ConnectionDB.SelectQuery<Withdraw>("SELECT * FROM withdraw WHERE id=@id;", new { id }).SingleOrDefault();
+        }
         public int? UpdateOne(Withdraw withdraw, int userId)
         {
             return ConnectionDB.ExecuteQuery(@"	UPDATE withdraw 

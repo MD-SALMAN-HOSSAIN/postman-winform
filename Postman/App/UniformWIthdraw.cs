@@ -15,16 +15,18 @@ namespace Postman.App
     {
         User user { get; set; }
         Double balance { get; set; }
+
+        CallbackDelegate loadGridView { get; set; }
         public UniformWIthdraw()
         {
             InitializeComponent();
         }
 
-        public UniformWIthdraw(User user)
+        public UniformWIthdraw(User user, CallbackDelegate callback)
         {
             InitializeComponent();
             this.user = user;
-
+            this.loadGridView = callback;
             var account = new AccountRepository().GetOneAccount(user.id);
             if(account !=null)
             {
@@ -35,23 +37,33 @@ namespace Postman.App
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if(balance <= Convert.ToDouble(amountBox.Text))
+            if(balance >= Convert.ToDouble(amountBox.Text))
             {
                 Withdraw withdraw = new Withdraw() { 
                     
                     accountNumber= accountNumber.Text,
                     amount = Convert.ToDouble(amountBox.Text),
-                    
                     bankName= paymentMethod.Text
                 };
                 try
                 {
                     var result = new WithdrawRepository().CreateOne(withdraw, user.id);
-                    if (result > 0) MessageBox.Show("Successfully created request");
+                    if (result > 0)
+                    {
+                        MessageBox.Show("Successfully created request");
+                        var account = new AccountRepository().GetOneAccount(user.id);
+                        if(account != null)
+                        {
+                            var reflect = new AccountRepository().CreateWithdrawRequst(withdraw.amount, account.balance - withdraw.amount,user.id);
+                            if(reflect <= 0) MessageBox.Show("Failed to create request!");
+                        }
+                        loadGridView();
+                    }
+                    else MessageBox.Show("Failed to create request!");
                 }
                 catch(Exception err)
                 {
-                    MessageBox.Show("Error");
+                    MessageBox.Show("Error"+ err.Message);
                 }
             }
         }

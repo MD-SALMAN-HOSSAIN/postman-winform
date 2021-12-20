@@ -52,10 +52,9 @@ namespace Postman
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1203, 673);
+            this.guna2Panel1.Size = new System.Drawing.Size(902, 564);
             this.guna2Panel1.TabIndex = 3;
             // 
             // guna2ControlBox2
@@ -66,11 +65,10 @@ namespace Postman
             this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.Gray;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1071, 4);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(803, 3);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.Size = new System.Drawing.Size(60, 36);
+            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox2.TabIndex = 20;
             // 
             // guna2ControlBox1
@@ -80,11 +78,10 @@ namespace Postman
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.DimGray;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1139, 4);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(854, 3);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(60, 36);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 19;
             // 
             // guna2Button1
@@ -97,11 +94,11 @@ namespace Postman
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Image = global::Postman.Properties.Resources.information_button;
-            this.guna2Button1.Location = new System.Drawing.Point(12, 570);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button1.Location = new System.Drawing.Point(9, 463);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(76, 27);
+            this.guna2Button1.Size = new System.Drawing.Size(57, 22);
             this.guna2Button1.TabIndex = 18;
             this.guna2Button1.Text = "Info";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -111,7 +108,7 @@ namespace Postman
             this.guna2GradientButton1.AutoRoundedCorners = true;
             this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.guna2GradientButton1.BorderRadius = 31;
+            this.guna2GradientButton1.BorderRadius = 25;
             this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(141)))), ((int)(((byte)(255)))));
@@ -119,23 +116,23 @@ namespace Postman
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(489, 217);
-            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(367, 176);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(267, 64);
+            this.guna2GradientButton1.Size = new System.Drawing.Size(200, 52);
             this.guna2GradientButton1.TabIndex = 10;
             this.guna2GradientButton1.Text = "Get Started ";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click_1);
             // 
             // guna2PictureBox1
             // 
+            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2PictureBox1.Image = global::Postman.Properties.Resources.MicrosoftTeams_image__9_1;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1203, 795);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(902, 564);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 4;
             this.guna2PictureBox1.TabStop = false;
@@ -143,11 +140,10 @@ namespace Postman
             // guna2Panel2
             // 
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel2.Location = new System.Drawing.Point(1203, 0);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel2.Location = new System.Drawing.Point(902, 0);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(0, 673);
+            this.guna2Panel2.Size = new System.Drawing.Size(6, 564);
             this.guna2Panel2.TabIndex = 4;
             // 
             // guna2DragControl1
@@ -156,14 +152,14 @@ namespace Postman
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1203, 673);
+            this.ClientSize = new System.Drawing.Size(908, 564);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Postman | Home";

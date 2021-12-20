@@ -55,5 +55,84 @@ namespace Postman.App.Admin
         {
 
         }
+
+        private void EditUserButton_Click(object sender, EventArgs e)
+        {
+           
+            if (withdrawTableData.SelectedRows.Count != 0)
+            {
+                DataGridViewRow row = this.withdrawTableData.SelectedRows[0];
+                int id = Convert.ToInt32(row.Cells["id"].Value);
+
+                try
+                {
+                    var withdraw = new WithdrawRepository().GetOne(id);
+                    
+                    if (withdraw != null)
+                    {
+                        if (withdraw.status.ToString() == "PENDING")
+                        {
+                            var account = new AccountRepository().GetOneAccount(withdraw.id);
+                            if (account != null)
+                            {
+
+                                var res = new AccountRepository().ConfirmWithdrawRequest(account.balance - withdraw.amount, account.withdraw - withdraw.amount, account.userId);
+                                if (res > 0)
+                                {
+                                    var response = new WithdrawRepository().ChangeStatus(id, "SUCCESS");
+                                    if (response > 0) MessageBox.Show("Withdraw successfull");
+                                    loadGridView();
+                                }
+                            }
+                        }
+                        else MessageBox.Show("Already proccessed!");
+
+                    }
+
+                }
+                catch (Exception erro)
+                {
+                    MessageBox.Show("Something went wrong! ", erro.Message);
+                }
+            }
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            if (withdrawTableData.SelectedRows.Count != 0)
+            {
+                DataGridViewRow row = this.withdrawTableData.SelectedRows[0];
+                int id = Convert.ToInt32(row.Cells["id"].Value);
+
+                try
+                {
+                    var withdraw = new WithdrawRepository().GetOne(id);
+                    if (withdraw != null)
+                    {
+                        if (withdraw.status.ToString() == "PENDING")
+                        {
+                            var account = new AccountRepository().GetOneAccount(withdraw.id);
+                            if (account != null)
+                            {
+                                var res = new AccountRepository().ConfirmWithdrawRequest(account.balance + withdraw.amount, account.withdraw - withdraw.amount, account.userId);
+                                if (res > 0)
+                                {
+                                    var response = new WithdrawRepository().ChangeStatus(id, "FAILED");
+                                    if (response > 0) MessageBox.Show("Withdraw FAILED");
+                                    loadGridView();
+                                }
+                            }
+                        }
+                        else MessageBox.Show("Already proccessed");
+
+                    }
+
+                }
+                catch (Exception erro)
+                {
+                    MessageBox.Show("Something went wrong! ", erro.Message);
+                }
+            }
+        }
     }
 }

@@ -29,18 +29,18 @@ namespace Postman.App.Admin
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.withdrawTableData = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.NumberOfUser = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.EditUserButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.withdrawTableData)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -49,40 +49,39 @@ namespace Postman.App.Admin
             // 
             // withdrawTableData
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.withdrawTableData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.withdrawTableData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.withdrawTableData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.withdrawTableData.BackgroundColor = System.Drawing.Color.White;
             this.withdrawTableData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.withdrawTableData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.withdrawTableData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.withdrawTableData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.withdrawTableData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.withdrawTableData.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.withdrawTableData.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.withdrawTableData.DefaultCellStyle = dataGridViewCellStyle6;
             this.withdrawTableData.EnableHeadersVisualStyles = false;
             this.withdrawTableData.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.withdrawTableData.Location = new System.Drawing.Point(29, 82);
-            this.withdrawTableData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.withdrawTableData.Location = new System.Drawing.Point(22, 67);
             this.withdrawTableData.Name = "withdrawTableData";
             this.withdrawTableData.RowHeadersVisible = false;
             this.withdrawTableData.RowHeadersWidth = 51;
             this.withdrawTableData.RowTemplate.Height = 50;
             this.withdrawTableData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.withdrawTableData.Size = new System.Drawing.Size(1261, 695);
+            this.withdrawTableData.Size = new System.Drawing.Size(946, 565);
             this.withdrawTableData.TabIndex = 0;
             this.withdrawTableData.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.withdrawTableData.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -115,19 +114,34 @@ namespace Postman.App.Admin
             this.guna2Panel1.Controls.Add(this.NumberOfUser);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1307, 75);
+            this.guna2Panel1.Size = new System.Drawing.Size(980, 61);
             this.guna2Panel1.TabIndex = 3;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2Button1.Location = new System.Drawing.Point(6, 22);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(27, 25);
+            this.guna2Button1.TabIndex = 41;
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(116, 31);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(71, 20);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(68, 18);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(99, 27);
             this.guna2HtmlLabel1.TabIndex = 1;
             this.guna2HtmlLabel1.Text = "Withdrawls";
             // 
@@ -136,10 +150,9 @@ namespace Postman.App.Admin
             this.NumberOfUser.BackColor = System.Drawing.Color.Transparent;
             this.NumberOfUser.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NumberOfUser.ForeColor = System.Drawing.Color.Blue;
-            this.NumberOfUser.Location = new System.Drawing.Point(61, 15);
-            this.NumberOfUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NumberOfUser.Location = new System.Drawing.Point(46, 12);
             this.NumberOfUser.Name = "NumberOfUser";
-            this.NumberOfUser.Size = new System.Drawing.Size(23, 48);
+            this.NumberOfUser.Size = new System.Drawing.Size(19, 39);
             this.NumberOfUser.TabIndex = 0;
             this.NumberOfUser.Text = "0";
             // 
@@ -148,11 +161,10 @@ namespace Postman.App.Admin
             this.guna2Panel2.Controls.Add(this.guna2Button2);
             this.guna2Panel2.Controls.Add(this.EditUserButton);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 785);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 638);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(1307, 73);
+            this.guna2Panel2.Size = new System.Drawing.Size(980, 59);
             this.guna2Panel2.TabIndex = 4;
             // 
             // guna2Button2
@@ -164,66 +176,50 @@ namespace Postman.App.Admin
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(923, 7);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button2.Location = new System.Drawing.Point(692, 6);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(163, 55);
+            this.guna2Button2.Size = new System.Drawing.Size(122, 45);
             this.guna2Button2.TabIndex = 1;
-            this.guna2Button2.Text = "Delete User";
+            this.guna2Button2.Text = "Reject Request";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // EditUserButton
             // 
             this.EditUserButton.BorderRadius = 5;
             this.EditUserButton.CheckedState.Parent = this.EditUserButton;
             this.EditUserButton.CustomImages.Parent = this.EditUserButton;
+            this.EditUserButton.FillColor = System.Drawing.Color.SeaGreen;
             this.EditUserButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.EditUserButton.ForeColor = System.Drawing.Color.White;
             this.EditUserButton.HoverState.Parent = this.EditUserButton;
-            this.EditUserButton.Location = new System.Drawing.Point(1093, 7);
-            this.EditUserButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EditUserButton.Location = new System.Drawing.Point(820, 6);
             this.EditUserButton.Name = "EditUserButton";
             this.EditUserButton.ShadowDecoration.Parent = this.EditUserButton;
-            this.EditUserButton.Size = new System.Drawing.Size(176, 55);
+            this.EditUserButton.Size = new System.Drawing.Size(132, 45);
             this.EditUserButton.TabIndex = 0;
-            this.EditUserButton.Text = "Update User";
+            this.EditUserButton.Text = "Accept Request";
+            this.EditUserButton.Click += new System.EventHandler(this.EditUserButton_Click);
             // 
             // guna2Panel3
             // 
             this.guna2Panel3.Controls.Add(this.withdrawTableData);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(1307, 858);
+            this.guna2Panel3.Size = new System.Drawing.Size(980, 697);
             this.guna2Panel3.TabIndex = 5;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button1.Location = new System.Drawing.Point(8, 27);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(36, 31);
-            this.guna2Button1.TabIndex = 41;
             // 
             // WithdrawTable
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1307, 858);
+            this.ClientSize = new System.Drawing.Size(980, 697);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "WithdrawTable";
             this.Text = "WithdrawTable";
             ((System.ComponentModel.ISupportInitialize)(this.withdrawTableData)).EndInit();

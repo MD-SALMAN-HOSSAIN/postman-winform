@@ -41,5 +41,10 @@ namespace Postman
         {
 
         }
+
+        private void guna2HtmlLabel19_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

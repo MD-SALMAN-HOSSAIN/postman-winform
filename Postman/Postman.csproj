@@ -83,41 +83,11 @@
     <Compile Include="App\Admin\AdminPrincipal.Designer.cs">
       <DependentUpon>AdminPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Admin\AdminSettings.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="App\Admin\AdminSettings.Designer.cs">
-      <DependentUpon>AdminSettings.cs</DependentUpon>
-    </Compile>
     <Compile Include="App\Admin\ConsignmentTable.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="App\Admin\ConsignmentTable.Designer.cs">
       <DependentUpon>ConsignmentTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="App\Admin\ConsignmentTableForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="App\Admin\ConsignmentTableForm.Designer.cs">
-      <DependentUpon>ConsignmentTableForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="App\Admin\MerchentTableForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="App\Admin\MerchentTableForm.Designer.cs">
-      <DependentUpon>MerchentTableForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="App\Admin\ParcelTableFomr.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="App\Admin\ParcelTableFomr.Designer.cs">
-      <DependentUpon>ParcelTableFomr.cs</DependentUpon>
-    </Compile>
-    <Compile Include="App\Admin\RiderTableForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="App\Admin\RiderTableForm.Designer.cs">
-      <DependentUpon>RiderTableForm.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Admin\UserTable.cs">
       <SubType>Form</SubType>
@@ -125,23 +95,11 @@
     <Compile Include="App\Admin\UserTable.Designer.cs">
       <DependentUpon>UserTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Admin\UserTableForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="App\Admin\UserTableForm.Designer.cs">
-      <DependentUpon>UserTableForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="App\Admin\WithdrawTable.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="App\Admin\WithdrawTable.Designer.cs">
       <DependentUpon>WithdrawTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="App\Admin\WithdrawTableForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="App\Admin\WithdrawTableForm.Designer.cs">
-      <DependentUpon>WithdrawTableForm.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Authentication\Login.cs">
       <SubType>Form</SubType>
@@ -234,23 +192,11 @@
     <Compile Include="App\Merchent\MerchentDashboard.Designer.cs">
       <DependentUpon>MerchentDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Merchent\MerchentSettings.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="App\Merchent\MerchentSettings.Designer.cs">
-      <DependentUpon>MerchentSettings.cs</DependentUpon>
-    </Compile>
     <Compile Include="App\Merchent\ParcelTable.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="App\Merchent\ParcelTable.Designer.cs">
       <DependentUpon>ParcelTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="App\Merchent\ParcelTableForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="App\Merchent\ParcelTableForm.Designer.cs">
-      <DependentUpon>ParcelTableForm.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Merchent\UpdateParcel.cs">
       <SubType>Form</SubType>
@@ -362,35 +308,14 @@
     <EmbeddedResource Include="App\Admin\AdminPrincipal.resx">
       <DependentUpon>AdminPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\AdminSettings.resx">
-      <DependentUpon>AdminSettings.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\ConsignmentTable.resx">
       <DependentUpon>ConsignmentTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\ConsignmentTableForm.resx">
-      <DependentUpon>ConsignmentTableForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\MerchentTableForm.resx">
-      <DependentUpon>MerchentTableForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\ParcelTableFomr.resx">
-      <DependentUpon>ParcelTableFomr.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\RiderTableForm.resx">
-      <DependentUpon>RiderTableForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\UserTable.resx">
       <DependentUpon>UserTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\UserTableForm.resx">
-      <DependentUpon>UserTableForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="App\Admin\WithdrawTable.resx">
       <DependentUpon>WithdrawTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Admin\WithdrawTableForm.resx">
-      <DependentUpon>WithdrawTableForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Authentication\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -438,14 +363,8 @@
     <EmbeddedResource Include="App\Merchent\MerchentDashboard.resx">
       <DependentUpon>MerchentDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="App\Merchent\MerchentSettings.resx">
-      <DependentUpon>MerchentSettings.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="App\Merchent\ParcelTable.resx">
       <DependentUpon>ParcelTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="App\Merchent\ParcelTableForm.resx">
-      <DependentUpon>ParcelTableForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Merchent\UpdateParcel.resx">
       <DependentUpon>UpdateParcel.cs</DependentUpon>

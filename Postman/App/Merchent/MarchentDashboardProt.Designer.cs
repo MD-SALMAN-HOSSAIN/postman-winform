@@ -81,9 +81,9 @@ namespace Postman.App.Merchent
             this.guna2HtmlLabel23.ForeColor = System.Drawing.Color.White;
             this.guna2HtmlLabel23.Location = new System.Drawing.Point(62, 277);
             this.guna2HtmlLabel23.Name = "guna2HtmlLabel23";
-            this.guna2HtmlLabel23.Size = new System.Drawing.Size(185, 32);
+            this.guna2HtmlLabel23.Size = new System.Drawing.Size(213, 32);
             this.guna2HtmlLabel23.TabIndex = 4;
-            this.guna2HtmlLabel23.Text = "TOTAL WITHDRAW";
+            this.guna2HtmlLabel23.Text = "PENDING WITHDRAW";
             // 
             // CustomerThisMonth
             // 
@@ -112,7 +112,7 @@ namespace Postman.App.Merchent
             this.DeliveredToday.BackColor = System.Drawing.Color.Transparent;
             this.DeliveredToday.Font = new System.Drawing.Font("Segoe UI Semibold", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeliveredToday.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.DeliveredToday.Location = new System.Drawing.Point(267, 460);
+            this.DeliveredToday.Location = new System.Drawing.Point(270, 470);
             this.DeliveredToday.Name = "DeliveredToday";
             this.DeliveredToday.Size = new System.Drawing.Size(109, 130);
             this.DeliveredToday.TabIndex = 20;

@@ -13,6 +13,8 @@ namespace Postman.App.Admin
     public partial class UserTable : Form
     {
         UserRepository userRepo = new UserRepository();
+
+        
         public UserTable()
         {
 

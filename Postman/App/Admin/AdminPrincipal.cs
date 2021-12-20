@@ -37,13 +37,12 @@ namespace Postman.App.Admin
         public AdminPrincipal(User user)
         {
             InitializeComponent();
-            Console.WriteLine("User" + user.name);
+            this.user = user;
             userList = userRepo.GetAll();
             consignmentList = parcelRepo.getAll();
             witdrawList = withdrawRepository.GetAll();
-            container(new AdminDashboardProt(user, userList, consignmentList ));
-            this.user = user;
             
+            container(new AdminDashboardProt(user, userList, consignmentList ));
         }
 
         private void AdminDashboardProto_Load(object sender, EventArgs e)

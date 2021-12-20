@@ -17,6 +17,7 @@ namespace Postman.Models
 
         public double withdraw { get; set; }
 
+        public int userId { get; set; }
         public User owner { get; set; }
     }
 }
