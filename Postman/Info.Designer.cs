@@ -68,7 +68,7 @@ namespace Postman
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(387, 229);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(387, 216);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(131, 20);
             this.guna2HtmlLabel1.TabIndex = 1;
@@ -78,7 +78,7 @@ namespace Postman
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(387, 280);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(387, 258);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(314, 19);
             this.guna2HtmlLabel2.TabIndex = 1;
@@ -87,7 +87,7 @@ namespace Postman
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(387, 333);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(387, 300);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(292, 18);
             this.guna2HtmlLabel3.TabIndex = 1;
@@ -96,7 +96,7 @@ namespace Postman
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(928, 85);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(928, 117);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(86, 18);
             this.guna2HtmlLabel4.TabIndex = 1;
@@ -105,17 +105,17 @@ namespace Postman
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(928, 122);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(928, 156);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(43, 18);
             this.guna2HtmlLabel5.TabIndex = 1;
-            this.guna2HtmlLabel5.Text = "Email :";
+            this.guna2HtmlLabel5.Text = "Email : ";
             this.guna2HtmlLabel5.Click += new System.EventHandler(this.guna2HtmlLabel5_Click);
             // 
             // guna2HtmlLabel6
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(928, 169);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(928, 189);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(164, 18);
             this.guna2HtmlLabel6.TabIndex = 1;
@@ -124,7 +124,7 @@ namespace Postman
             // guna2HtmlLabel8
             // 
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(387, 373);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(387, 333);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(64, 18);
             this.guna2HtmlLabel8.TabIndex = 1;
@@ -134,7 +134,7 @@ namespace Postman
             // guna2HtmlLabel12
             // 
             this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel12.Location = new System.Drawing.Point(928, 44);
+            this.guna2HtmlLabel12.Location = new System.Drawing.Point(928, 71);
             this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
             this.guna2HtmlLabel12.Size = new System.Drawing.Size(143, 18);
             this.guna2HtmlLabel12.TabIndex = 1;
@@ -143,7 +143,7 @@ namespace Postman
             // guna2HtmlLabel7
             // 
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(931, 333);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(928, 300);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(86, 18);
             this.guna2HtmlLabel7.TabIndex = 1;
@@ -152,7 +152,7 @@ namespace Postman
             // guna2HtmlLabel9
             // 
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(931, 415);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(931, 373);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(154, 18);
             this.guna2HtmlLabel9.TabIndex = 1;
@@ -161,7 +161,7 @@ namespace Postman
             // guna2HtmlLabel10
             // 
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(931, 373);
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(928, 333);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
             this.guna2HtmlLabel10.Size = new System.Drawing.Size(229, 18);
             this.guna2HtmlLabel10.TabIndex = 1;
@@ -171,7 +171,7 @@ namespace Postman
             // guna2HtmlLabel11
             // 
             this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(931, 294);
+            this.guna2HtmlLabel11.Location = new System.Drawing.Point(928, 258);
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
             this.guna2HtmlLabel11.Size = new System.Drawing.Size(172, 18);
             this.guna2HtmlLabel11.TabIndex = 1;
@@ -180,7 +180,7 @@ namespace Postman
             // guna2HtmlLabel13
             // 
             this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel13.Location = new System.Drawing.Point(934, 573);
+            this.guna2HtmlLabel13.Location = new System.Drawing.Point(934, 547);
             this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
             this.guna2HtmlLabel13.Size = new System.Drawing.Size(86, 18);
             this.guna2HtmlLabel13.TabIndex = 1;
@@ -189,7 +189,7 @@ namespace Postman
             // guna2HtmlLabel14
             // 
             this.guna2HtmlLabel14.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel14.Location = new System.Drawing.Point(934, 652);
+            this.guna2HtmlLabel14.Location = new System.Drawing.Point(934, 604);
             this.guna2HtmlLabel14.Name = "guna2HtmlLabel14";
             this.guna2HtmlLabel14.Size = new System.Drawing.Size(151, 18);
             this.guna2HtmlLabel14.TabIndex = 1;
@@ -198,7 +198,7 @@ namespace Postman
             // guna2HtmlLabel15
             // 
             this.guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel15.Location = new System.Drawing.Point(934, 614);
+            this.guna2HtmlLabel15.Location = new System.Drawing.Point(934, 573);
             this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
             this.guna2HtmlLabel15.Size = new System.Drawing.Size(194, 18);
             this.guna2HtmlLabel15.TabIndex = 1;
@@ -208,7 +208,7 @@ namespace Postman
             // guna2HtmlLabel16
             // 
             this.guna2HtmlLabel16.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel16.Location = new System.Drawing.Point(934, 534);
+            this.guna2HtmlLabel16.Location = new System.Drawing.Point(934, 516);
             this.guna2HtmlLabel16.Name = "guna2HtmlLabel16";
             this.guna2HtmlLabel16.Size = new System.Drawing.Size(187, 18);
             this.guna2HtmlLabel16.TabIndex = 1;
@@ -232,7 +232,7 @@ namespace Postman
             // 
             this.guna2HtmlLabel21.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel21.Location = new System.Drawing.Point(12, 94);
+            this.guna2HtmlLabel21.Location = new System.Drawing.Point(12, 112);
             this.guna2HtmlLabel21.Name = "guna2HtmlLabel21";
             this.guna2HtmlLabel21.Size = new System.Drawing.Size(150, 20);
             this.guna2HtmlLabel21.TabIndex = 0;
@@ -242,7 +242,7 @@ namespace Postman
             // 
             this.guna2HtmlLabel20.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel20.Location = new System.Drawing.Point(12, 68);
+            this.guna2HtmlLabel20.Location = new System.Drawing.Point(12, 86);
             this.guna2HtmlLabel20.Name = "guna2HtmlLabel20";
             this.guna2HtmlLabel20.Size = new System.Drawing.Size(658, 20);
             this.guna2HtmlLabel20.TabIndex = 0;
@@ -253,7 +253,7 @@ namespace Postman
             // 
             this.guna2HtmlLabel19.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel19.Location = new System.Drawing.Point(12, 42);
+            this.guna2HtmlLabel19.Location = new System.Drawing.Point(12, 55);
             this.guna2HtmlLabel19.Name = "guna2HtmlLabel19";
             this.guna2HtmlLabel19.Size = new System.Drawing.Size(679, 20);
             this.guna2HtmlLabel19.TabIndex = 0;
@@ -264,7 +264,7 @@ namespace Postman
             // 
             this.guna2HtmlLabel18.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel18.Location = new System.Drawing.Point(12, 16);
+            this.guna2HtmlLabel18.Location = new System.Drawing.Point(12, 29);
             this.guna2HtmlLabel18.Name = "guna2HtmlLabel18";
             this.guna2HtmlLabel18.Size = new System.Drawing.Size(691, 20);
             this.guna2HtmlLabel18.TabIndex = 0;
@@ -332,7 +332,7 @@ namespace Postman
             // guna2HtmlLabel17
             // 
             this.guna2HtmlLabel17.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel17.Location = new System.Drawing.Point(524, 231);
+            this.guna2HtmlLabel17.Location = new System.Drawing.Point(524, 218);
             this.guna2HtmlLabel17.Name = "guna2HtmlLabel17";
             this.guna2HtmlLabel17.Size = new System.Drawing.Size(148, 18);
             this.guna2HtmlLabel17.TabIndex = 42;

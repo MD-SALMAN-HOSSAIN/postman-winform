@@ -82,7 +82,12 @@ namespace Postman.App.Rider
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            container(new WithdrawTable());
+            container(new WithdrawTable(user));
+        }
+
+        private void guna2Button4_Click_2(object sender, EventArgs e)
+        {
+            container(new UniformUpdate(user));
         }
     }
 }

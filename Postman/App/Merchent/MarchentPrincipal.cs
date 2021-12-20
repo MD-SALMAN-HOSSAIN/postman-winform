@@ -61,7 +61,7 @@ namespace Postman.App.Merchent
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            container(new WithdrawTableMr());
+            container(new WithdrawTableMr(user));
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
