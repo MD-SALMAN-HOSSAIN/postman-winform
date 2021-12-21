@@ -15,6 +15,7 @@ namespace Postman.App.Admin
     {
 
         WithdrawRepository withdraw = new WithdrawRepository();
+        List<Withdraw> withdrawList { get; set; }
         public WithdrawTable()
         {
             InitializeComponent();
@@ -25,12 +26,14 @@ namespace Postman.App.Admin
         {
             InitializeComponent();
             loadGridView(withdrawList);
+            this.withdrawList = withdrawList;
         }
         void loadGridView()
         {
             try
             {
                 this.withdrawTableData.DataSource = withdraw.GetAll();
+                NumberOfUser.Text =$"{withdrawList.Count}";
             }
             catch (Exception error)
             {
@@ -44,6 +47,7 @@ namespace Postman.App.Admin
             try
             {
                 this.withdrawTableData.DataSource = withdrawList;
+                NumberOfUser.Text = $"{withdrawList.Count}";
             }
             catch (Exception error)
             {
@@ -133,6 +137,11 @@ namespace Postman.App.Admin
                     MessageBox.Show("Something went wrong! ", erro.Message);
                 }
             }
+        }
+
+        private void NumberOfUser_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -51,7 +51,8 @@ namespace Postman.Repository
             return ConnectionDB.ExecuteQuery(@"
 	                            UPDATE account 
 		                            SET withdraw=@withdraw,
-                                        balance=@balance
+                                        balance=@balance,
+                                        proccessAt=CURRENT_TIMESTAMP
 		                            WHERE id=@id;",
                    new { withdraw, balance, id });
         }
@@ -60,7 +61,7 @@ namespace Postman.Repository
             return ConnectionDB.ExecuteQuery(@"
 	                            UPDATE account 
 		                            SET withdraw=@withdraw,
-                                        balance=@balance
+                                        balance=@balance,
 		                            WHERE id=@id;",
                     new { withdraw, balance, id });
         }

@@ -64,6 +64,7 @@ namespace Postman.App
             this.packageWeightText = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.customerCityText = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.customerAreaText = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
@@ -90,6 +91,7 @@ namespace Postman.App
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.guna2Button2);
             this.guna2Panel2.Controls.Add(this.guna2Button1);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 551);
@@ -408,6 +410,21 @@ namespace Postman.App
             this.customerAreaText.TabIndex = 32;
             this.customerAreaText.Text = "N/A";
             // 
+            // guna2Button2
+            // 
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Location = new System.Drawing.Point(558, 11);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button2.TabIndex = 1;
+            this.guna2Button2.Text = "Print";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
             // ViewParcelDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -496,5 +513,6 @@ namespace Postman.App
         private Guna.UI2.WinForms.Guna2HtmlLabel packageWeightText;
         private Guna.UI2.WinForms.Guna2HtmlLabel customerCityText;
         private Guna.UI2.WinForms.Guna2HtmlLabel customerAreaText;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }

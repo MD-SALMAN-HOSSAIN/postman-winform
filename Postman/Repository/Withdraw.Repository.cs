@@ -13,7 +13,7 @@ namespace Postman.Repository
         public int? CreateOne(Withdraw withdraw, int userId)
         {
             return ConnectionDB.ExecuteQuery("INSERT INTO  withdraw VALUES(@accountNumber, @amount, @status,@method ,CURRENT_TIMESTAMP , null, @userId);",
-                new { withdraw.accountNumber, withdraw.amount,method= withdraw.bankName, status ="PENDING", withdraw.createdAt, userId });
+                new { withdraw.accountNumber, withdraw.amount,withdraw.method, status ="PENDING", withdraw.createdAt, userId });
         }
 
 

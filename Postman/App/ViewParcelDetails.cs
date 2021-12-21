@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,10 @@ namespace Postman.App
     {
         ParcelRepositry parcelRepo = new ParcelRepositry();
         UserRepository userRepo = new UserRepository();
+        Bitmap memoryImage { get; set; }
+        private PrintDocument printDocument1 = new PrintDocument();
+
+
         Parcel parcel { get; set; }
         public ViewParcelDetails()
         {
@@ -55,5 +60,27 @@ namespace Postman.App
         {
             this.Hide();
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            CaptureImage();
+            printDocument1.Print();
+        }
+
+        private void CaptureImage()
+        {
+            Graphics myGraphics = this.CreateGraphics();
+            Size s = this.Size;
+            memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
+            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
+            memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
+        }
+        private void printDocument1_PrintPage(System.Object sender,
+           System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(memoryImage, 0, 0);
+        }
+
+
     }
 }
