@@ -41,6 +41,8 @@ namespace Postman.App.Rider
                 parcelToday.Text = $"{parcelList.Count}";
                 parcelThisMonth.Text = $"{riderParcel.FindAll(e=> e.createdAt.Month == new DateTime().Month).Count}";
                 deliveredParcels.Text = $"{riderParcel.FindAll(e => e.status == "DELIVERED").Count}";
+                pendingDelivery.Text = $"{riderParcel.FindAll(e => e.status == "ONDELIVERY").Count}";
+                deliveredThisMonth.Text = $"{riderParcel.FindAll(e => e.createdAt.Month == new DateTime().Month).Count}";
             }
             catch(Exception eer)
             {

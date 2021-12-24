@@ -30,8 +30,6 @@ namespace Postman.App.Rider
         private void InitializeComponent()
         {
             this.guna2HtmlLabel25 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel22 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel23 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.deliveredThisMonth = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.parcelThisMonth = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.deliveriedToday = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -70,28 +68,6 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel25.Size = new System.Drawing.Size(48, 32);
             this.guna2HtmlLabel25.TabIndex = 7;
             this.guna2HtmlLabel25.Text = "TK. 0";
-            // 
-            // guna2HtmlLabel22
-            // 
-            this.guna2HtmlLabel22.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel22.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel22.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel22.Location = new System.Drawing.Point(307, 235);
-            this.guna2HtmlLabel22.Name = "guna2HtmlLabel22";
-            this.guna2HtmlLabel22.Size = new System.Drawing.Size(48, 32);
-            this.guna2HtmlLabel22.TabIndex = 5;
-            this.guna2HtmlLabel22.Text = "TK. 0";
-            // 
-            // guna2HtmlLabel23
-            // 
-            this.guna2HtmlLabel23.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel23.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel23.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel23.Location = new System.Drawing.Point(51, 235);
-            this.guna2HtmlLabel23.Name = "guna2HtmlLabel23";
-            this.guna2HtmlLabel23.Size = new System.Drawing.Size(185, 32);
-            this.guna2HtmlLabel23.TabIndex = 4;
-            this.guna2HtmlLabel23.Text = "TOTAL WITHDRAW";
             // 
             // deliveredThisMonth
             // 
@@ -193,7 +169,7 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel21.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel21.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel21.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel21.Location = new System.Drawing.Point(307, 175);
+            this.guna2HtmlLabel21.Location = new System.Drawing.Point(307, 248);
             this.guna2HtmlLabel21.Name = "guna2HtmlLabel21";
             this.guna2HtmlLabel21.Size = new System.Drawing.Size(48, 32);
             this.guna2HtmlLabel21.TabIndex = 3;
@@ -204,7 +180,7 @@ namespace Postman.App.Rider
             this.guna2HtmlLabel20.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel20.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel20.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel20.Location = new System.Drawing.Point(51, 175);
+            this.guna2HtmlLabel20.Location = new System.Drawing.Point(51, 248);
             this.guna2HtmlLabel20.Name = "guna2HtmlLabel20";
             this.guna2HtmlLabel20.Size = new System.Drawing.Size(154, 32);
             this.guna2HtmlLabel20.TabIndex = 2;
@@ -226,8 +202,6 @@ namespace Postman.App.Rider
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel25);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel24);
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel22);
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel23);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel21);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel20);
             this.guna2Panel2.Controls.Add(this.UserName);
@@ -393,8 +367,6 @@ namespace Postman.App.Rider
         #endregion
 
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel25;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel22;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel23;
         private Guna.UI2.WinForms.Guna2HtmlLabel deliveredThisMonth;
         private Guna.UI2.WinForms.Guna2HtmlLabel parcelThisMonth;
         private Guna.UI2.WinForms.Guna2HtmlLabel deliveriedToday;
