@@ -74,6 +74,16 @@ namespace Postman.Repository
                                                        new { user.name, user.email,user.pickupLocation, id });
         }
 
+        public int? BanUser(UserRole userRole, int id)
+        {
+            return ConnectionDB.ExecuteQuery(@"Update users SET userRole=@userRole WHERE id=@id", new { userRole, id });
+        }
+
+        public int? RemoveUser(int id)
+        {
+            return ConnectionDB.ExecuteQuery(@"DELETE FROM users WHERE id=@id", new { id });
+
+        }
         public int? UpdateUserWithPassword(User user, int id)
         {
             

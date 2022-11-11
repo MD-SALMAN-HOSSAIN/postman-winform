@@ -43,7 +43,7 @@ namespace Postman.App
                     
                     accountNumber= accountNumber.Text,
                     amount = Convert.ToDouble(amountBox.Text),
-                    bankName= paymentMethod.Text
+                    method= paymentMethod.Text
                 };
                 try
                 {

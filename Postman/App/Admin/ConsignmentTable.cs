@@ -14,6 +14,7 @@ namespace Postman.App.Admin
     public partial class ConsignmentTable : Form
     {
         ParcelRepositry parcelRepo = new ParcelRepositry();
+        List<Parcel> parcelList { get; set; }
         public ConsignmentTable()
         {
             InitializeComponent();
@@ -24,6 +25,7 @@ namespace Postman.App.Admin
         {
             InitializeComponent();
             loadGridView(parcelList);
+            this.parcelList = parcelList;
         }
 
         private void userTableData_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -36,6 +38,8 @@ namespace Postman.App.Admin
             try
             {
                 this.consignmentTableData.DataSource = parcelRepo.getAll();
+                NumberOfUser.Text = $"{parcelList.Count}";
+
             }
             catch (Exception error)
             {
@@ -49,6 +53,7 @@ namespace Postman.App.Admin
             try
             {
                 this.consignmentTableData.DataSource =parcelList;
+                NumberOfUser.Text = $"{parcelList.Count}";
             }
             catch (Exception error)
             {

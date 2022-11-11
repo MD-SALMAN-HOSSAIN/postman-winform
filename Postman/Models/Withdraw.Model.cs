@@ -10,17 +10,15 @@ namespace Postman.Models
     public enum WithdrawStatus
     {
         PENDING,
-        CONFIRM,
         SUCCESS,
-        PROCCESSED,
-        REJECTED
+        FAILED,
     }
     public class Withdraw
     {
         public int id { get; }
         public string accountNumber { get; set; }
 
-        public string bankName { get; set; }
+        public string method { get; set; }
 
         public double amount { get; set; }
 
